@@ -72,18 +72,6 @@ All skills are **vendor-neutral** — they call generic interfaces and work acro
 
 Tests every skill end-to-end against its sample input and asserts on output content. Exits 0 on full pass. CI and the daily auto-publish job both refuse to push if any test fails.
 
-## How new skills are added
-
-A scheduled job runs daily at 09:00 America/Los_Angeles and:
-
-1. Reads the existing `skills/` directory to avoid duplicates.
-2. Generates 5 new vendor-neutral skill folders (SKILL.md + Python + sample data + README).
-3. Adds tests to `test_all_skills.sh` and runs the full suite.
-4. If — and only if — every test passes, commits to `main` and republishes to skills.sh via `npx skills add`.
-5. Auto-regenerates this README's skill table and count.
-
-The job pauses automatically if the collection exceeds 200 skills.
-
 ## License
 
 MIT — see [LICENSE](./LICENSE).
