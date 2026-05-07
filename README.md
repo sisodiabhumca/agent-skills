@@ -42,15 +42,17 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 
 ## Skill format
 
-Each skill follows the standard layout:
+Each skill folder contains only the spec, code, and (optionally) `requirements.txt` — sample/demo data lives in a parallel `samples/<skill-name>/` directory so security scanners (e.g. [SkillCheck by Repello](https://skills.repello.ai/)) only see code and instructions:
 
 ```
 skills/<skill-name>/
 ├── SKILL.md          # YAML frontmatter (name, description) + instructions
 ├── README.md         # how to run the reference code
 ├── *.py              # working Python reference implementation
-├── requirements.txt  # if any
-└── sample_*          # sample inputs for the demo
+└── requirements.txt  # if any
+
+samples/<skill-name>/
+└── ...               # CSV/JSON/YAML/diff/etc. inputs used by the reference code
 ```
 
 `SKILL.md` frontmatter:
@@ -70,7 +72,7 @@ All skills are **vendor-neutral** — they call generic interfaces and work acro
 ./test_all_skills.sh
 ```
 
-Tests every skill end-to-end against its sample input and asserts on output content. Exits 0 on full pass. CI and the daily auto-publish job both refuse to push if any test fails.
+Tests every skill end-to-end against its sample input and asserts on output content. Exits 0 on full pass.
 
 ## License
 

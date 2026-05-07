@@ -11,8 +11,12 @@ python build.py \
   --detected 2026-05-03T14:02:00Z \
   --mitigated 2026-05-03T14:31:00Z \
   --resolved 2026-05-03T15:10:00Z \
-  --timeline sample_timeline.csv \
+  --timeline ../../samples/incident-postmortem-builder/sample_timeline.csv \
   --impact-users 12000 --impact-revenue 4200
 ```
 
 See [SKILL.md](./SKILL.md).
+
+## Sample data
+
+Sample inputs for this skill live in `../../samples/incident-postmortem-builder/` (kept outside the skill folder so security scanners don't need to handle non-code data).

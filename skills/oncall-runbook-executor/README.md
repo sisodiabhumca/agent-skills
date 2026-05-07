@@ -6,10 +6,14 @@ Execute a YAML runbook step by step with prechecks, confirmations, and a Markdow
 
 ```bash
 # Safe dry-run (default) — prints commands but doesn't execute
-python runbook.py --runbook sample_runbook.yml
+python runbook.py --runbook ../../samples/oncall-runbook-executor/sample_runbook.yml
 
 # Actually run, skipping confirm prompts
-python runbook.py --runbook sample_runbook.yml --mode execute --yes
+python runbook.py --runbook ../../samples/oncall-runbook-executor/sample_runbook.yml --mode execute --yes
 ```
 
 See [SKILL.md](./SKILL.md).
+
+## Sample data
+
+Sample inputs for this skill live in `../../samples/oncall-runbook-executor/` (kept outside the skill folder so security scanners don't need to handle non-code data).

@@ -5,7 +5,7 @@ Triage scanner output (`npm audit`, `pip-audit`, OSV-Scanner, or generic JSON) i
 ## Run on the bundled sample
 
 ```bash
-python triage.py --input sample_audit.json --reachable sample_reachable.txt --prod-only
+python triage.py --input ../../samples/dependency-vuln-triager/sample_audit.json --reachable ../../samples/dependency-vuln-triager/sample_reachable.txt --prod-only
 ```
 
 Outputs `TRIAGE.md` (human-readable) and `triage.json` (for tooling).
@@ -33,3 +33,7 @@ python triage.py --input osv.json
 - `--prod-only` — push dev-only findings down (not removed).
 
 Stdlib only.
+
+## Sample data
+
+Sample inputs for this skill live in `../../samples/dependency-vuln-triager/` (kept outside the skill folder so security scanners don't need to handle non-code data).

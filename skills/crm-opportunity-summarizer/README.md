@@ -5,7 +5,7 @@ Pull opportunities from Salesforce, HubSpot, or CSV and produce a deal brief wit
 ## Run
 
 ```bash
-python summarize.py --source csv --csv sample/opportunities.csv
+python summarize.py --source csv --csv ../../samples/crm-opportunity-summarizer/sample/opportunities.csv
 ```
 
 Live:
@@ -16,3 +16,7 @@ python summarize.py --source sfdc
 ```
 
 See [SKILL.md](./SKILL.md).
+
+## Sample data
+
+Sample inputs for this skill live in `../../samples/crm-opportunity-summarizer/` (kept outside the skill folder so security scanners don't need to handle non-code data).

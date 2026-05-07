@@ -6,7 +6,7 @@ Investigate product metric changes in Amplitude or Mixpanel and produce a root-c
 
 ```bash
 pip install -r requirements.txt
-python investigate.py --source csv --csv sample_events.csv \
+python investigate.py --source csv --csv ../../samples/product-analytics-investigator/sample_events.csv \
   --steps view_pricing start_checkout purchase \
   --segment platform --current-days 7 --prior-days 7 \
   --end 2026-05-07T00:00:00Z
@@ -20,3 +20,7 @@ python investigate.py --source amplitude --steps view_pricing start_checkout pur
 ```
 
 See [SKILL.md](./SKILL.md) for the full skill definition.
+
+## Sample data
+
+Sample inputs for this skill live in `../../samples/product-analytics-investigator/` (kept outside the skill folder so security scanners don't need to handle non-code data).
