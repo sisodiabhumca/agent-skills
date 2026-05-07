@@ -1,8 +1,6 @@
 # agent-skills
 
-A growing collection of production-ready, **vendor-neutral Agent Skills** — usable by any AI agent or product, not just Perplexity. Each skill lives in `skills/<skill-name>/` with a `SKILL.md` (YAML frontmatter + instructions) and runnable Python reference code.
-
-The collection currently contains <!-- SKILLS-COUNT-START -->15<!-- SKILLS-COUNT-END --> skills and grows automatically — a daily job adds 5 new skills, runs the full test suite, and republishes to [skills.sh](https://skills.sh).
+A growing collection of production-ready, **vendor-neutral Agent Skills** — usable by any AI agent or product. Each skill lives in `skills/<skill-name>/` with a `SKILL.md` (YAML frontmatter + instructions) and runnable Python reference code.
 
 Compatible with the [skills.sh](https://skills.sh) directory layout.
 

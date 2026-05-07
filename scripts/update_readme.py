@@ -66,12 +66,14 @@ def update_readme() -> int:
         flags=re.DOTALL,
     )
     count = sum(1 for d in SKILLS_DIR.iterdir() if (d / "SKILL.md").exists())
-    new_text = re.sub(
-        r"<!-- SKILLS-COUNT-START -->.*?<!-- SKILLS-COUNT-END -->",
-        f"<!-- SKILLS-COUNT-START -->{count}<!-- SKILLS-COUNT-END -->",
-        new_text,
-        flags=re.DOTALL,
-    )
+    # Optional count marker — only update if present.
+    if "<!-- SKILLS-COUNT-START -->" in new_text:
+        new_text = re.sub(
+            r"<!-- SKILLS-COUNT-START -->.*?<!-- SKILLS-COUNT-END -->",
+            f"<!-- SKILLS-COUNT-START -->{count}<!-- SKILLS-COUNT-END -->",
+            new_text,
+            flags=re.DOTALL,
+        )
     if new_text != text:
         README.write_text(new_text)
         print(f"README updated. Skills: {count}")
