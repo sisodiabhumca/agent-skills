@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Comprehensive test runner for all 10 skills.
+# Comprehensive test runner for every skill in skills/.
 # Exits 0 only if every skill passes.
 set -u
 ROOT="$(cd "$(dirname "$0")" && pwd)/skills"
@@ -124,7 +124,80 @@ else
 fi
 echo
 
-rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md
+cd "$ROOT/pr-review-summarizer"
+run_test "pr-review-summarizer" python review.py --diff sample.diff --out /tmp/pr_review.md
+
+if grep -q "Pull Request Review Brief" /tmp/pr_review.md && grep -q "security-sensitive" /tmp/pr_review.md; then
+  echo "  PASS  (pr-review-content-check)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  (pr-review-content-check) — expected sections missing"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("pr-review-content-check")
+fi
+echo
+
+cd "$ROOT/meeting-notes-distiller"
+run_test "meeting-notes-distiller" python distill.py \
+  --in sample_transcript.txt --attendees "Alice,Bob,Carol" --purpose "Q3 planning" \
+  --out /tmp/meeting_notes.md
+
+if grep -q "Action items" /tmp/meeting_notes.md && grep -q "Decisions" /tmp/meeting_notes.md; then
+  echo "  PASS  (meeting-notes-content-check)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  (meeting-notes-content-check) — expected sections missing"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("meeting-notes-content-check")
+fi
+echo
+
+cd "$ROOT/oncall-runbook-executor"
+run_test "oncall-runbook-dry-run" python runbook.py --runbook sample_runbook.yml --yes --log /tmp/runbook.md
+
+if grep -q "dry-run" /tmp/runbook.md && grep -q "print_uptime" /tmp/runbook.md; then
+  echo "  PASS  (oncall-runbook-content-check)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  (oncall-runbook-content-check) — expected steps missing"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("oncall-runbook-content-check")
+fi
+echo
+
+cd "$ROOT/release-notes-writer"
+run_test "release-notes-writer" python generate.py \
+  --prs sample_prs.csv --version 3.2.0 --date 2026-05-07 \
+  --out-md /tmp/release_notes.md --out-slack /tmp/release_slack.md
+
+if grep -q "Breaking changes" /tmp/release_notes.md && grep -q "New features" /tmp/release_notes.md && grep -q "Bug fixes" /tmp/release_notes.md; then
+  echo "  PASS  (release-notes-content-check)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  (release-notes-content-check) — expected sections missing"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("release-notes-content-check")
+fi
+echo
+
+cd "$ROOT/dependency-vuln-triager"
+run_test "dependency-vuln-triager" python triage.py \
+  --input sample_audit.json --reachable sample_reachable.txt --prod-only \
+  --out-md /tmp/triage.md --out-json /tmp/triage.json
+
+if grep -q "P0" /tmp/triage.md && grep -q "axios" /tmp/triage.md && grep -q "reachable" /tmp/triage.md; then
+  echo "  PASS  (vuln-triage-content-check)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  (vuln-triage-content-check) — expected groupings missing"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("vuln-triage-content-check")
+fi
+echo
+
+rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \
+       /tmp/pr_review.md /tmp/meeting_notes.md /tmp/runbook.md /tmp/release_notes.md /tmp/release_slack.md \
+       /tmp/triage.md /tmp/triage.json
 
 echo "=========================================="
 echo "RESULTS: $PASS passed, $FAIL failed"

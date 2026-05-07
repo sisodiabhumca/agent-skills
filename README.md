@@ -1,6 +1,8 @@
 # agent-skills
 
-A collection of 10 production-ready Agent Skills, each in `skills/{skill-name}/` with a `SKILL.md` and runnable Python reference code.
+A growing collection of production-ready, **vendor-neutral Agent Skills** — usable by any AI agent or product, not just Perplexity. Each skill lives in `skills/<skill-name>/` with a `SKILL.md` (YAML frontmatter + instructions) and runnable Python reference code.
+
+The collection currently contains <!-- SKILLS-COUNT-START -->15<!-- SKILLS-COUNT-END --> skills and grows automatically — a daily job adds 5 new skills, runs the full test suite, and republishes to [skills.sh](https://skills.sh).
 
 Compatible with the [skills.sh](https://skills.sh) directory layout.
 
@@ -18,18 +20,27 @@ npx skills add https://github.com/sisodiabhumca/agent-skills --skill product-ana
 
 ## Skills
 
-| Skill | Domain | Persona |
-|---|---|---|
-| [product-analytics-investigator](./skills/product-analytics-investigator) | Amplitude / Mixpanel | PM, data PM, analyst |
-| [growth-experiment-planner](./skills/growth-experiment-planner) | LaunchDarkly / Optimizely | PM, growth, marketing |
-| [crm-opportunity-summarizer](./skills/crm-opportunity-summarizer) | Salesforce / HubSpot | Sales, RevOps |
-| [customer-interview-analyzer](./skills/customer-interview-analyzer) | Research / Notion / Drive | PM, UX researcher |
-| [incident-postmortem-builder](./skills/incident-postmortem-builder) | SRE / observability | SRE, DevOps |
-| [data-contract-enforcer](./skills/data-contract-enforcer) | dbt / warehouse | Analytics eng, data eng |
-| [saas-spend-optimizer](./skills/saas-spend-optimizer) | Billing / Zuora | Finance, RevOps |
-| [regulatory-guardrail-checker](./skills/regulatory-guardrail-checker) | Compliance | PM, legal, security |
-| [architecture-map-builder](./skills/architecture-map-builder) | GitHub / GitLab | Staff eng, platform |
-| [ai-eval-regression-tester](./skills/ai-eval-regression-tester) | LLM apps | AI eng, MLE |
+The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run `python scripts/update_readme.py` after adding a skill to refresh it.
+
+<!-- SKILLS-TABLE-START -->
+| Skill | Description |
+|---|---|
+| [`ai-eval-regression-tester`](./skills/ai-eval-regression-tester) | Use to run a regression eval suite over an LLM application — fixed test cases with deterministic graders (exact match, JSON schema, regex, embedding similarity, LLM-as-judge). |
+| [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
+| [`crm-opportunity-summarizer`](./skills/crm-opportunity-summarizer) | Use when a sales rep or RevOps lead needs a concise opportunity summary from Salesforce or HubSpot — pulling stage, amount, contacts, recent activity, and risks, then producing a deal brief and recommended next-best-action. |
+| [`customer-interview-analyzer`](./skills/customer-interview-analyzer) | Use when a PM or UX researcher has interview transcripts (text/Notion/Drive) and needs themes, pain points, JTBD, and verbatim quotes synthesized into a research report. |
+| [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
+| [`dependency-vuln-triager`](./skills/dependency-vuln-triager) | Use to triage dependency vulnerability scanner output (npm audit, pip-audit, OSV, GitHub advisories) and produce a ranked, deduplicated action list. |
+| [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
+| [`incident-postmortem-builder`](./skills/incident-postmortem-builder) | Use after a production incident to build a blameless postmortem. |
+| [`meeting-notes-distiller`](./skills/meeting-notes-distiller) | Use when given a meeting transcript or raw notes to produce a structured summary — decisions made, action items (with owner + due date), risks/blockers, open questions, and a follow-up email draft. |
+| [`oncall-runbook-executor`](./skills/oncall-runbook-executor) | Use during an incident or routine on-call task to execute a YAML-defined runbook step by step. |
+| [`pr-review-summarizer`](./skills/pr-review-summarizer) | Use when reviewing a code pull request or merge request. |
+| [`product-analytics-investigator`](./skills/product-analytics-investigator) | Use when a PM, data PM, or analyst needs to investigate product metrics in Amplitude or Mixpanel — diagnosing drops in activation, retention, or funnel conversion, or attributing changes to releases, segments, or experiments. |
+| [`regulatory-guardrail-checker`](./skills/regulatory-guardrail-checker) | Use to screen a feature spec or product change for compliance risks across GDPR, CCPA, HIPAA, PCI-DSS, SOC2, and accessibility (WCAG 2.2). |
+| [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
+| [`saas-spend-optimizer`](./skills/saas-spend-optimizer) | Use to analyze SaaS billing/usage exports (Zuora, Stripe, vendor invoices) and surface optimization opportunities — unused seats, duplicate tools, over-provisioned tiers, autorenewals coming up, and ARR-at-risk. |
+<!-- SKILLS-TABLE-END -->
 
 ## Skill format
 
@@ -53,13 +64,27 @@ description: When to use this skill (one or two sentences).
 ---
 ```
 
+All skills are **vendor-neutral** — they call generic interfaces and work across any model provider, agent framework, or hosting platform.
+
 ## Run the test suite
 
 ```bash
 ./test_all_skills.sh
 ```
 
-Tests every skill end-to-end against its sample input and asserts on output content. Exits 0 on full pass.
+Tests every skill end-to-end against its sample input and asserts on output content. Exits 0 on full pass. CI and the daily auto-publish job both refuse to push if any test fails.
+
+## How new skills are added
+
+A scheduled job runs daily at 09:00 America/Los_Angeles and:
+
+1. Reads the existing `skills/` directory to avoid duplicates.
+2. Generates 5 new vendor-neutral skill folders (SKILL.md + Python + sample data + README).
+3. Adds tests to `test_all_skills.sh` and runs the full suite.
+4. If — and only if — every test passes, commits to `main` and republishes to skills.sh via `npx skills add`.
+5. Auto-regenerates this README's skill table and count.
+
+The job pauses automatically if the collection exceeds 200 skills.
 
 ## License
 

@@ -1,0 +1,22 @@
+name: demo-self-test
+description: Demo runbook that runs harmless local commands
+owner: sre-oncall
+prechecks:
+  - desc: shell is available
+    cmd: echo "precheck-ok"
+steps:
+  - id: print_uptime
+    desc: Print uptime
+    cmd: uptime
+    expect_zero_exit: true
+  - id: list_workspace
+    desc: List the agent-skills repo
+    cmd: ls /home/user/workspace/agent-skills/skills | head -5
+    expect_zero_exit: true
+  - id: confirm_demo
+    desc: Demonstrate a confirm-required step (dry-run skips the prompt)
+    cmd: echo "would do something destructive"
+    requires_confirm: true
+postchecks:
+  - desc: shell still alive
+    cmd: echo "postcheck-ok"

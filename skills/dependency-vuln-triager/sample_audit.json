@@ -1,0 +1,10 @@
+[
+  {"id": "CVE-2024-1111", "package": "lodash", "installed": "4.17.20", "severity": "high", "cvss": 7.5, "fix_version": "4.17.21", "dev_only": false, "summary": "Prototype pollution"},
+  {"id": "CVE-2024-1112", "package": "lodash", "installed": "4.17.20", "severity": "medium", "cvss": 5.3, "fix_version": "4.17.21", "dev_only": false, "summary": "ReDoS in template"},
+  {"id": "GHSA-aaaa-bbbb-cccc", "package": "axios", "installed": "0.21.1", "severity": "critical", "cvss": 9.8, "fix_version": "1.6.0", "dev_only": false, "summary": "SSRF via crafted URL"},
+  {"id": "CVE-2023-9999", "package": "axios", "installed": "0.21.1", "severity": "high", "cvss": 7.1, "fix_version": "1.6.0", "dev_only": false, "summary": "CSRF token leak"},
+  {"id": "CVE-2024-2000", "package": "left-pad", "installed": "1.1.3", "severity": "low", "cvss": 3.1, "fix_version": "1.3.0", "dev_only": true, "summary": "Minor regex inefficiency"},
+  {"id": "CVE-2024-3000", "package": "moment", "installed": "2.29.1", "severity": "medium", "cvss": 5.5, "fix_version": "", "dev_only": false, "summary": "Path traversal in locale loader (no fix yet)"},
+  {"id": "CVE-2024-4000", "package": "express", "installed": "4.17.1", "severity": "high", "cvss": 7.2, "fix_version": "4.19.2", "dev_only": false, "summary": "Open redirect via res.location"},
+  {"id": "CVE-2024-5000", "package": "jest", "installed": "27.5.1", "severity": "medium", "cvss": 5.0, "fix_version": "29.7.0", "dev_only": true, "summary": "Test runner DoS via crafted fixture"}
+]

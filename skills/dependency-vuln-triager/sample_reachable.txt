@@ -1,0 +1,4 @@
+# Packages actually imported by application code
+axios
+express
+lodash

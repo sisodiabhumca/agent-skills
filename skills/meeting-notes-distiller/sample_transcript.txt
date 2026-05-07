@@ -1,0 +1,9 @@
+Alex: Welcome everyone. We agreed last week that we'd ship the dashboard MVP by the end of this month.
+Priya: Yes. The decision is to scope it to read-only views for now.
+Marcus: I'm worried about the data freshness — we depend on the warehouse refresh which is a known risk.
+Alex: Priya will draft the spec by Friday.
+Priya: I'll also send the access list to security by 2026-05-12.
+Marcus: I will set up the alerting next week.
+Alex: Open question: do we need a kill switch for the public preview?
+Priya: TBD on the legal review.
+Alex: Let's follow up on the kill switch by EOW.

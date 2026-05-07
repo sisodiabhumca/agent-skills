@@ -1,0 +1,11 @@
+number,title,body,labels,author,url
+421,"feat(auth): add SSO via SAML for enterprise tenants","Adds SAML 2.0 support behind feature flag.",feature,alice,https://example.com/pr/421
+422,"fix(billing): correct proration for mid-cycle upgrades","Off-by-one day caused under-billing on annual plans.",fix;bug,bob,https://example.com/pr/422
+423,"chore: bump axios to 1.7.2","Routine dependency bump.",chore;dependencies,renovate,https://example.com/pr/423
+424,"feat!: rename API field `customer_id` to `account_id`","BREAKING CHANGE: clients must update to new field name. See migration guide.",breaking,carol,https://example.com/pr/424
+425,"perf(search): cache facet counts for 60s","Reduces p95 by ~120ms on listing endpoints.",performance,dave,https://example.com/pr/425
+426,"docs: clarify webhook retry policy","",docs,erin,https://example.com/pr/426
+427,"fix: handle empty arrays in CSV import","",fix,frank,https://example.com/pr/427
+428,"Add bulk export to CSV","Users can now export up to 50k rows at once.",feature,grace,https://example.com/pr/428
+429,"refactor: extract pricing engine to its own module","No behavior change.",refactor;internal,heidi,https://example.com/pr/429
+430,"fix(api): return 404 instead of 500 for missing tenants","",fix;bug,ivan,https://example.com/pr/430
