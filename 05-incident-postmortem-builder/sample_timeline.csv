@@ -1,0 +1,8 @@
+timestamp,event,actor,source
+2026-05-03T13:55:00Z,Deploy of checkout-svc v3.7.0,deploy-bot,GitHub Actions
+2026-05-03T14:02:00Z,5xx rate alert fires,alertmanager,PagerDuty
+2026-05-03T14:05:00Z,On-call acknowledges page,oncall-eng,PagerDuty
+2026-05-03T14:14:00Z,Incident channel opened,oncall-eng,Slack #inc-1234
+2026-05-03T14:22:00Z,Suspect deploy v3.7.0; start rollback,oncall-eng,Slack
+2026-05-03T14:31:00Z,Rollback complete; 5xx returning to baseline,deploy-bot,Slack
+2026-05-03T15:10:00Z,Monitors clear; incident resolved,oncall-eng,PagerDuty

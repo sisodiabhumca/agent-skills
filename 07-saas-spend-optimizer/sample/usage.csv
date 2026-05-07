@@ -1,0 +1,15 @@
+vendor,user,last_active
+Slack,alice,2026-05-06
+Slack,bob,2026-05-05
+Slack,carol,2026-01-03
+MS Teams,alice,2026-02-02
+Notion,alice,2026-05-04
+Notion,bob,2026-05-03
+Confluence,alice,2025-11-10
+Figma,dev1,2026-05-01
+Figma,dev2,2026-05-06
+Sketch,old,2025-09-09
+GitHub,alice,2026-05-06
+GitHub,bob,2026-05-06
+Datadog,oncall1,2026-05-06
+Datadog,oncall2,2026-05-05

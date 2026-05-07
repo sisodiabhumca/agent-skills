@@ -1,0 +1,3 @@
+P2: The column mapping page is hard to use. I tried to upload a CSV three times.
+P2: I need to share dashboards with my team so that everyone can see the same numbers.
+P2: It's really frustrating that the import flow keeps failing on big files.

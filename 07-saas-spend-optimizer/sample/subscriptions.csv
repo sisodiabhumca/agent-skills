@@ -1,0 +1,9 @@
+vendor,category,plan,seats,cost_monthly,renewal_date,critical
+Slack,messaging,Enterprise,250,5000,2026-06-15,true
+MS Teams,messaging,E3,250,4000,2026-08-01,false
+Notion,docs,Team,250,2500,2026-05-30,false
+Confluence,docs,Premium,250,2750,2026-09-12,false
+Figma,design,Org,80,2000,2026-07-20,true
+Sketch,design,Standard,40,400,2026-06-25,false
+GitHub,dev,Enterprise,180,3600,2027-01-10,true
+Datadog,observability,Pro,200,7000,2026-05-22,true

@@ -1,0 +1,22 @@
+- id: refund_basic
+  tags: [refund, policy]
+  input: "How do I request a refund after 60 days?"
+  graders:
+    - type: contains
+      values: ["return policy", "support team"]
+    - type: not_contains
+      values: ["sure thing", "lol"]
+- id: refund_regex
+  tags: [refund]
+  input: "Need refund info"
+  graders:
+    - type: regex
+      pattern: "policy"
+- id: json_shape
+  tags: [json]
+  input: "Return JSON answer with citation"
+  graders:
+    - type: json_schema
+      schema:
+        type: object
+        required: [answer, citation]

@@ -1,0 +1,13 @@
+timestamp,user_id,event,platform,plan,country
+2026-04-25T10:00:00Z,u1,view_pricing,web,free,US
+2026-04-25T10:01:00Z,u1,start_checkout,web,free,US
+2026-04-25T10:02:00Z,u1,purchase,web,free,US
+2026-04-26T11:00:00Z,u2,view_pricing,ios,free,US
+2026-04-26T11:01:00Z,u2,start_checkout,ios,free,US
+2026-05-02T09:00:00Z,u3,view_pricing,web,free,US
+2026-05-02T09:01:00Z,u3,start_checkout,web,free,US
+2026-05-02T09:02:00Z,u3,purchase,web,free,US
+2026-05-03T12:00:00Z,u4,view_pricing,ios,free,US
+2026-05-03T12:01:00Z,u4,start_checkout,ios,free,US
+2026-05-04T08:00:00Z,u5,view_pricing,android,free,IN
+2026-05-04T08:01:00Z,u5,start_checkout,android,free,IN

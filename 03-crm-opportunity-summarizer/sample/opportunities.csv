@@ -1,0 +1,4 @@
+id,name,account,stage,amount,close_date,owner,last_activity_date,primary_contact,next_step,economic_buyer,metrics,decision_criteria,notes
+O-1001,Platform expansion,Acme Corp,Negotiation,120000,2026-05-22,Jane Patel,2026-04-18,"Maria Lopez (VP Eng)",Send redlines,Mark Chen (CFO),"$1.2M annual savings","Security review + ROI",Champion strong
+O-1002,Pilot to enterprise,Globex,Discovery,45000,2026-06-30,Sam Rivers,2026-05-04,"Tomás Reyes",Schedule technical deep-dive,,,Pricing TBD,
+O-1003,Renewal + upsell,Initech,Proposal,80000,2026-05-15,Jane Patel,2026-04-10,"Priya Shah",Confirm renewal terms,,Hours saved per week,Procurement-led,

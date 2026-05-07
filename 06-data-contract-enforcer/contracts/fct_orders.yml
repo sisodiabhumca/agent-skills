@@ -1,0 +1,20 @@
+table: analytics.fct_orders
+owner: data-eng@acme.com
+strict: false
+freshness:
+  column: created_at
+  max_lag_minutes: 120
+columns:
+  - name: order_id
+    type: VARCHAR
+    nullable: false
+    unique: true
+  - name: amount
+    type: DECIMAL
+    nullable: false
+    min: 0
+  - name: created_at
+    type: TIMESTAMP
+    nullable: false
+row_count:
+  min: 1

@@ -1,0 +1,4 @@
+Interviewer: Walk me through your last week using the product.
+P1: Honestly, the import flow is so confusing. I'm trying to upload a CSV but the column mapping is broken.
+P1: I want to get my data in quickly so that I can start the analysis. Right now it's slow and I get errors.
+P1: I wish there were a sample file. The error messages are not helpful.
