@@ -1,0 +1,28 @@
+- id: read-orders
+  effect: allow
+  actions:
+    - orders.read
+  resources:
+    - orders/*
+  principals:
+    - role:analyst
+  description: Allow analysts to read orders
+
+- id: admin-all
+  effect: allow
+  actions:
+    - "*"
+  resources:
+    - "*"
+  principals:
+    - "*"
+
+- id: deny-delete-orders
+  effect: deny
+  actions:
+    - orders.delete
+  resources:
+    - orders/*
+  principals:
+    - role:intern
+  description: Prevent interns from deleting orders

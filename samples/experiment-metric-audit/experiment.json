@@ -1,0 +1,37 @@
+{
+  "experiment": {
+    "name": "checkout-latency-optimization",
+    "description": "Optimize checkout latency by changing API batching strategy.",
+    "variants": ["control", "treatment"],
+    "analysis_window_days": 14
+  },
+  "metrics": [
+    {
+      "name": "purchase_conversion_rate",
+      "type": "ratio",
+      "unit": "user",
+      "window_days": 14,
+      "numerator": "users_with_purchase",
+      "denominator": "exposed_users",
+      "direction": "increase"
+    },
+    {
+      "name": "p95_checkout_latency_ms",
+      "type": "average",
+      "unit": "session",
+      "window_days": 14,
+      "direction": "decrease",
+      "role": "guardrail"
+    },
+    {
+      "name": "error_rate",
+      "type": "ratio",
+      "unit": "session",
+      "window_days": 14,
+      "numerator": "sessions_with_error",
+      "denominator": "sessions_with_checkout",
+      "direction": "decrease",
+      "role": "guardrail"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "endpoints": [
+    "/orders",
+    "/orders/{id}",
+    "/checkout"
+  ],
+  "fields": [
+    "status",
+    "customer_phone",
+    "discount_code"
+  ]
+}
