@@ -1,0 +1,5 @@
+id,title,reach,impact,confidence,effort,cost_of_delay,job_size
+1,Fix checkout error,5000,8,0.9,3,40,5
+2,Add dark mode,20000,3,0.6,8,10,8
+3,Improve search relevance,15000,7,0.7,10,50,13
+4,Reduce infra cost,0,5,0.8,4,30,3

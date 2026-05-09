@@ -1,0 +1,33 @@
+{
+  "flags": [
+    {
+      "key": "new-checkout",
+      "owner": "payments-team",
+      "created_at": "2025-01-10",
+      "updated_at": "2025-02-01",
+      "enabled": true,
+      "rules": [
+        {"segment": "beta", "rollout": 50},
+        {"segment": "beta", "rollout": 10},
+        {"segment": "all", "rollout": 100}
+      ]
+    },
+    {
+      "key": "search-ui-refresh",
+      "created_at": "2026-04-01",
+      "updated_at": "2026-04-01",
+      "enabled": true,
+      "rules": [
+        {"segment": "employees", "rollout": 100}
+      ]
+    },
+    {
+      "key": "deprecated-flow",
+      "owner": "growth",
+      "created_at": "2024-10-01",
+      "updated_at": "2024-10-01",
+      "enabled": false,
+      "rules": []
+    }
+  ]
+}

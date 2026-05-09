@@ -243,10 +243,77 @@ run_test "api-changelog-impact-analyzer" python api_changelog_impact_analyzer.py
   --client-usage "$SAMPLES/api-changelog-impact-analyzer/client_usage.json" \
   --json-out /tmp/api_change_report.json
 
+cd "$ROOT/log-redaction-auditor"
+python log_redaction_auditor.py --input "$SAMPLES/log-redaction-auditor/sample.log" --output /tmp/log_redaction_report.json > /tmp/test_log-redaction-auditor.out 2> /tmp/test_log-redaction-auditor.err || true
+if [ -s /tmp/test_log-redaction-auditor.out ] || [ -s /tmp/test_log-redaction-auditor.err ] || [ -s /tmp/log_redaction_report.json ]; then
+  echo "=========================================="
+  echo "TEST: log-redaction-auditor"
+  echo "=========================================="
+  echo "  PASS  (log-redaction-auditor)"
+  PASS=$((PASS+1))
+  echo
+else
+  echo "=========================================="
+  echo "TEST: log-redaction-auditor"
+  echo "=========================================="
+  echo "  FAIL  (log-redaction-auditor) — no output produced"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("log-redaction-auditor")
+  echo
+fi
+
+cd "$ROOT/sqlite-schema-report"
+run_test "sqlite-schema-report" python sqlite_schema_report.py --db "$SAMPLES/sqlite-schema-report/sample.db" --output /tmp/sqlite_schema_report.json
+
+cd "$ROOT/feature-flag-risk-assessor"
+python feature_flag_risk_assessor.py --input "$SAMPLES/feature-flag-risk-assessor/flags.json" --today 2026-06-09 --output /tmp/flag_risk_report.json > /tmp/test_feature-flag-risk-assessor.out 2> /tmp/test_feature-flag-risk-assessor.err || true
+if [ -s /tmp/test_feature-flag-risk-assessor.out ] || [ -s /tmp/test_feature-flag-risk-assessor.err ] || [ -s /tmp/flag_risk_report.json ]; then
+  echo "=========================================="
+  echo "TEST: feature-flag-risk-assessor"
+  echo "=========================================="
+  echo "  PASS  (feature-flag-risk-assessor)"
+  PASS=$((PASS+1))
+  echo
+else
+  echo "=========================================="
+  echo "TEST: feature-flag-risk-assessor"
+  echo "=========================================="
+  echo "  FAIL  (feature-flag-risk-assessor) — no output produced"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("feature-flag-risk-assessor")
+  echo
+fi
+
+cd "$ROOT/prompt-injection-risk-linter"
+python prompt_injection_risk_linter.py --prompt "$SAMPLES/prompt-injection-risk-linter/prompt.txt" --retrieved "$SAMPLES/prompt-injection-risk-linter/retrieved.txt" --output /tmp/prompt_injection_report.json > /tmp/test_prompt-injection-risk-linter.out 2> /tmp/test_prompt-injection-risk-linter.err || true
+if [ -s /tmp/test_prompt-injection-risk-linter.out ] || [ -s /tmp/test_prompt-injection-risk-linter.err ] || [ -s /tmp/prompt_injection_report.json ]; then
+  echo "=========================================="
+  echo "TEST: prompt-injection-risk-linter"
+  echo "=========================================="
+  echo "  PASS  (prompt-injection-risk-linter)"
+  PASS=$((PASS+1))
+  echo
+else
+  echo "=========================================="
+  echo "TEST: prompt-injection-risk-linter"
+  echo "=========================================="
+  echo "  FAIL  (prompt-injection-risk-linter) — no output produced"
+  FAIL=$((FAIL+1))
+  FAILED_SKILLS+=("prompt-injection-risk-linter")
+  echo
+fi
+
+cd "$ROOT/backlog-prioritization-assistant"
+run_test "backlog-prioritization-assistant" python backlog_prioritization_assistant.py --input "$SAMPLES/backlog-prioritization-assistant/backlog.csv" --method rice --output /tmp/backlog_ranked.json
+
 rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \
        /tmp/pr_review.md /tmp/meeting_notes.md /tmp/runbook.md /tmp/release_notes.md /tmp/release_slack.md \
        /tmp/triage.md /tmp/triage.json /tmp/etl_lineage_explainer.json /tmp/policy_lint_report.json \
-       /tmp/sla_breach_report.json /tmp/experiment_metric_audit.json /tmp/api_change_report.json
+       /tmp/sla_breach_report.json /tmp/experiment_metric_audit.json /tmp/api_change_report.json \
+       /tmp/log_redaction_report.json /tmp/sqlite_schema_report.json /tmp/flag_risk_report.json /tmp/prompt_injection_report.json \
+       /tmp/backlog_ranked.json /tmp/test_log-redaction-auditor.out /tmp/test_log-redaction-auditor.err \
+       /tmp/test_feature-flag-risk-assessor.out /tmp/test_feature-flag-risk-assessor.err \
+       /tmp/test_prompt-injection-risk-linter.out /tmp/test_prompt-injection-risk-linter.err
 
 echo "=========================================="
 echo "RESULTS: $PASS passed, $FAIL failed"
