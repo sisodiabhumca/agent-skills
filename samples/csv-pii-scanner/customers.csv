@@ -1,0 +1,5 @@
+customer_id,full_name,email,phone,signup_ip,notes
+1,Ada Lovelace,ada@example.com,+1 (415) 555-0123,203.0.113.10,VIP
+2,Grace Hopper,grace.hopper@example.com,415-555-0199,203.0.113.11,Prefers email
+3,Alan Turing,alan@example.net,+44 20 7946 0958,198.51.100.7,Requested data export
+4,Katherine Johnson,kjohnson@example.org,,192.0.2.44,

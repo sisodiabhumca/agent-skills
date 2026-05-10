@@ -1,0 +1,6 @@
+2026-05-10T00:01:10Z Alert triggered: elevated 5xx
+2026-05-10T00:03:05Z On-call acknowledged
+2026-05-10T00:06:41Z Noted errors correlate with deploy v2.3.1
+2026-05-10T00:25:10Z Rolled back deploy to v2.3.0
+2026-05-10T00:28:22Z Error rate returning to baseline
+2026-05-10T01:10:00Z Post-incident review scheduled

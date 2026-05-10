@@ -306,7 +306,23 @@ fi
 cd "$ROOT/backlog-prioritization-assistant"
 run_test "backlog-prioritization-assistant" python backlog_prioritization_assistant.py --input "$SAMPLES/backlog-prioritization-assistant/backlog.csv" --method rice --output /tmp/backlog_ranked.json
 
-rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \
+
+cd "$ROOT/api-contract-diff"
+run_test "api-contract-diff" python api_contract_diff.py   --old "$SAMPLES/api-contract-diff/openapi_old.json"   --new "$SAMPLES/api-contract-diff/openapi_new.json"   --out /tmp/api_contract_diff_report.json
+
+cd "$ROOT/csv-pii-scanner"
+run_test "csv-pii-scanner" python csv_pii_scanner.py   --input "$SAMPLES/csv-pii-scanner/customers.csv"   --out /tmp/csv_pii_report.json
+
+cd "$ROOT/incident-timeline-builder"
+run_test "incident-timeline-builder" python incident_timeline_builder.py   --input "$SAMPLES/incident-timeline-builder/incident_log.txt"   --out /tmp/incident_timeline.json   --gap-minutes 15
+
+cd "$ROOT/kpi-anomaly-triage"
+run_test "kpi-anomaly-triage" python kpi_anomaly_triage.py   --input "$SAMPLES/kpi-anomaly-triage/kpi.csv"   --out /tmp/kpi_anomaly_report.json   --window 7   --z 2.5
+
+cd "$ROOT/meeting-action-items-extractor"
+run_test "meeting-action-items-extractor" python meeting_action_items_extractor.py   --input "$SAMPLES/meeting-action-items-extractor/transcript.txt"   --out /tmp/meeting_actions.json
+
+rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \ /tmp/api_contract_diff_report.json /tmp/csv_pii_report.json /tmp/incident_timeline.json /tmp/kpi_anomaly_report.json /tmp/meeting_actions.json
        /tmp/pr_review.md /tmp/meeting_notes.md /tmp/runbook.md /tmp/release_notes.md /tmp/release_slack.md \
        /tmp/triage.md /tmp/triage.json /tmp/etl_lineage_explainer.json /tmp/policy_lint_report.json \
        /tmp/sla_breach_report.json /tmp/experiment_metric_audit.json /tmp/api_change_report.json \

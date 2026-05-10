@@ -1,0 +1,5 @@
+Alicia: Decision: We will ship the read-only mode first.
+Ben: Action: draft release notes by Wednesday.
+Chen: I'll update the API docs for the new endpoint.
+Alicia: Can you check with Support about common user questions?
+Ben: We decided to postpone the billing migration.
