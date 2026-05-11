@@ -322,7 +322,26 @@ run_test "kpi-anomaly-triage" python kpi_anomaly_triage.py   --input "$SAMPLES/k
 cd "$ROOT/meeting-action-items-extractor"
 run_test "meeting-action-items-extractor" python meeting_action_items_extractor.py   --input "$SAMPLES/meeting-action-items-extractor/transcript.txt"   --out /tmp/meeting_actions.json
 
-rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \ /tmp/api_contract_diff_report.json /tmp/csv_pii_report.json /tmp/incident_timeline.json /tmp/kpi_anomaly_report.json /tmp/meeting_actions.json
+
+# ------------------------------
+# json-schema-drift-detector
+run_test "json-schema-drift-detector" bash -lc "cd $ROOT/json-schema-drift-detector && python json_schema_drift_detector.py --old \"$SAMPLES/json-schema-drift-detector/old_schema.json\" --new \"$SAMPLES/json-schema-drift-detector/new_schema.json\" --out /tmp/json_schema_drift_report.json"
+
+# utm-campaign-governor
+run_test "utm-campaign-governor" bash -lc "cd $ROOT/utm-campaign-governor && python utm_campaign_governor.py --input \"$SAMPLES/utm-campaign-governor/links.csv\" --policy \"$SAMPLES/utm-campaign-governor/policy.json\" --out /tmp/utm_governed_links.csv"
+
+# ops-rca-hypothesis-generator
+run_test "ops-rca-hypothesis-generator" bash -lc "cd $ROOT/ops-rca-hypothesis-generator && python ops_rca_hypothesis_generator.py --incident \"$SAMPLES/ops-rca-hypothesis-generator/incident.json\" --changes \"$SAMPLES/ops-rca-hypothesis-generator/changes.json\" --out /tmp/rca_hypotheses.json"
+
+# feature-adoption-funnel-builder
+run_test "feature-adoption-funnel-builder" bash -lc "cd $ROOT/feature-adoption-funnel-builder && python feature_adoption_funnel_builder.py --events \"$SAMPLES/feature-adoption-funnel-builder/events.csv\" --steps \"feature_viewed,feature_started,feature_completed\" --window-days 7 --out /tmp/feature_funnel.json"
+
+# docx-style-auditor
+run_test "docx-style-auditor" bash -lc "cd $ROOT/docx-style-auditor && python docx_style_auditor.py --input \"$SAMPLES/docx-style-auditor/sample.docx\" --out /tmp/docx_style_report.json"
+
+
+rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \
+       /tmp/api_contract_diff_report.json /tmp/csv_pii_report.json /tmp/incident_timeline.json /tmp/kpi_anomaly_report.json /tmp/meeting_actions.json /tmp/json_schema_drift_report.json /tmp/utm_governed_links.csv /tmp/rca_hypotheses.json /tmp/feature_funnel.json /tmp/docx_style_report.json
        /tmp/pr_review.md /tmp/meeting_notes.md /tmp/runbook.md /tmp/release_notes.md /tmp/release_slack.md \
        /tmp/triage.md /tmp/triage.json /tmp/etl_lineage_explainer.json /tmp/policy_lint_report.json \
        /tmp/sla_breach_report.json /tmp/experiment_metric_audit.json /tmp/api_change_report.json \

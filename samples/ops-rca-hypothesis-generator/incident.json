@@ -1,0 +1,18 @@
+{
+  "title": "Checkout latency spike",
+  "window": {
+    "start": "2026-05-10T15:10:00Z",
+    "end": "2026-05-10T15:55:00Z"
+  },
+  "impact": {
+    "users_affected": "~18%",
+    "symptoms": ["p95 latency increased from 450ms to 4s", "HTTP 502s from edge"],
+    "business": "cart abandonment increased"
+  },
+  "symptoms": [
+    "p95 latency increased from 450ms to 4s",
+    "HTTP 502 responses",
+    "database connection pool saturation"
+  ],
+  "affected_components": ["checkout-api", "edge-gateway", "payments-adapter"]
+}

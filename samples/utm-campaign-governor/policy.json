@@ -1,0 +1,6 @@
+{
+  "required_params": ["utm_source", "utm_medium", "utm_campaign"],
+  "lowercase_values": true,
+  "allowed_sources": ["newsletter", "twitter", "partner"],
+  "allowed_mediums": ["email", "social"]
+}

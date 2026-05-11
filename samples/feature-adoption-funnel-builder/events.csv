@@ -1,0 +1,12 @@
+user_id,event_name,timestamp
+u1,feature_viewed,2026-05-01T10:00:00Z
+u1,feature_started,2026-05-01T10:02:00Z
+u1,feature_completed,2026-05-01T10:05:30Z
+u2,feature_viewed,2026-05-01T11:00:00Z
+u2,feature_started,2026-05-02T11:00:00Z
+u3,feature_viewed,2026-05-03T09:00:00Z
+u4,feature_viewed,2026-05-03T12:00:00Z
+u4,feature_started,2026-05-03T12:20:00Z
+u5,feature_viewed,2026-05-03T13:00:00Z
+u5,feature_started,2026-05-03T13:10:00Z
+u5,feature_completed,2026-05-10T13:10:00Z
