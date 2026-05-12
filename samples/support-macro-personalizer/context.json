@@ -1,0 +1,10 @@
+{
+  "variables": {
+    "customer": {"first_name": "Ravi", "last_name": "Patel"},
+    "product_name": "Acme Widget Pro",
+    "refund_days": 30,
+    "order_id": "ORD-10492",
+    "agent_name": "Sam",
+    "app": {"version": "2.4.1"}
+  }
+}

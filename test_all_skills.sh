@@ -356,4 +356,37 @@ if [ $FAIL -gt 0 ]; then
   echo "Failed: ${FAILED_SKILLS[*]}"
   exit 1
 fi
-echo "ALL TESTS PASSED"
+
+echo "== csv-pii-redactor =="
+cd "$ROOT/csv-pii-redactor"
+python csv_pii_redactor.py \
+  --input_csv "$SAMPLES/csv-pii-redactor/sample_customers.csv" \
+  --output_csv /tmp/sample_customers.redacted.csv \
+  --report_json /tmp/sample_customers.redaction_report.json
+
+echo "== api-changelog-summarizer =="
+cd "$ROOT/api-changelog-summarizer"
+python api_changelog_summarizer.py \
+  --old_spec "$SAMPLES/api-changelog-summarizer/openapi_old.json" \
+  --new_spec "$SAMPLES/api-changelog-summarizer/openapi_new.json" \
+  --out_md /tmp/api_changelog.md
+
+echo "== support-macro-personalizer =="
+cd "$ROOT/support-macro-personalizer"
+python support_macro_personalizer.py \
+  --macros_json "$SAMPLES/support-macro-personalizer/macros.json" \
+  --context_json "$SAMPLES/support-macro-personalizer/context.json" \
+  --out_dir /tmp/support_drafts
+
+echo "== sql-anti-pattern-linter =="
+cd "$ROOT/sql-anti-pattern-linter"
+python sql_anti_pattern_linter.py \
+  --sql_file "$SAMPLES/sql-anti-pattern-linter/query.sql" \
+  --out_json /tmp/sql_lint_findings.json
+
+echo "== incident-timeline-normalizer =="
+cd "$ROOT/incident-timeline-normalizer"
+python incident_timeline_normalizer.py \
+  --events_json "$SAMPLES/incident-timeline-normalizer/events.json" \
+  --out_json /tmp/incident_timeline.json
+echo "ALL TESTS PASSED" /tmp/sample_customers.redacted.csv /tmp/sample_customers.redaction_report.json /tmp/api_changelog.md /tmp/support_drafts /tmp/sql_lint_findings.json /tmp/incident_timeline.json

@@ -1,0 +1,10 @@
+{
+  "incident_id": "INC-2026-0512",
+  "events": [
+    {"timestamp": "Tue, 12 May 2026 15:45:10 +0000", "type": "note", "message": "Customer reports elevated errors"},
+    {"timestamp": 1778600755, "type": "detected", "message": "Alert fired: 5xx rate > 2%"},
+    {"timestamp": "2026-05-12T15:50:00Z", "type": "acknowledged", "message": "On-call acknowledged"},
+    {"timestamp": "2026-05-12T16:05:30+00:00", "type": "mitigated", "message": "Rolled back deploy"},
+    {"timestamp": "2026-05-12T16:22:00Z", "type": "resolved", "message": "Error rates back to baseline"}
+  ]
+}

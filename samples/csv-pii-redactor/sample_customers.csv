@@ -1,0 +1,6 @@
+customer_id,name,email,phone,signup_ip,notes,card_last4
+1001,Alice Johnson,alice.johnson@example.com,+1 (415) 555-0199,203.0.113.10,Asked about invoice copy,1234
+1002,Bob Smith,bob.smith@example.org,415-555-0123,198.51.100.25,Prefers email contact,9876
+1003,Carol Nguyen,carol.nguyen@example.net,+44 20 7946 0958,192.0.2.44,Do not call before 9am,
+1004,David Lee,,+1 212 555 0134,203.0.113.77,No email provided,
+1005,Eva Martinez,eva.m@example.com,,198.51.100.99,Test account,

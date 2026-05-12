@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "Widget API", "version": "1.0.0"},
+  "paths": {
+    "/widgets": {
+      "get": {
+        "summary": "List widgets",
+        "parameters": [
+          {"name": "limit", "in": "query", "required": false, "schema": {"type": "integer"}}
+        ],
+        "responses": {
+          "200": {"description": "OK"},
+          "400": {"description": "Bad request"}
+        }
+      },
+      "post": {
+        "summary": "Create widget",
+        "requestBody": {"required": false, "content": {"application/json": {"schema": {"type": "object"}}}},
+        "responses": {
+          "201": {"description": "Created"},
+          "400": {"description": "Bad request"}
+        }
+      }
+    },
+    "/widgets/{id}": {
+      "get": {
+        "summary": "Get widget",
+        "parameters": [
+          {"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "OK"},
+          "404": {"description": "Not found"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "Widget API", "version": "1.1.0"},
+  "paths": {
+    "/widgets": {
+      "get": {
+        "summary": "List widgets",
+        "parameters": [
+          {"name": "limit", "in": "query", "required": false, "schema": {"type": "integer"}},
+          {"name": "cursor", "in": "query", "required": false, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "OK"},
+          "400": {"description": "Bad request"},
+          "429": {"description": "Rate limited"}
+        }
+      },
+      "post": {
+        "summary": "Create widget",
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object"}}}},
+        "responses": {
+          "201": {"description": "Created"},
+          "400": {"description": "Bad request"}
+        }
+      }
+    },
+    "/widgets/{id}": {
+      "get": {
+        "summary": "Get widget",
+        "parameters": [
+          {"name": "id", "in": "path", "required": true, "schema": {"type": "string"}},
+          {"name": "expand", "in": "query", "required": false, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "OK"}
+        }
+      },
+      "delete": {
+        "summary": "Delete widget",
+        "parameters": [
+          {"name": "id", "in": "path", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "204": {"description": "Deleted"},
+          "404": {"description": "Not found"}
+        }
+      }
+    }
+  }
+}

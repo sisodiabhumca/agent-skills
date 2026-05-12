@@ -1,0 +1,16 @@
+{
+  "macros": [
+    {
+      "id": "billing-refund-policy",
+      "subject_template": "Refund policy for {product_name}",
+      "body_template": "Hi {customer.first_name},\n\nThanks for reaching out about {product_name}. Our refund policy is {refund_days} days from purchase.\n\nOrder: {order_id}\n\nBest,\n{agent_name}\n",
+      "required_variables": ["customer.first_name", "product_name", "refund_days", "order_id", "agent_name"]
+    },
+    {
+      "id": "troubleshooting-reset",
+      "subject_template": "Steps to reset your {product_name}",
+      "body_template": "Hi {customer.first_name},\n\nPlease try these steps:\n1) Sign out\n2) Clear cache\n3) Sign in again\n\nIf it still fails, reply with a screenshot and your app version ({app.version}).\n\nThanks,\n{agent_name}\n",
+      "required_variables": ["customer.first_name", "product_name", "agent_name"]
+    }
+  ]
+}
