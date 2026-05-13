@@ -1,0 +1,16 @@
+{
+  "fields": {
+    "id": {"type": "string", "required": true, "min_length": 2},
+    "email": {"type": "string", "required": true, "regex": "@"},
+    "status": {"type": "string", "required": true, "regex": "^(trial|active|churned)$"},
+    "mrr": {"type": "number", "required": true, "min": 0},
+    "churn_reason": {"type": "string", "required": false, "max_length": 100}
+  },
+  "rules": [
+    {
+      "name": "churn_reason_required_when_churned",
+      "if": [{"field": "status", "op": "equals", "value": "churned"}],
+      "then": [{"field": "churn_reason", "op": "exists"}]
+    }
+  ]
+}

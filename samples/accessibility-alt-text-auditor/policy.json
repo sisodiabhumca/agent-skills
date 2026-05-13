@@ -1,0 +1,10 @@
+{
+  "ignore_src_prefixes": ["data:"],
+  "placeholder_alt_patterns": [
+    "^image$",
+    "^photo$",
+    "^picture$",
+    "^logo$",
+    "^placeholder$"
+  ]
+}

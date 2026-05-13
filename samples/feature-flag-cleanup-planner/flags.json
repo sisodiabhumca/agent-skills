@@ -1,0 +1,35 @@
+[
+  {
+    "key": "new_checkout",
+    "created_at": "2024-09-01",
+    "last_evaluated_at": "2026-04-01",
+    "owner": "payments@acme.com",
+    "default": "off",
+    "environments": {"prod": {"state": "on", "percentage": 25}}
+  },
+  {
+    "key": "legacy_search_fallback",
+    "created_at": "2023-01-10",
+    "last_evaluated_at": "2025-12-01",
+    "owner": "search@acme.com",
+    "default": "on",
+    "environments": {"prod": {"state": "on", "percentage": 100}},
+    "notes": "Temporary fallback during reindexing"
+  },
+  {
+    "key": "ab_test_header_copy",
+    "created_at": "2025-11-01",
+    "last_evaluated_at": null,
+    "owner": "growth@acme.com",
+    "default": "off",
+    "environments": {"prod": {"state": "off", "percentage": 0}}
+  },
+  {
+    "key": "deprecated_api_warning_banner",
+    "created_at": "2022-06-20",
+    "last_evaluated_at": "2024-10-10",
+    "owner": "platform@acme.com",
+    "default": "on",
+    "environments": {"prod": {"state": "on", "percentage": 100}}
+  }
+]

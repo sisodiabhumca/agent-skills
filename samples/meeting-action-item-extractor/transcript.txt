@@ -1,0 +1,6 @@
+Alex: Quick updates. The launch is tracking, but docs are behind.
+Priya: Action item: I'll draft the migration guide by Friday.
+Sam: We should set up a customer webinar for the new workflow.
+Alex: Can you, Priya, share the beta sign-up link by 2026-06-01?
+Priya: Yes. Also todo: update the changelog section.
+Sam: Not an action item, but I think we need to revisit onboarding copy.

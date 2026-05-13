@@ -341,14 +341,19 @@ run_test "docx-style-auditor" bash -lc "cd $ROOT/docx-style-auditor && python do
 
 
 rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \
-       /tmp/api_contract_diff_report.json /tmp/csv_pii_report.json /tmp/incident_timeline.json /tmp/kpi_anomaly_report.json /tmp/meeting_actions.json /tmp/json_schema_drift_report.json /tmp/utm_governed_links.csv /tmp/rca_hypotheses.json /tmp/feature_funnel.json /tmp/docx_style_report.json
+       /tmp/api_contract_diff_report.json /tmp/csv_pii_report.json /tmp/incident_timeline.json /tmp/kpi_anomaly_report.json /tmp/meeting_actions.json /tmp/json_schema_drift_report.json /tmp/utm_governed_links.csv /tmp/rca_hypotheses.json /tmp/feature_funnel.json /tmp/docx_style_report.json \
        /tmp/pr_review.md /tmp/meeting_notes.md /tmp/runbook.md /tmp/release_notes.md /tmp/release_slack.md \
        /tmp/triage.md /tmp/triage.json /tmp/etl_lineage_explainer.json /tmp/policy_lint_report.json \
        /tmp/sla_breach_report.json /tmp/experiment_metric_audit.json /tmp/api_change_report.json \
        /tmp/log_redaction_report.json /tmp/sqlite_schema_report.json /tmp/flag_risk_report.json /tmp/prompt_injection_report.json \
        /tmp/backlog_ranked.json /tmp/test_log-redaction-auditor.out /tmp/test_log-redaction-auditor.err \
        /tmp/test_feature-flag-risk-assessor.out /tmp/test_feature-flag-risk-assessor.err \
-       /tmp/test_prompt-injection-risk-linter.out /tmp/test_prompt-injection-risk-linter.err
+       /tmp/test_prompt-injection-risk-linter.out /tmp/test_prompt-injection-risk-linter.err \
+       /tmp/patched_accessibility_alt_text_auditor.html /tmp/report_accessibility_alt_text_auditor.json /tmp/stdout_accessibility_alt_text_auditor.json \
+       /tmp/report_data_contract_validator.json /tmp/stdout_data_contract_validator.json \
+       /tmp/report_feature_flag_cleanup_planner.json /tmp/stdout_feature_flag_cleanup_planner.json \
+       /tmp/report_meeting_action_item_extractor.json /tmp/stdout_meeting_action_item_extractor.json \
+       /tmp/report_sbom_license_risk_checker.json /tmp/stdout_sbom_license_risk_checker.json
 
 echo "=========================================="
 echo "RESULTS: $PASS passed, $FAIL failed"
@@ -389,4 +394,45 @@ cd "$ROOT/incident-timeline-normalizer"
 python incident_timeline_normalizer.py \
   --events_json "$SAMPLES/incident-timeline-normalizer/events.json" \
   --out_json /tmp/incident_timeline.json
-echo "ALL TESTS PASSED" /tmp/sample_customers.redacted.csv /tmp/sample_customers.redaction_report.json /tmp/api_changelog.md /tmp/support_drafts /tmp/sql_lint_findings.json /tmp/incident_timeline.json
+
+# ------------------------------
+# accessibility-alt-text-auditor
+cd "$ROOT/accessibility-alt-text-auditor"
+run_test "accessibility-alt-text-auditor" python alt_text_auditor.py \
+  --html "$SAMPLES/accessibility-alt-text-auditor/page.html" \
+  --policy "$SAMPLES/accessibility-alt-text-auditor/policy.json" \
+  --patched-out "/tmp/patched_accessibility_alt_text_auditor.html" \
+  --report-out "/tmp/report_accessibility_alt_text_auditor.json"
+
+# ------------------------------
+# data-contract-validator
+cd "$ROOT/data-contract-validator"
+run_test "data-contract-validator" python validate_contract.py \
+  --contract "$SAMPLES/data-contract-validator/contract.json" \
+  --data "$SAMPLES/data-contract-validator/records.jsonl" \
+  --out "/tmp/report_data_contract_validator.json"
+
+# ------------------------------
+# feature-flag-cleanup-planner
+cd "$ROOT/feature-flag-cleanup-planner"
+run_test "feature-flag-cleanup-planner" python plan_cleanup.py \
+  --flags "$SAMPLES/feature-flag-cleanup-planner/flags.json" \
+  --out "/tmp/report_feature_flag_cleanup_planner.json"
+
+# ------------------------------
+# meeting-action-item-extractor
+cd "$ROOT/meeting-action-item-extractor"
+run_test "meeting-action-item-extractor" python extract_action_items.py \
+  --transcript "$SAMPLES/meeting-action-item-extractor/transcript.txt" \
+  --participants "$SAMPLES/meeting-action-item-extractor/participants.json" \
+  --out "/tmp/report_meeting_action_item_extractor.json"
+
+# ------------------------------
+# sbom-license-risk-checker
+cd "$ROOT/sbom-license-risk-checker"
+run_test "sbom-license-risk-checker" python check_sbom_licenses.py \
+  --sbom "$SAMPLES/sbom-license-risk-checker/sbom.json" \
+  --policy "$SAMPLES/sbom-license-risk-checker/policy.json" \
+  --out "/tmp/report_sbom_license_risk_checker.json"
+
+echo "ALL TESTS PASSED"
