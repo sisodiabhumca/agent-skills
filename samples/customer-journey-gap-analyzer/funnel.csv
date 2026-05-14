@@ -1,0 +1,6 @@
+stage,entered,completed,avg_time_seconds,notes
+Landing page view,10000,4200,12,
+Signup start,4200,2500,45,Form has optional fields
+Email verification,2500,1900,120,Some users never receive email
+Onboarding,1900,1200,300,Long setup wizard
+Activation (first project created),1200,650,600,Users unsure what to do next

@@ -1,0 +1,24 @@
+{
+  "base_url": "https://httpbin.org",
+  "steps": [
+    {
+      "name": "GET /get returns 200 and has url",
+      "method": "GET",
+      "path": "/get",
+      "assert": [
+        {"type": "status_equals", "value": 200},
+        {"type": "json_path_exists", "path": "$.url"}
+      ]
+    },
+    {
+      "name": "POST /post echoes json",
+      "method": "POST",
+      "path": "/post",
+      "json": {"hello": "world"},
+      "assert": [
+        {"type": "status_equals", "value": 200},
+        {"type": "json_path_equals", "path": "$.json.hello", "value": "world"}
+      ]
+    }
+  ]
+}

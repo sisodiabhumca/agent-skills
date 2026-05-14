@@ -1,0 +1,8 @@
+resource_id,service,cost_monthly,tag_owner,tag_cost_center,tag_env
+r-001,compute,1200,platform,CC100,prod
+r-002,compute,450,,CC100,prod
+r-003,storage,300,data,CC200,production
+r-004,db,2200,app,CC300,prod
+r-005,db,800,app,,staging
+r-006,network,150,platform,CC100,
+r-007,compute,90,ml,CC400,dev

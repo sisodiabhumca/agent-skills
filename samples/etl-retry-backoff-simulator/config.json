@@ -1,0 +1,8 @@
+{
+  "attempts_max": 5,
+  "base_delay_seconds": 2,
+  "strategy": "exponential_jitter",
+  "failure_probability": 0.35,
+  "work_seconds_per_attempt": 4,
+  "trials": 2000
+}

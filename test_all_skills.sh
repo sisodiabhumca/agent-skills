@@ -353,7 +353,12 @@ rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md
        /tmp/report_data_contract_validator.json /tmp/stdout_data_contract_validator.json \
        /tmp/report_feature_flag_cleanup_planner.json /tmp/stdout_feature_flag_cleanup_planner.json \
        /tmp/report_meeting_action_item_extractor.json /tmp/stdout_meeting_action_item_extractor.json \
-       /tmp/report_sbom_license_risk_checker.json /tmp/stdout_sbom_license_risk_checker.json
+       /tmp/report_sbom_license_risk_checker.json /tmp/stdout_sbom_license_risk_checker.json \
+       /tmp/report_http_api_smoke_tester.json \
+       /tmp/report_privacy_policy_diff.json \
+       /tmp/report_etl_retry_backoff.json \
+       /tmp/report_customer_journey_gap.json \
+       /tmp/report_cloud_cost_tag_coverage.json
 
 echo "=========================================="
 echo "RESULTS: $PASS passed, $FAIL failed"
@@ -434,5 +439,32 @@ run_test "sbom-license-risk-checker" python check_sbom_licenses.py \
   --sbom "$SAMPLES/sbom-license-risk-checker/sbom.json" \
   --policy "$SAMPLES/sbom-license-risk-checker/policy.json" \
   --out "/tmp/report_sbom_license_risk_checker.json"
+
+
+
+# ------------------------------
+# http-api-smoke-tester
+cd "$ROOT/http-api-smoke-tester"
+run_test "http-api-smoke-tester" python http_api_smoke_tester.py   --plan "$SAMPLES/http-api-smoke-tester/plan.json"   > /tmp/report_http_api_smoke_tester.json
+
+# ------------------------------
+# privacy-policy-diff-summarizer
+cd "$ROOT/privacy-policy-diff-summarizer"
+run_test "privacy-policy-diff-summarizer" python privacy_policy_diff_summarizer.py   --old "$SAMPLES/privacy-policy-diff-summarizer/policy_old.txt"   --new "$SAMPLES/privacy-policy-diff-summarizer/policy_new.txt"   > /tmp/report_privacy_policy_diff.json
+
+# ------------------------------
+# etl-retry-backoff-simulator
+cd "$ROOT/etl-retry-backoff-simulator"
+run_test "etl-retry-backoff-simulator" python etl_retry_backoff_simulator.py   --config "$SAMPLES/etl-retry-backoff-simulator/config.json"   > /tmp/report_etl_retry_backoff.json
+
+# ------------------------------
+# customer-journey-gap-analyzer
+cd "$ROOT/customer-journey-gap-analyzer"
+run_test "customer-journey-gap-analyzer" python customer_journey_gap_analyzer.py   --input "$SAMPLES/customer-journey-gap-analyzer/funnel.csv"   > /tmp/report_customer_journey_gap.json
+
+# ------------------------------
+# cloud-cost-tag-coverage-auditor
+cd "$ROOT/cloud-cost-tag-coverage-auditor"
+run_test "cloud-cost-tag-coverage-auditor" python cloud_cost_tag_coverage_auditor.py   --input "$SAMPLES/cloud-cost-tag-coverage-auditor/resources.csv"   --policy "$SAMPLES/cloud-cost-tag-coverage-auditor/policy.json"   > /tmp/report_cloud_cost_tag_coverage.json
 
 echo "ALL TESTS PASSED"
