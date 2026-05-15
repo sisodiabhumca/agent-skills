@@ -1,41 +1,34 @@
 ---
 name: accessibility-alt-text-auditor
-description: Vendor-neutral skill to audit HTML for missing or low-quality image alternative text and propose fixes.
+description: Vendor-neutral skill to audit image alt-text coverage and basic quality heuristics for accessibility.
 ---
 
 ## When to invoke
-- You have an HTML page (or snippet) and need to improve accessibility by ensuring images have meaningful `alt` text.
-- You want a quick report of missing `alt`, empty `alt`, placeholder `alt`, or filename-based `alt`.
+- You maintain a website/app content library and want to improve accessibility.
+- You need an audit of missing or low-quality `alt` text for images.
 
 ## Inputs needed
-- Path to an HTML file.
-- (Optional) A JSON policy file with:
-  - `ignore_src_prefixes`: list of string prefixes for images to ignore
-  - `placeholder_alt_patterns`: list of regex strings to treat as placeholders
+- A JSON export of images with fields: `page`, `src`, `alt`.
+- Optional policy: minimum alt length, banned phrases, whether decorative images may be empty.
 
 ## Workflow
-1. Parse the HTML and collect all `<img>` elements.
-2. For each image, extract `src`, `alt`, and basic context (nearby text).
-3. Classify issues:
-   - `missing_alt`: no `alt` attribute
-   - `empty_alt`: `alt` is present but empty/whitespace
-   - `placeholder_alt`: `alt` looks like “image”, “photo”, etc.
-   - `filename_alt`: `alt` appears to be a filename or URL fragment
-4. Suggest an improved `alt` based on:
-   - `title` attribute if present
-   - file basename (lightly cleaned)
-   - nearby text content (if present)
-5. Output a JSON report and an optional patched HTML file.
+1. Validate input records and normalize text.
+2. Score each image:
+   - Missing alt
+   - Empty alt (allowed only if decorative)
+   - Too short / too long
+   - Generic alt (e.g., “image”, “photo”, file names)
+3. Produce a remediation list sorted by severity.
+4. Summarize coverage and common issues.
 
 ## Output format
-JSON to stdout:
-- `summary`: counts by issue type
-- `findings`: list of `{src, alt, issue_types, suggested_alt, context_excerpt}`
+- JSON report:
+  - `summary` metrics
+  - `issues[]` with per-image findings and suggested fix hints
 
 ## Guardrails
-- Do not claim semantic meaning you cannot infer; prefer conservative suggestions.
-- Respect decorative images: if `role="presentation"` or `aria-hidden="true"`, report but do not force non-empty `alt`.
-- Never add `alt` suggestions for ignored `src` prefixes.
+- This is a heuristic audit; do not claim WCAG compliance.
+- Do not fetch remote images or attempt vision-based descriptions.
 
 ## Reference code
-`alt_text_auditor.py`
+- `accessibility_alt_text_auditor.py` reads image metadata JSON and outputs an audit JSON.

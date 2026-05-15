@@ -1,0 +1,8 @@
+[
+  {"page": "/home", "src": "/assets/hero.png", "alt": "", "decorative": false},
+  {"page": "/home", "src": "/assets/logo.svg", "alt": "logo"},
+  {"page": "/pricing", "src": "/assets/plans.png", "alt": "Pricing table comparing Starter, Pro, and Enterprise plans"},
+  {"page": "/blog/post-1", "src": "/assets/graph.png", "alt": "image"},
+  {"page": "/blog/post-1", "src": "/assets/author.jpg", "alt": "Photo of the author, Sam Lee"},
+  {"page": "/docs", "src": "/assets/diagram.png"}
+]

@@ -1,0 +1,17 @@
+{
+  "service": "checkout-api",
+  "severity": "SEV-2",
+  "impact": "~12% of checkout attempts failed with 5xx",
+  "root_cause": "DB connection pool exhaustion after deploy 1.24.3",
+  "action_items": [
+    {"title": "Lower default pool size and add circuit breaker", "owner": "platform", "due": "2026-05-30"},
+    {"title": "Add alert on connection pool wait time", "owner": "sre", "due": "2026-05-22"}
+  ],
+  "events": [
+    {"ts": "2026-05-14T16:02:00Z", "desc": "Alert fired: elevated 5xx on checkout"},
+    {"ts": "2026-05-14T16:06:00Z", "desc": "Triage: correlated with deploy 1.24.3"},
+    {"ts": "2026-05-14T16:12:00Z", "desc": "Mitigation: rolled back deploy to 1.24.2"},
+    {"ts": "2026-05-14T16:25:00Z", "desc": "Recovery: error rate back to baseline"},
+    {"ts": "2026-05-14T17:10:00Z", "desc": "Follow-up: drafted postmortem and action items"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "dataset": "support_tickets",
+  "fields": [
+    {"name": "ticket_id", "type": "string", "join_key": true, "tags": ["quasi_identifier"]},
+    {"name": "created_at", "type": "datetime"},
+    {"name": "requester_email", "type": "string"},
+    {"name": "requester_name", "type": "string"},
+    {"name": "requester_phone", "type": "string"},
+    {"name": "ip_address", "type": "string"},
+    {"name": "issue_category", "type": "string"},
+    {"name": "plan_tier", "type": "string"},
+    {"name": "refund_amount", "type": "number", "tags": ["sensitive"]},
+    {"name": "agent_notes", "type": "string", "tags": ["free_text"]}
+  ]
+}

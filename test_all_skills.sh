@@ -358,7 +358,8 @@ rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md
        /tmp/report_privacy_policy_diff.json \
        /tmp/report_etl_retry_backoff.json \
        /tmp/report_customer_journey_gap.json \
-       /tmp/report_cloud_cost_tag_coverage.json
+       /tmp/report_cloud_cost_tag_coverage.json \
+       /tmp/pseudonymization_plan.json /tmp/postmortem_checklist.json /tmp/alt_audit.json /tmp/changelog_entry.md /tmp/kpi_consistency_report.json
 
 echo "=========================================="
 echo "RESULTS: $PASS passed, $FAIL failed"
@@ -466,5 +467,31 @@ run_test "customer-journey-gap-analyzer" python customer_journey_gap_analyzer.py
 # cloud-cost-tag-coverage-auditor
 cd "$ROOT/cloud-cost-tag-coverage-auditor"
 run_test "cloud-cost-tag-coverage-auditor" python cloud_cost_tag_coverage_auditor.py   --input "$SAMPLES/cloud-cost-tag-coverage-auditor/resources.csv"   --policy "$SAMPLES/cloud-cost-tag-coverage-auditor/policy.json"   > /tmp/report_cloud_cost_tag_coverage.json
+
+########################################
+# pseudonymization-field-mapper
+########################################
+run_test "pseudonymization-field-mapper" bash -lc "cd $ROOT/pseudonymization-field-mapper && python pseudonymization_field_mapper.py --schema \"$SAMPLES/pseudonymization-field-mapper/schema.json\" --out /tmp/pseudonymization_plan.json"
+
+########################################
+# incident-postmortem-qa-checklist
+########################################
+run_test "incident-postmortem-qa-checklist" bash -lc "cd $ROOT/incident-postmortem-qa-checklist && python incident_postmortem_qa_checklist.py --timeline \"$SAMPLES/incident-postmortem-qa-checklist/timeline.json\" --out /tmp/postmortem_checklist.json"
+
+########################################
+# accessibility-alt-text-auditor
+########################################
+run_test "accessibility-alt-text-auditor" bash -lc "cd $ROOT/accessibility-alt-text-auditor && python accessibility_alt_text_auditor.py --images \"$SAMPLES/accessibility-alt-text-auditor/images.json\" --out /tmp/alt_audit.json"
+
+########################################
+# release-notes-changelog-normalizer
+########################################
+run_test "release-notes-changelog-normalizer" bash -lc "cd $ROOT/release-notes-changelog-normalizer && python release_notes_changelog_normalizer.py --in \"$SAMPLES/release-notes-changelog-normalizer/release_notes.json\" --out /tmp/changelog_entry.md"
+
+########################################
+# kpi-definition-consistency-checker
+########################################
+run_test "kpi-definition-consistency-checker" bash -lc "cd $ROOT/kpi-definition-consistency-checker && python kpi_definition_consistency_checker.py --kpis \"$SAMPLES/kpi-definition-consistency-checker/kpis.json\" --out /tmp/kpi_consistency_report.json"
+
 
 echo "ALL TESTS PASSED"

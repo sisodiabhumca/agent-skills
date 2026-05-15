@@ -1,0 +1,34 @@
+{
+  "kpis": [
+    {
+      "name": "Activation Rate",
+      "description": "Percent of new users who activate within 7 days",
+      "numerator": "count(distinct user_id) with activated=true within 7d",
+      "denominator": "count(distinct user_id) created",
+      "grain": "user",
+      "window": "7d",
+      "owner": "growth",
+      "source_tables": ["users", "events"]
+    },
+    {
+      "name": "activation_rate",
+      "description": "Share of signups who activated in 30 days",
+      "numerator": "count(distinct user_id) with activated=true within 30d",
+      "denominator": "count(distinct user_id) created",
+      "grain": "user",
+      "window": "30d",
+      "owner": "",
+      "source_tables": ["users", "events"]
+    },
+    {
+      "name": "NPS",
+      "description": "Net Promoter Score",
+      "numerator": "%promoters - %detractors",
+      "denominator": "respondents",
+      "grain": "survey_response",
+      "window": "quarter",
+      "owner": "cx",
+      "source_tables": ["nps_surveys"]
+    }
+  ]
+}

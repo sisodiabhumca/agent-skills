@@ -1,0 +1,12 @@
+{
+  "version": "1.8.0",
+  "date": "2026-05-15",
+  "items": [
+    "add export to CSV for reports",
+    "Fixed: crash when saving empty form",
+    "security: rotate signing keys on schedule",
+    "Improve caching for dashboard widgets",
+    "Removed legacy /v1 endpoint",
+    "add export to CSV for reports"
+  ]
+}
