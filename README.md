@@ -26,7 +26,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`accessibility-alt-text-auditor`](./skills/accessibility-alt-text-auditor) | Vendor-neutral skill to audit image alt-text coverage and basic quality heuristics for accessibility. |
 | [`ai-eval-regression-tester`](./skills/ai-eval-regression-tester) | Use to run a regression eval suite over an LLM application — fixed test cases with deterministic graders (exact match, JSON schema, regex, embedding similarity, LLM-as-judge). |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
-| [`api-changelog-summarizer`](./skills/api-changelog-summarizer) | Vendor-neutral skill to compare two OpenAPI specs and summarize breaking and non-breaking API changes. |
+| [`api-changelog-summarizer`](./skills/api-changelog-summarizer) | Vendor-neutral skill to convert an API diff (before/after schemas or endpoints) into a structured changelog with breaking changes and migration guidance. |
 | [`api-contract-diff`](./skills/api-contract-diff) | Vendor-neutral skill to compare two OpenAPI 3 specifications and produce a structured contract change report with breaking-change detection. |
 | [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
@@ -38,6 +38,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`customer-journey-gap-analyzer`](./skills/customer-journey-gap-analyzer) | Analyze a CSV of funnel stages and drop-offs to identify the biggest customer journey gaps and suggest prioritized experiments (vendor-neutral). |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
+| [`data-retention-policy-checker`](./skills/data-retention-policy-checker) | Vendor-neutral skill to check a data retention schedule for completeness and risk (coverage, deletion handling, legal holds) and produce a structured findings report. |
 | [`dependency-vuln-triager`](./skills/dependency-vuln-triager) | Use to triage dependency vulnerability scanner output (npm audit, pip-audit, OSV, GitHub advisories) and produce a ranked, deduplicated action list. |
 | [`docx-style-auditor`](./skills/docx-style-auditor) | Audits .docx documents for vendor-neutral style consistency issues (headings, spacing) and outputs an actionable report. |
 | [`etl-lineage-explainer`](./skills/etl-lineage-explainer) | Vendor-neutral skill for extracting and summarizing table-level lineage from SQL-based ETL jobs. |
@@ -46,9 +47,11 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`feature-adoption-funnel-builder`](./skills/feature-adoption-funnel-builder) | Builds vendor-neutral feature adoption funnels from event logs to quantify conversion, drop-off, and time-to-adopt. |
 | [`feature-flag-cleanup-planner`](./skills/feature-flag-cleanup-planner) | Vendor-neutral skill to prioritize feature flags for cleanup using simple heuristics and produce a deprecation plan. |
 | [`feature-flag-risk-assessor`](./skills/feature-flag-risk-assessor) | Vendor-neutral skill to assess risk in feature-flag configurations (stale flags, kill-switch coverage, conflicting rules) and produce actionable recommendations. |
+| [`feature-flag-rollout-planner`](./skills/feature-flag-rollout-planner) | Vendor-neutral skill to generate a staged feature-flag rollout plan (phases, metrics, guardrails, rollback criteria) from feature context and risk inputs. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
 | [`incident-postmortem-builder`](./skills/incident-postmortem-builder) | Use after a production incident to build a blameless postmortem. |
+| [`incident-postmortem-drafter`](./skills/incident-postmortem-drafter) | Vendor-neutral skill to draft a blameless incident postmortem from structured incident inputs (timeline, impact, contributing factors) and produce an actionable report. |
 | [`incident-postmortem-qa-checklist`](./skills/incident-postmortem-qa-checklist) | Vendor-neutral skill to turn an incident timeline into a postmortem QA checklist and identify missing or weak evidence. |
 | [`incident-timeline-builder`](./skills/incident-timeline-builder) | Vendor-neutral skill to turn semi-structured incident logs into a normalized chronological timeline with clusters and gaps. |
 | [`incident-timeline-normalizer`](./skills/incident-timeline-normalizer) | Vendor-neutral skill to normalize incident event logs into an ordered timeline and compute phase durations. |
@@ -58,6 +61,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`log-redaction-auditor`](./skills/log-redaction-auditor) | Vendor-neutral skill to audit application logs for potential sensitive-data leakage and redaction coverage. |
 | [`meeting-action-item-extractor`](./skills/meeting-action-item-extractor) | Vendor-neutral skill to extract action items (task, owner, due date) from a meeting transcript into structured JSON. |
 | [`meeting-action-items-extractor`](./skills/meeting-action-items-extractor) | Vendor-neutral skill to extract decisions, action items, and owners from meeting transcripts and output an actionable task list. |
+| [`meeting-decision-log-extractor`](./skills/meeting-decision-log-extractor) | Vendor-neutral skill to extract decisions and action items from a meeting transcript and produce a decision log plus an action register. |
 | [`meeting-notes-distiller`](./skills/meeting-notes-distiller) | Use when given a meeting transcript or raw notes to produce a structured summary — decisions made, action items (with owner + due date), risks/blockers, open questions, and a follow-up email draft. |
 | [`oncall-runbook-executor`](./skills/oncall-runbook-executor) | Use during an incident or routine on-call task to execute a YAML-defined runbook step by step. |
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |

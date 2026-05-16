@@ -1,0 +1,40 @@
+{
+  "title": "Checkout latency spike and partial outage",
+  "severity": "SEV-2",
+  "start_time": "2026-05-10T18:05:00Z",
+  "end_time": "2026-05-10T18:55:00Z",
+  "summary": "A latency regression in the checkout API caused elevated timeouts for a subset of requests. The incident was mitigated by rolling back the deployment and increasing connection pool limits.",
+  "impact": {
+    "customer": "~12% of checkout attempts experienced timeouts; some customers retried successfully.",
+    "internal": "On-call engaged; customer support saw increased ticket volume.",
+    "metrics": {
+      "p95 latency": "+1800ms (baseline 450ms)",
+      "error rate": "peaked at 7% 5xx",
+      "affected region": "us-east-1"
+    }
+  },
+  "timeline": [
+    {"timestamp": "2026-05-10T18:05:00Z", "event": "New checkout deployment completed"},
+    {"timestamp": "2026-05-10T18:12:00Z", "event": "Alert fired: elevated 5xx"},
+    {"timestamp": "2026-05-10T18:18:00Z", "event": "On-call acknowledged page and began triage"},
+    {"timestamp": "2026-05-10T18:27:00Z", "event": "Mitigated by rolling back checkout deployment"},
+    {"timestamp": "2026-05-10T18:40:00Z", "event": "Connection pool limits increased to reduce contention"},
+    {"timestamp": "2026-05-10T18:55:00Z", "event": "Resolved; metrics returned to baseline"}
+  ],
+  "contributing_factors": [
+    "Connection pool configuration was close to saturation under peak load.",
+    "Load test coverage did not include the affected traffic mix."
+  ],
+  "went_well": [
+    "Alerts triggered quickly and on-call response was prompt.",
+    "Rollback procedure was well-practiced and executed without errors."
+  ],
+  "went_poorly": [
+    "Customer status page update lagged initial detection.",
+    "Runbook lacked a clear checklist for connection pool tuning."
+  ],
+  "action_items": [
+    {"action": "Add load test scenario for mixed cart sizes", "owner": "Perf Eng", "due_date": "2026-06-01", "status": "planned"},
+    {"action": "Update runbook with pool tuning checklist", "owner": "SRE", "due_date": "2026-05-25", "status": "in_progress"}
+  ]
+}

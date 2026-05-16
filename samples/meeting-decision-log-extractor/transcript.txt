@@ -1,0 +1,7 @@
+Alex: Thanks everyone. The main topic is the onboarding flow.
+Priya: We should remove the extra signup step; it is hurting conversion.
+Sam: Agreed. Decision: we will ship the simplified signup behind a flag.
+Alex: Action: Sam to draft the experiment plan by 2026-05-20.
+Priya: I will coordinate with Design and update the screens by end of week.
+Sam: Please follow up with Support to update macros next week.
+Alex: Approved: we'll keep the old flow available for rollback.

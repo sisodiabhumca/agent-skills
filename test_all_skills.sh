@@ -340,7 +340,7 @@ run_test "feature-adoption-funnel-builder" bash -lc "cd $ROOT/feature-adoption-f
 run_test "docx-style-auditor" bash -lc "cd $ROOT/docx-style-auditor && python docx_style_auditor.py --input \"$SAMPLES/docx-style-auditor/sample.docx\" --out /tmp/docx_style_report.json"
 
 
-rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \
+rm -rf /tmp/repos_demo /tmp/arch_out /tmp/results.jsonl /tmp/r2.jsonl /tmp/r2.md /tmp/eval_report.md \ /tmp/incident_postmortem.md /tmp/api_changelog.md /tmp/retention_policy_report.md /tmp/decision_log.md /tmp/rollout_plan.md
        /tmp/api_contract_diff_report.json /tmp/csv_pii_report.json /tmp/incident_timeline.json /tmp/kpi_anomaly_report.json /tmp/meeting_actions.json /tmp/json_schema_drift_report.json /tmp/utm_governed_links.csv /tmp/rca_hypotheses.json /tmp/feature_funnel.json /tmp/docx_style_report.json \
        /tmp/pr_review.md /tmp/meeting_notes.md /tmp/runbook.md /tmp/release_notes.md /tmp/release_slack.md \
        /tmp/triage.md /tmp/triage.json /tmp/etl_lineage_explainer.json /tmp/policy_lint_report.json \
@@ -494,4 +494,24 @@ run_test "release-notes-changelog-normalizer" bash -lc "cd $ROOT/release-notes-c
 run_test "kpi-definition-consistency-checker" bash -lc "cd $ROOT/kpi-definition-consistency-checker && python kpi_definition_consistency_checker.py --kpis \"$SAMPLES/kpi-definition-consistency-checker/kpis.json\" --out /tmp/kpi_consistency_report.json"
 
 
+
+# incident-postmortem-drafter
+cd "$ROOT/incident-postmortem-drafter"
+run_test "incident-postmortem-drafter" python postmortem_drafter.py   --input "$SAMPLES/incident-postmortem-drafter/incident.json"   --output /tmp/incident_postmortem.md
+
+# api-changelog-summarizer
+cd "$ROOT/api-changelog-summarizer"
+run_test "api-changelog-summarizer" python summarize_api_diff.py   --input "$SAMPLES/api-changelog-summarizer/api_diff.json"   --output /tmp/api_changelog.md
+
+# data-retention-policy-checker
+cd "$ROOT/data-retention-policy-checker"
+run_test "data-retention-policy-checker" python check_retention_policy.py   --input "$SAMPLES/data-retention-policy-checker/policy.json"   --output /tmp/retention_policy_report.md
+
+# meeting-decision-log-extractor
+cd "$ROOT/meeting-decision-log-extractor"
+run_test "meeting-decision-log-extractor" python extract_decisions.py   --input "$SAMPLES/meeting-decision-log-extractor/transcript.txt"   --output /tmp/decision_log.md
+
+# feature-flag-rollout-planner
+cd "$ROOT/feature-flag-rollout-planner"
+run_test "feature-flag-rollout-planner" python plan_rollout.py   --input "$SAMPLES/feature-flag-rollout-planner/feature.json"   --output /tmp/rollout_plan.md
 echo "ALL TESTS PASSED"

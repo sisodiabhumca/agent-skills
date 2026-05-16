@@ -1,0 +1,28 @@
+{
+  "legal_hold_supported": false,
+  "backup_retention_days": 120,
+  "datasets": [
+    {
+      "name": "user_profiles",
+      "data_class": "personal",
+      "system": "postgres-primary",
+      "retention_days": 3650,
+      "deletion_method": "soft_delete_then_purge"
+    },
+    {
+      "name": "authentication_logs",
+      "data_class": "security",
+      "system": "log-archive",
+      "retention_days": 400,
+      "deletion_method": "ttl"
+    },
+    {
+      "name": "marketing_events",
+      "data_class": "personal",
+      "system": "analytics-warehouse",
+      "retention_days": 9999,
+      "deletion_method": ""
+    }
+  ],
+  "notes": "Sample policy for demonstration purposes."
+}

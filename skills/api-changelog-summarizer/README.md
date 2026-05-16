@@ -1,15 +1,11 @@
 # api-changelog-summarizer
 
-Compare two OpenAPI JSON specs and output a markdown changelog.
+Generate a Markdown changelog from a structured API diff.
 
-## Run (sample)
+## Run
 
 ```bash
-python api_changelog_summarizer.py \
-  --old_spec ../../samples/api-changelog-summarizer/openapi_old.json \
-  --new_spec ../../samples/api-changelog-summarizer/openapi_new.json \
-  --out_md /tmp/api_changelog.md
+python summarize_api_diff.py \
+  --input ../../samples/api-changelog-summarizer/api_diff.json \
+  --output /tmp/api_changelog.md
 ```
-
-Output:
-- `/tmp/api_changelog.md`

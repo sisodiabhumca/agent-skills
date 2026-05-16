@@ -1,39 +1,35 @@
 ---
 name: api-changelog-summarizer
-description: Vendor-neutral skill to compare two OpenAPI specs and summarize breaking and non-breaking API changes.
+description: Vendor-neutral skill to convert an API diff (before/after schemas or endpoints) into a structured changelog with breaking changes and migration guidance.
 ---
 
 ## When to invoke
-- You maintain an API and need a release note / changelog from spec changes.
-- You need to assess whether an API update is breaking.
+- You have an API change (OpenAPI fragments, endpoint lists, or schema diffs) and need a human-readable changelog.
+- You want release notes with clear breaking vs non-breaking classification.
 
 ## Inputs needed
-- `--old_spec`: Path to an old OpenAPI spec (JSON).
-- `--new_spec`: Path to a new OpenAPI spec (JSON).
-- `--out_md`: Path to write a markdown changelog.
+- A JSON diff describing changes (added/removed/modified endpoints and fields).
+- Optional release metadata: version, date, owner.
 
 ## Workflow
-1. Parse both OpenAPI specs.
-2. Build an operation map keyed by `(method, path)`.
-3. Compare:
-   - Added/removed paths or methods.
-   - Request body requiredness.
-   - Parameter additions/removals and requiredness changes.
-   - Response status code additions/removals.
-4. Classify changes:
-   - Breaking: removed operations, removed required params, made body required, removed response codes.
-   - Non-breaking: added optional params, added response codes, added operations.
-5. Emit a changelog markdown with sections and bullet lists.
+1. Validate diff structure and normalize identifiers.
+2. Classify each change as breaking / behavioral / non-breaking.
+3. Group by endpoint or component.
+4. Generate migration notes (what to update in clients).
+5. Output a Markdown changelog with concise bullets.
 
 ## Output format
-- Markdown file with:
-  - `## Breaking changes`
-  - `## Non-breaking changes`
-  - `## Notes / limitations`
+Markdown with:
+- Release header
+- Breaking changes
+- Behavioral changes
+- Non-breaking changes
+- Deprecations
+- Migration notes
 
 ## Guardrails
-- This is structural diffing; it does not fully validate schema compatibility.
-- Only JSON OpenAPI files are supported by the reference code.
+- If the diff does not include enough information to classify a change, mark it as "needs review".
+- Do not invent endpoints or fields.
 
 ## Reference code
-- `api_changelog_summarizer.py`
+- `summarize_api_diff.py` reads a JSON diff and writes Markdown changelog.

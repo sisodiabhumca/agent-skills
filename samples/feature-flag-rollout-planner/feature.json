@@ -1,0 +1,22 @@
+{
+  "name": "Simplified signup flow",
+  "description": "Remove one step from signup and prefill fields to reduce friction.",
+  "target_users": "New users on web and mobile",
+  "success_metrics": [
+    "Signup completion rate (+3% absolute)",
+    "Time-to-first-action (decrease)",
+    "Activation rate after 7 days (no regression)"
+  ],
+  "guardrail_metrics": [
+    "Error rate (no >1% regression)",
+    "p95 latency on signup endpoints (no >10% regression)",
+    "Support tickets tagged 'signup' (no spike)"
+  ],
+  "risks": {
+    "data_migration": false,
+    "performance_sensitive": true,
+    "external_dependencies": ["Email verification provider"],
+    "notes": ["Risk of increased bot signups; ensure rate limiting and CAPTCHA remain effective."]
+  },
+  "stakeholders": ["Product", "Growth", "SRE", "Customer Support"]
+}

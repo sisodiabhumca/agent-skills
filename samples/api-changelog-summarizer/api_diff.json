@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "Payments API Changelog",
+    "version": "v1.12.0",
+    "date": "2026-05-16"
+  },
+  "changes": [
+    {
+      "type": "endpoint_added",
+      "target": "POST /refunds",
+      "detail": "Added endpoint to create a refund.",
+      "migration": "If you previously used charge reversal, switch to POST /refunds for explicit refund objects."
+    },
+    {
+      "type": "field_added",
+      "target": "Charge.amount_details",
+      "detail": "Added optional breakdown of fees and taxes.",
+      "migration": "No client change required unless you want to display fee breakdowns."
+    },
+    {
+      "type": "required_added",
+      "target": "POST /charges.request.idempotency_key",
+      "detail": "Request now requires idempotency_key to prevent duplicate charges.",
+      "migration": "Generate and persist an idempotency key per checkout attempt."
+    },
+    {
+      "type": "type_changed",
+      "target": "Charge.status",
+      "detail": "Charge.status is now an enum with values: pending|succeeded|failed.",
+      "migration": "Update client-side status handling to accept the new enum values."
+    },
+    {
+      "type": "deprecated",
+      "target": "GET /charges?expand=card",
+      "detail": "The card expansion is deprecated; use expand=payment_method instead.",
+      "migration": "Replace expand=card with expand=payment_method in queries."
+    }
+  ]
+}
