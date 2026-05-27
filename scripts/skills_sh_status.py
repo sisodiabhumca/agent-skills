@@ -101,7 +101,7 @@ def has_download_snapshot_once(base_url: str, repo: str, skill: str, timeout: in
     except HTTPError as exc:
         if exc.code == 404:
             return False
-        if 500 <= exc.code < 600:
+        if exc.code == 429 or 500 <= exc.code < 600:
             raise TransientDownloadError(f"HTTP {exc.code}") from exc
         raise
     except URLError as exc:
@@ -183,25 +183,33 @@ def cmd_verify(args: argparse.Namespace) -> int:
     missing = expected
     for attempt in range(1, args.attempts + 1):
         try:
-            missing = missing_snapshots(
-                expected,
-                base_url=args.base_url,
-                repo=args.repo,
-                timeout=args.timeout,
-            )
+            if args.download_api:
+                missing = missing_snapshots(
+                    expected,
+                    base_url=args.base_url,
+                    repo=args.repo,
+                    timeout=args.timeout,
+                )
+                success_message = "skills.sh download API resolves all indexed skills."
+                warning_subject = "download API did not resolve"
+            else:
+                indexed = collection_skill_names(args.base_url, args.repo, args.timeout)
+                missing = [skill for skill in expected if skill not in indexed]
+                success_message = "skills.sh collection lists all indexed skills."
+                warning_subject = "collection did not show"
         except RuntimeError as exc:
             print(f"::warning::skills.sh verification skipped after request error: {exc}")
             return 0
         if not missing:
-            print("skills.sh download API resolves all indexed skills.")
+            print(success_message)
             return 0
         print(f"Attempt {attempt}/{args.attempts}: still missing {', '.join(missing)}")
         if attempt != args.attempts:
             time.sleep(args.delay)
 
     print(
-        "::warning::skills.sh download API did not resolve these skills after "
-        f"verification: {', '.join(missing)}"
+        f"::warning::skills.sh {warning_subject} these skills after verification: "
+        f"{', '.join(missing)}"
     )
     return 0
 
@@ -222,6 +230,7 @@ def build_parser() -> argparse.ArgumentParser:
     verify.add_argument("skills", nargs="*")
     verify.add_argument("--attempts", type=int, default=10)
     verify.add_argument("--delay", type=int, default=30)
+    verify.add_argument("--download-api", action="store_true")
     verify.set_defaults(func=cmd_verify)
 
     return parser
