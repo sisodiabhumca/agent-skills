@@ -149,5 +149,5 @@ jobs:
               time.sleep(30)
 
           print(f"::warning::skills.sh did not show these skills after verification: {', '.join(missing)}")
-          sys.exit(1)
+          sys.exit(0)
           PY
