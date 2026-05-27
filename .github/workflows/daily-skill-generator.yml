@@ -28,20 +28,14 @@ jobs:
       - name: Refresh README table
         run: python scripts/update_readme.py
 
-      - name: Trigger skills.sh refresh
-        run: |
-          curl -X POST https://www.skills.sh/api/admin/refresh \
-            -H "Content-Type: application/json" \
-            -d '{"owner":"sisodiabhumca","repo":"agent-skills"}' || echo "Refresh request failed (may not be available)"
-
       - name: Commit and push changes
         run: |
           if git diff --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "sisodiabhumca"
+          git config user.email "sisodiabhumca@users.noreply.github.com"
           git add skills samples README.md
-          git commit -m "chore: generate 5 daily skills"
+          git commit -m "Add 5 new vendor-neutral skills (daily auto-run $(date -u +%Y-%m-%d))"
           git push
