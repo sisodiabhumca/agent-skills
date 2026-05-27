@@ -31,23 +31,7 @@ jobs:
 
       - name: Find skills missing from skills.sh
         id: missing
-        run: |
-          python - <<'PY' >> "$GITHUB_OUTPUT"
-          from pathlib import Path
-          import re
-          import urllib.request
-
-          repo_skills = sorted(
-              p.name for p in Path("skills").iterdir()
-              if p.is_dir() and (p / "SKILL.md").exists()
-          )
-          url = "https://www.skills.sh/sisodiabhumca/agent-skills"
-          with urllib.request.urlopen(url, timeout=20) as response:
-              html = response.read().decode("utf-8", "ignore")
-          indexed = set(re.findall(r"/sisodiabhumca/agent-skills/([a-z0-9-]+)", html))
-          missing = [skill for skill in repo_skills if skill not in indexed]
-          print(f"names={' '.join(missing)}")
-          PY
+        run: python scripts/skills_sh_status.py missing >> "$GITHUB_OUTPUT"
 
       - name: Index missing skills
         if: steps.missing.outputs.names != ''
@@ -60,7 +44,7 @@ jobs:
           echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
           npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
             --skill $SKILLS_TO_INDEX \
-            --agent universal \
+            --agent codex \
             --global \
             --copy \
             --yes

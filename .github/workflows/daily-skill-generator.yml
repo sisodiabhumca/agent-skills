@@ -86,23 +86,7 @@ jobs:
       - name: Find skills missing from skills.sh
         id: missing
         if: github.event_name == 'workflow_dispatch' && inputs.publish_existing && steps.generated.outputs.names == ''
-        run: |
-          python - <<'PY' >> "$GITHUB_OUTPUT"
-          from pathlib import Path
-          import re
-          import urllib.request
-
-          repo_skills = sorted(
-              p.name for p in Path("skills").iterdir()
-              if p.is_dir() and (p / "SKILL.md").exists()
-          )
-          url = "https://www.skills.sh/sisodiabhumca/agent-skills"
-          with urllib.request.urlopen(url, timeout=20) as response:
-              html = response.read().decode("utf-8", "ignore")
-          indexed = set(re.findall(r"/sisodiabhumca/agent-skills/([a-z0-9-]+)", html))
-          missing = [skill for skill in repo_skills if skill not in indexed]
-          print(f"names={' '.join(missing)}")
-          PY
+        run: python scripts/skills_sh_status.py missing >> "$GITHUB_OUTPUT"
 
       - name: Index skills on skills.sh
         if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
@@ -115,7 +99,7 @@ jobs:
           echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
           npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
             --skill $SKILLS_TO_INDEX \
-            --agent universal \
+            --agent codex \
             --global \
             --copy \
             --yes
@@ -124,30 +108,4 @@ jobs:
         if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
         env:
           SKILLS_TO_INDEX: ${{ steps.generated.outputs.names || steps.missing.outputs.names }}
-        run: |
-          python - <<'PY'
-          import os
-          import re
-          import sys
-          import time
-          import urllib.request
-
-          expected = os.environ["SKILLS_TO_INDEX"].split()
-          url = "https://www.skills.sh/sisodiabhumca/agent-skills"
-          missing = expected
-
-          for attempt in range(1, 11):
-              cache_buster = int(time.time())
-              with urllib.request.urlopen(f"{url}?verify={cache_buster}", timeout=20) as response:
-                  html = response.read().decode("utf-8", "ignore")
-              indexed = set(re.findall(r"/sisodiabhumca/agent-skills/([a-z0-9-]+)", html))
-              missing = [skill for skill in expected if skill not in indexed]
-              if not missing:
-                  print("skills.sh shows all indexed skills.")
-                  sys.exit(0)
-              print(f"Attempt {attempt}/10: still missing {', '.join(missing)}")
-              time.sleep(30)
-
-          print(f"::warning::skills.sh did not show these skills after verification: {', '.join(missing)}")
-          sys.exit(0)
-          PY
+        run: python scripts/skills_sh_status.py verify
