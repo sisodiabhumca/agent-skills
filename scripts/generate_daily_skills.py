@@ -1,8 +1,10 @@
-"""Create 5 new skill scaffolds for the current UTC day.
+"""Create stable skill scaffolds from the template catalog.
 
-This script is deterministic per day and idempotent:
-- It generates exactly `count` unique skill names for the day.
-- If a generated skill already exists, it is skipped.
+This script is deterministic and idempotent:
+- It rotates the template starting point by UTC day.
+- It creates up to `count` missing template skills.
+- Skill names use stable slugs and never include dates.
+- If all template skills already exist, it creates nothing.
 - It writes SKILL.md, README.md, and run.py for each new skill.
 """
 
@@ -157,8 +159,8 @@ def daily_templates(day_key: str, count: int) -> list[SkillTemplate]:
     return picks
 
 
-def create_skill(day_key: str, idx: int, template: SkillTemplate) -> bool:
-    skill_name = f"{template.slug}-{day_key}-{idx:02d}"
+def create_skill(template: SkillTemplate) -> bool:
+    skill_name = template.slug
     skill_dir = SKILLS_DIR / skill_name
     if skill_dir.exists():
         return False
@@ -170,17 +172,21 @@ def create_skill(day_key: str, idx: int, template: SkillTemplate) -> bool:
     (skill_dir / "SKILL.md").write_text(render_skill_md(skill_name, template.description))
     (skill_dir / "README.md").write_text(render_readme(skill_name, template.title))
     (skill_dir / "run.py").write_text(render_python())
-    (sample_dir / "input.json").write_text('{"source":"daily-generator","day":"%s"}\n' % day_key)
+    (sample_dir / "input.json").write_text(
+        '{"source":"daily-generator","skill":"%s"}\n' % skill_name
+    )
     return True
 
 
 def generate(count: int = 5) -> int:
     day_key = datetime.now(timezone.utc).strftime("%Y%m%d")
     created = 0
-    for idx, template in enumerate(daily_templates(day_key, count), start=1):
-        if create_skill(day_key, idx, template):
+    for template in daily_templates(day_key, len(TEMPLATES)):
+        if created >= count:
+            break
+        if create_skill(template):
             created += 1
-    print(f"Created {created} skill(s) for {day_key}.")
+    print(f"Created {created} stable skill(s).")
     return created
 
 

@@ -36,7 +36,7 @@ jobs:
         run: |
           find skills -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort > /tmp/skills-before.txt
 
-      - name: Generate 5 skills for today
+      - name: Generate up to 5 stable skills
         run: python scripts/generate_daily_skills.py
 
       - name: Collect generated skills
@@ -71,7 +71,7 @@ jobs:
           git config user.name "sisodiabhumca"
           git config user.email "sisodiabhumca@users.noreply.github.com"
           git add skills samples README.md skills.sh.json
-          git commit -m "Add 5 new vendor-neutral skills (daily auto-run $(date -u +%Y-%m-%d))"
+          git commit -m "Add generated vendor-neutral skills (daily auto-run $(date -u +%Y-%m-%d))"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

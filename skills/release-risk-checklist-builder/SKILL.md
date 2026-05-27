@@ -1,5 +1,5 @@
 ---
-name: release-risk-checklist-builder-20260527-04
+name: release-risk-checklist-builder
 description: Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints.
 ---
 

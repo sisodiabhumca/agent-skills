@@ -1,5 +1,5 @@
 ---
-name: customer-churn-risk-ranker-20260527-03
+name: customer-churn-risk-ranker
 description: Vendor-neutral skill to score customer churn risk from account signals and produce prioritized retention actions.
 ---
 

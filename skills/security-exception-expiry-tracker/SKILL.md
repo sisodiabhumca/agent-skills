@@ -1,6 +1,6 @@
 ---
-name: onboarding-dropoff-explainer-20260527-01
-description: Vendor-neutral skill to analyze onboarding funnel dropoff and propose prioritized interventions.
+name: security-exception-expiry-tracker
+description: Vendor-neutral skill to track security exception expirations and generate remediation reminders.
 ---
 
 ## Purpose

@@ -1,5 +1,5 @@
 ---
-name: api-error-budget-tracker-20260527-05
+name: api-error-budget-tracker
 description: Vendor-neutral skill to analyze API reliability metrics and summarize error budget burn with mitigation guidance.
 ---
 
