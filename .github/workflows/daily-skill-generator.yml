@@ -28,6 +28,12 @@ jobs:
       - name: Refresh README table
         run: python scripts/update_readme.py
 
+      - name: Trigger skills.sh refresh
+        run: |
+          curl -X POST https://www.skills.sh/api/admin/refresh \
+            -H "Content-Type: application/json" \
+            -d '{"owner":"sisodiabhumca","repo":"agent-skills"}' || echo "Refresh request failed (may not be available)"
+
       - name: Commit and push changes
         run: |
           if git diff --quiet; then
