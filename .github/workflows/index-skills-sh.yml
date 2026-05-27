@@ -1,0 +1,70 @@
+name: Index Skills on skills.sh
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "skills/**"
+      - "skills.sh.json"
+      - ".github/workflows/index-skills-sh.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: index-skills-sh-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Find skills missing from skills.sh
+        id: missing
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          from pathlib import Path
+          import re
+          import urllib.request
+
+          repo_skills = sorted(
+              p.name for p in Path("skills").iterdir()
+              if p.is_dir() and (p / "SKILL.md").exists()
+          )
+          url = "https://www.skills.sh/sisodiabhumca/agent-skills"
+          with urllib.request.urlopen(url, timeout=20) as response:
+              html = response.read().decode("utf-8", "ignore")
+          indexed = set(re.findall(r"/sisodiabhumca/agent-skills/([a-z0-9-]+)", html))
+          missing = [skill for skill in repo_skills if skill not in indexed]
+          print(f"names={' '.join(missing)}")
+          PY
+
+      - name: Index missing skills
+        if: steps.missing.outputs.names != ''
+        env:
+          SKILLS_TO_INDEX: ${{ steps.missing.outputs.names }}
+          HOME: ${{ runner.temp }}/skills-index-home
+          XDG_CONFIG_HOME: ${{ runner.temp }}/skills-index-config
+          CODEX_HOME: ${{ runner.temp }}/skills-index-codex
+        run: |
+          echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
+          npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
+            --skill $SKILLS_TO_INDEX \
+            --agent universal \
+            --global \
+            --copy \
+            --yes
+
+      - name: Nothing to index
+        if: steps.missing.outputs.names == ''
+        run: echo "skills.sh already lists every skill in this repo."
