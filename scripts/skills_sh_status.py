@@ -24,6 +24,10 @@ class TransientDownloadError(RuntimeError):
     pass
 
 
+class CollectionUnavailableError(RuntimeError):
+    pass
+
+
 def ssl_context() -> ssl.SSLContext:
     try:
         import certifi  # type: ignore[import-not-found]
@@ -65,7 +69,12 @@ def collection_skill_names(base_url: str, repo: str, timeout: int) -> set[str]:
     owner, repo_name = repo.split("/", 1)
     html = fetch_text(f"{base_url.rstrip('/')}/{owner}/{repo_name}", timeout)
     pattern = rf"/{re.escape(owner)}/{re.escape(repo_name)}/([a-z0-9-]+)"
-    return set(re.findall(pattern, html))
+    indexed = set(re.findall(pattern, html))
+    if not indexed:
+        raise CollectionUnavailableError(
+            "skills.sh collection response did not include any skill links"
+        )
+    return indexed
 
 
 def download_url(base_url: str, repo: str, skill: str) -> str:
@@ -162,7 +171,12 @@ def missing_snapshots(
 
 def cmd_missing(args: argparse.Namespace) -> int:
     skills = repo_skill_names(Path(args.skills_dir))
-    indexed = collection_skill_names(args.base_url, args.repo, args.timeout)
+    try:
+        indexed = collection_skill_names(args.base_url, args.repo, args.timeout)
+    except CollectionUnavailableError as exc:
+        print(f"names=")
+        print(f"::warning::{exc}; skipping backfill indexing", file=sys.stderr)
+        return 0
     missing = [skill for skill in skills if skill not in indexed]
     print(f"names={' '.join(missing)}")
     print(
@@ -197,6 +211,9 @@ def cmd_verify(args: argparse.Namespace) -> int:
                 missing = [skill for skill in expected if skill not in indexed]
                 success_message = "skills.sh collection lists all indexed skills."
                 warning_subject = "collection did not show"
+        except CollectionUnavailableError as exc:
+            print(f"::warning::{exc}; verification skipped")
+            return 0
         except RuntimeError as exc:
             print(f"::warning::skills.sh verification skipped after request error: {exc}")
             return 0
