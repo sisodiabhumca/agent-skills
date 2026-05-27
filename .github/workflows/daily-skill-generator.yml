@@ -32,8 +32,24 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Record existing skills
+        run: |
+          find skills -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort > /tmp/skills-before.txt
+
       - name: Generate 5 skills for today
         run: python scripts/generate_daily_skills.py
+
+      - name: Collect generated skills
+        id: generated
+        run: |
+          find skills -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort > /tmp/skills-after.txt
+          names="$(comm -13 /tmp/skills-before.txt /tmp/skills-after.txt | tr '\n' ' ' | sed 's/[[:space:]]*$//')"
+          echo "names=$names" >> "$GITHUB_OUTPUT"
+          if [ -n "$names" ]; then
+            echo "Generated skills: $names"
+          else
+            echo "No generated skills found."
+          fi
 
       - name: Refresh README table
         run: python scripts/update_readme.py
@@ -63,3 +79,72 @@ jobs:
         run: |
           tag="skills-$(date -u +%Y%m%d)-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
           gh skill publish --tag "$tag"
+
+      - name: Find skills missing from skills.sh
+        id: missing
+        if: github.event_name == 'workflow_dispatch' && inputs.publish_existing && steps.generated.outputs.names == ''
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          from pathlib import Path
+          import re
+          import urllib.request
+
+          repo_skills = sorted(
+              p.name for p in Path("skills").iterdir()
+              if p.is_dir() and (p / "SKILL.md").exists()
+          )
+          url = "https://www.skills.sh/sisodiabhumca/agent-skills"
+          with urllib.request.urlopen(url, timeout=20) as response:
+              html = response.read().decode("utf-8", "ignore")
+          indexed = set(re.findall(r"/sisodiabhumca/agent-skills/([a-z0-9-]+)", html))
+          missing = [skill for skill in repo_skills if skill not in indexed]
+          print(f"names={' '.join(missing)}")
+          PY
+
+      - name: Index skills on skills.sh
+        if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
+        env:
+          SKILLS_TO_INDEX: ${{ steps.generated.outputs.names || steps.missing.outputs.names }}
+          HOME: ${{ runner.temp }}/skills-index-home
+          XDG_CONFIG_HOME: ${{ runner.temp }}/skills-index-config
+          CODEX_HOME: ${{ runner.temp }}/skills-index-codex
+        run: |
+          echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
+          npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
+            --skill $SKILLS_TO_INDEX \
+            --agent universal \
+            --global \
+            --copy \
+            --yes
+
+      - name: Verify skills.sh indexing
+        if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
+        env:
+          SKILLS_TO_INDEX: ${{ steps.generated.outputs.names || steps.missing.outputs.names }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          import sys
+          import time
+          import urllib.request
+
+          expected = os.environ["SKILLS_TO_INDEX"].split()
+          url = "https://www.skills.sh/sisodiabhumca/agent-skills"
+          missing = expected
+
+          for attempt in range(1, 11):
+              cache_buster = int(time.time())
+              with urllib.request.urlopen(f"{url}?verify={cache_buster}", timeout=20) as response:
+                  html = response.read().decode("utf-8", "ignore")
+              indexed = set(re.findall(r"/sisodiabhumca/agent-skills/([a-z0-9-]+)", html))
+              missing = [skill for skill in expected if skill not in indexed]
+              if not missing:
+                  print("skills.sh shows all indexed skills.")
+                  sys.exit(0)
+              print(f"Attempt {attempt}/10: still missing {', '.join(missing)}")
+              time.sleep(30)
+
+          print(f"::warning::skills.sh did not show these skills after verification: {', '.join(missing)}")
+          sys.exit(1)
+          PY
