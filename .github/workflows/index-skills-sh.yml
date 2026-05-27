@@ -49,6 +49,12 @@ jobs:
             --copy \
             --yes
 
+      - name: Verify skills.sh indexing
+        if: steps.missing.outputs.names != ''
+        env:
+          SKILLS_TO_INDEX: ${{ steps.missing.outputs.names }}
+        run: python scripts/skills_sh_status.py verify
+
       - name: Nothing to index
         if: steps.missing.outputs.names == ''
         run: echo "skills.sh already lists every skill in this repo."
