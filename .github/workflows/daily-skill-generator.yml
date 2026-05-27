@@ -4,21 +4,31 @@ on:
   schedule:
     - cron: "15 6 * * *"
   workflow_dispatch:
+    inputs:
+      publish_existing:
+        description: "Publish the current repository even if no new skills were generated"
+        required: false
+        type: boolean
+        default: true
 
 permissions:
   contents: write
+
+concurrency:
+  group: daily-skill-generator-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   generate-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -28,9 +38,14 @@ jobs:
       - name: Refresh README table
         run: python scripts/update_readme.py
 
+      - name: Validate skills for publishing
+        run: gh skill publish --dry-run
+
       - name: Commit and push changes
+        id: commit
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No changes to commit."
             exit 0
           fi
@@ -39,3 +54,12 @@ jobs:
           git add skills samples README.md
           git commit -m "Add 5 new vendor-neutral skills (daily auto-run $(date -u +%Y-%m-%d))"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish skills release
+        if: steps.commit.outputs.changed == 'true' || (github.event_name == 'workflow_dispatch' && inputs.publish_existing)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="skills-$(date -u +%Y%m%d)-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          gh skill publish --tag "$tag"
