@@ -1,0 +1,16 @@
+---
+name: onboarding-dropoff-explainer-20260527-01
+description: Vendor-neutral skill to analyze onboarding funnel dropoff and propose prioritized interventions.
+---
+
+## Purpose
+
+Use this skill to process structured input and produce a concise, actionable report.
+
+## Input
+
+- JSON object or CSV rows with the relevant business signals.
+
+## Output
+
+- Structured JSON summary with findings and recommendations.
