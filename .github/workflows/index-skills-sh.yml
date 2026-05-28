@@ -43,8 +43,12 @@ jobs:
           CODEX_HOME: ${{ runner.temp }}/skills-index-codex
         run: |
           echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
+          SKILL_ARGS=""
+          for skill in $SKILLS_TO_INDEX; do
+            SKILL_ARGS="$SKILL_ARGS --skill $skill"
+          done
           npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
-            --skill $SKILLS_TO_INDEX \
+            $SKILL_ARGS \
             --agent codex \
             --global \
             --copy \
