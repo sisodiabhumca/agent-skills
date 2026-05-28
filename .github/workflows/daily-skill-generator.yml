@@ -97,12 +97,17 @@ jobs:
           CODEX_HOME: ${{ runner.temp }}/skills-index-codex
         run: |
           echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
-          npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
-            --skill $SKILLS_TO_INDEX \
-            --agent codex \
-            --global \
-            --copy \
-            --yes
+          for skill in $SKILLS_TO_INDEX; do
+            echo "Publishing skill: $skill"
+            npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
+              --skill "$skill" \
+              --agent codex \
+              --global \
+              --copy \
+              --yes
+            echo "Published skill: $skill"
+            sleep 5
+          done
 
       - name: Verify skills.sh indexing
         if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
