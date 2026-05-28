@@ -43,16 +43,17 @@ jobs:
           CODEX_HOME: ${{ runner.temp }}/skills-index-codex
         run: |
           echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
-          SKILL_ARGS=""
           for skill in $SKILLS_TO_INDEX; do
-            SKILL_ARGS="$SKILL_ARGS --skill $skill"
+            echo "Indexing $skill..."
+            npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
+              --skill $skill \
+              --agent codex \
+              --global \
+              --copy \
+              --yes
+            # Delay to avoid 429 Too Many Requests from skills.sh API
+            sleep 2
           done
-          npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
-            $SKILL_ARGS \
-            --agent codex \
-            --global \
-            --copy \
-            --yes
 
       - name: Verify skills.sh indexing
         if: steps.missing.outputs.names != ''
