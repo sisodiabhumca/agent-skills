@@ -131,7 +131,7 @@ Tests every skill end-to-end against its sample input and asserts on output cont
 
 The daily GitHub Action generates new skills, refreshes this README, validates the repository with `gh skill publish --dry-run`, commits the generated files, and publishes a GitHub release with `gh skill publish --tag ...`.
 
-The public [skills.sh](https://www.skills.sh/sisodiabhumca/agent-skills) directory is updated by the `skills` CLI install/index event. The workflow also regenerates `skills.sh.json` so the repo page has an explicit list of skills to display, runs `npx skills add` for newly generated skills with the Codex agent target, then verifies that the skills.sh collection lists them.
+The public [skills.sh](https://www.skills.sh/sisodiabhumca/agent-skills) directory is updated by install telemetry from the `skills` CLI. GitHub Actions must not use `npx skills add` with CI environment variables set, because that tags requests with `ci=1` and skills.sh excludes them from the public collection. The workflow regenerates `skills.sh.json`, then calls `python scripts/index_skills_sh.py`, which performs a real install with CI markers unset, and verifies the skills.sh collection afterward.
 
 If skills already exist in `main` but are missing from skills.sh, run the **Daily Skill Generator** workflow manually and leave `publish_existing` enabled. The workflow compares the repo against skills.sh and indexes only the missing skills.
 

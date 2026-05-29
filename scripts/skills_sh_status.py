@@ -225,10 +225,11 @@ def cmd_verify(args: argparse.Namespace) -> int:
             time.sleep(args.delay)
 
     print(
-        f"::warning::skills.sh {warning_subject} these skills after verification: "
-        f"{', '.join(missing)}"
+        f"::error::skills.sh {warning_subject} these skills after verification: "
+        f"{', '.join(missing)}",
+        file=sys.stderr,
     )
-    return 0
+    return 1
 
 
 def build_parser() -> argparse.ArgumentParser:

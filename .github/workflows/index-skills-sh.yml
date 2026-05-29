@@ -8,6 +8,7 @@ on:
       - "skills/**"
       - "skills.sh.json"
       - "scripts/skills_sh_status.py"
+      - "scripts/index_skills_sh.py"
       - ".github/workflows/index-skills-sh.yml"
   workflow_dispatch:
 
@@ -38,22 +39,7 @@ jobs:
         if: steps.missing.outputs.names != ''
         env:
           SKILLS_TO_INDEX: ${{ steps.missing.outputs.names }}
-          HOME: ${{ runner.temp }}/skills-index-home
-          XDG_CONFIG_HOME: ${{ runner.temp }}/skills-index-config
-          CODEX_HOME: ${{ runner.temp }}/skills-index-codex
-        run: |
-          echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
-          for skill in $SKILLS_TO_INDEX; do
-            echo "Indexing $skill..."
-            npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
-              --skill $skill \
-              --agent codex \
-              --global \
-              --copy \
-              --yes
-            # Delay to avoid 429 Too Many Requests from skills.sh API
-            sleep 2
-          done
+        run: python scripts/index_skills_sh.py --delay-seconds 5
 
       - name: Verify skills.sh indexing
         if: steps.missing.outputs.names != ''

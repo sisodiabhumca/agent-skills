@@ -85,32 +85,31 @@ jobs:
 
       - name: Find skills missing from skills.sh
         id: missing
-        if: github.event_name == 'workflow_dispatch' && inputs.publish_existing && steps.generated.outputs.names == ''
+        if: steps.generated.outputs.names != '' || (github.event_name == 'workflow_dispatch' && inputs.publish_existing) || github.event_name == 'schedule'
         run: python scripts/skills_sh_status.py missing >> "$GITHUB_OUTPUT"
 
-      - name: Index skills on skills.sh
-        if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
-        env:
-          SKILLS_TO_INDEX: ${{ steps.generated.outputs.names || steps.missing.outputs.names }}
-          HOME: ${{ runner.temp }}/skills-index-home
-          XDG_CONFIG_HOME: ${{ runner.temp }}/skills-index-config
-          CODEX_HOME: ${{ runner.temp }}/skills-index-codex
+      - name: Build skills to index
+        id: index_list
+        if: steps.missing.outputs.names != '' || steps.generated.outputs.names != ''
         run: |
-          echo "Indexing skills on skills.sh: $SKILLS_TO_INDEX"
-          for skill in $SKILLS_TO_INDEX; do
-            echo "Publishing skill: $skill"
-            npx -y skills@1.5.9 add sisodiabhumca/agent-skills \
-              --skill "$skill" \
-              --agent codex \
-              --global \
-              --copy \
-              --yes
-            echo "Published skill: $skill"
-            sleep 5
-          done
+          printf '%s\n' ${{ steps.generated.outputs.names }} ${{ steps.missing.outputs.names }} \
+            | tr ' ' '\n' \
+            | sed '/^$/d' \
+            | sort -u \
+            | tr '\n' ' ' \
+            | sed 's/[[:space:]]*$//' > /tmp/skills-to-index.txt
+          names="$(cat /tmp/skills-to-index.txt)"
+          echo "names=$names" >> "$GITHUB_OUTPUT"
+          echo "Skills queued for skills.sh indexing: $names"
+
+      - name: Index skills on skills.sh
+        if: steps.index_list.outputs.names != ''
+        env:
+          SKILLS_TO_INDEX: ${{ steps.index_list.outputs.names }}
+        run: python scripts/index_skills_sh.py --delay-seconds 5
 
       - name: Verify skills.sh indexing
-        if: steps.generated.outputs.names != '' || steps.missing.outputs.names != ''
+        if: steps.index_list.outputs.names != ''
         env:
-          SKILLS_TO_INDEX: ${{ steps.generated.outputs.names || steps.missing.outputs.names }}
+          SKILLS_TO_INDEX: ${{ steps.index_list.outputs.names }}
         run: python scripts/skills_sh_status.py verify
