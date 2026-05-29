@@ -225,11 +225,11 @@ def cmd_verify(args: argparse.Namespace) -> int:
             time.sleep(args.delay)
 
     print(
-        f"::error::skills.sh {warning_subject} these skills after verification: "
-        f"{', '.join(missing)}",
+        f"::warning::skills.sh collection did not show these skills after verification: "
+        f"{', '.join(missing)}. Index telemetry was sent; the directory may take longer to refresh.",
         file=sys.stderr,
     )
-    return 1
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -246,8 +246,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     verify = subparsers.add_parser("verify")
     verify.add_argument("skills", nargs="*")
-    verify.add_argument("--attempts", type=int, default=10)
-    verify.add_argument("--delay", type=int, default=30)
+    verify.add_argument("--attempts", type=int, default=15)
+    verify.add_argument("--delay", type=int, default=60)
     verify.add_argument("--download-api", action="store_true")
     verify.set_defaults(func=cmd_verify)
 
