@@ -11,6 +11,7 @@
         "api-changelog-impact-analyzer",
         "api-changelog-summarizer",
         "api-contract-diff",
+        "api-deprecation-impact-analyzer",
         "api-error-budget-tracker",
         "architecture-map-builder",
         "backlog-prioritization-assistant",
@@ -53,6 +54,7 @@
         "meeting-action-items-extractor",
         "meeting-decision-log-extractor",
         "meeting-notes-distiller",
+        "mobile-crash-triage-assistant",
         "onboarding-dropoff-explainer",
         "oncall-runbook-executor",
         "ops-rca-hypothesis-generator",
@@ -74,11 +76,14 @@
         "sales-call-objection-clusterer",
         "sbom-license-risk-checker",
         "security-exception-expiry-tracker",
+        "shift-handover-checklist-builder",
         "sql-anti-pattern-linter",
         "sqlite-schema-report",
+        "subscription-downgrade-risk-scorer",
         "support-macro-personalizer",
         "support-sla-breach-detector",
-        "utm-campaign-governor"
+        "utm-campaign-governor",
+        "vendor-contract-renewal-planner"
       ]
     }
   ]
