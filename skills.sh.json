@@ -15,6 +15,7 @@
         "api-error-budget-tracker",
         "architecture-map-builder",
         "backlog-prioritization-assistant",
+        "cache-invalidation-planner",
         "cloud-cost-tag-coverage-auditor",
         "compliance-evidence-collector",
         "crm-opportunity-summarizer",
@@ -38,6 +39,7 @@
         "forecast-assumption-drift-checker",
         "growth-experiment-planner",
         "http-api-smoke-tester",
+        "identity-provisioning-auditor",
         "incident-comms-clarity-linter",
         "incident-postmortem-builder",
         "incident-postmortem-drafter",
@@ -63,6 +65,7 @@
         "pr-review-summarizer",
         "privacy-policy-diff-summarizer",
         "product-analytics-investigator",
+        "product-feedback-router",
         "prompt-injection-risk-linter",
         "pseudonymization-field-mapper",
         "queue-backlog-prioritizer",
@@ -80,10 +83,12 @@
         "sql-anti-pattern-linter",
         "sqlite-schema-report",
         "subscription-downgrade-risk-scorer",
+        "support-macro-gap-analyzer",
         "support-macro-personalizer",
         "support-sla-breach-detector",
         "utm-campaign-governor",
-        "vendor-contract-renewal-planner"
+        "vendor-contract-renewal-planner",
+        "vendor-sla-breach-summarizer"
       ]
     }
   ]
