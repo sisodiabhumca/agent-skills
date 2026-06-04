@@ -23,6 +23,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 <!-- SKILLS-TABLE-START -->
 | Skill | Description |
 |---|---|
+| [`ab-test-power-calculator`](./skills/ab-test-power-calculator) | Vendor-neutral skill to estimate experiment power, sample size, and runtime for product experiments. |
 | [`accessibility-alt-text-auditor`](./skills/accessibility-alt-text-auditor) | Vendor-neutral skill to audit image alt-text coverage and basic quality heuristics for accessibility. |
 | [`ai-eval-regression-tester`](./skills/ai-eval-regression-tester) | Use to run a regression eval suite over an LLM application — fixed test cases with deterministic graders (exact match, JSON schema, regex, embedding similarity, LLM-as-judge). |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
@@ -39,10 +40,12 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`csv-pii-redactor`](./skills/csv-pii-redactor) | Vendor-neutral skill to detect and redact common PII in CSV files and produce a redaction report. |
 | [`csv-pii-scanner`](./skills/csv-pii-scanner) | Vendor-neutral skill to scan CSV exports for likely PII columns and risky values, producing a remediation-focused report. |
 | [`customer-churn-risk-ranker`](./skills/customer-churn-risk-ranker) | Vendor-neutral skill to score customer churn risk from account signals and produce prioritized retention actions. |
+| [`customer-health-score-explainer`](./skills/customer-health-score-explainer) | Vendor-neutral skill to explain customer health score movement with leading indicator breakdowns. |
 | [`customer-interview-analyzer`](./skills/customer-interview-analyzer) | Use when a PM or UX researcher has interview transcripts (text/Notion/Drive) and needs themes, pain points, JTBD, and verbatim quotes synthesized into a research report. |
 | [`customer-journey-gap-analyzer`](./skills/customer-journey-gap-analyzer) | Analyze a CSV of funnel stages and drop-offs to identify the biggest customer journey gaps and suggest prioritized experiments (vendor-neutral). |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
+| [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
 | [`data-retention-policy-checker`](./skills/data-retention-policy-checker) | Vendor-neutral skill to check a data retention schedule for completeness and risk (coverage, deletion handling, legal holds) and produce a structured findings report. |
 | [`dependency-vuln-triager`](./skills/dependency-vuln-triager) | Use to triage dependency vulnerability scanner output (npm audit, pip-audit, OSV, GitHub advisories) and produce a ranked, deduplicated action list. |
 | [`docx-style-auditor`](./skills/docx-style-auditor) | Audits .docx documents for vendor-neutral style consistency issues (headings, spacing) and outputs an actionable report. |
@@ -67,6 +70,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`json-schema-drift-detector`](./skills/json-schema-drift-detector) | Detects vendor-neutral JSON Schema drift between two versions and produces an actionable change report. |
 | [`kpi-anomaly-triage`](./skills/kpi-anomaly-triage) | Vendor-neutral skill to analyze KPI time-series data, detect anomalies, and generate a triage summary with likely drivers. |
 | [`kpi-definition-consistency-checker`](./skills/kpi-definition-consistency-checker) | Vendor-neutral skill to check a KPI dictionary for conflicting definitions, grain mismatches, and missing ownership. |
+| [`license-usage-optimizer`](./skills/license-usage-optimizer) | Vendor-neutral skill to find underused software licenses and recommend seat right-sizing actions. |
 | [`log-redaction-auditor`](./skills/log-redaction-auditor) | Vendor-neutral skill to audit application logs for potential sensitive-data leakage and redaction coverage. |
 | [`marketing-attribution-sanity-checker`](./skills/marketing-attribution-sanity-checker) | Vendor-neutral skill to audit marketing attribution models for double counting and channel bias. |
 | [`meeting-action-item-extractor`](./skills/meeting-action-item-extractor) | Vendor-neutral skill to extract action items (task, owner, due date) from a meeting transcript into structured JSON. |
@@ -90,6 +94,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-notes-changelog-normalizer`](./skills/release-notes-changelog-normalizer) | Vendor-neutral skill to normalize raw release notes into Keep a Changelog-style entries with consistent headings. |
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
 | [`release-risk-checklist-builder`](./skills/release-risk-checklist-builder) | Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints. |
+| [`renewal-churn-playbook-builder`](./skills/renewal-churn-playbook-builder) | Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals. |
 | [`roadmap-dependency-heatmap`](./skills/roadmap-dependency-heatmap) | Vendor-neutral skill to map roadmap dependencies and surface delivery risk concentrations. |
 | [`runbook-freshness-auditor`](./skills/runbook-freshness-auditor) | Vendor-neutral skill to identify stale runbooks and recommend updates based on recent incidents and ownership gaps. |
 | [`saas-spend-optimizer`](./skills/saas-spend-optimizer) | Use to analyze SaaS billing/usage exports (Zuora, Stripe, vendor invoices) and surface optimization opportunities — unused seats, duplicate tools, over-provisioned tiers, autorenewals coming up, and ARR-at-risk. |
