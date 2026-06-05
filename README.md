@@ -31,11 +31,13 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`api-contract-diff`](./skills/api-contract-diff) | Vendor-neutral skill to compare two OpenAPI 3 specifications and produce a structured contract change report with breaking-change detection. |
 | [`api-deprecation-impact-analyzer`](./skills/api-deprecation-impact-analyzer) | Vendor-neutral skill to analyze API deprecation impact on consumers and migration urgency. |
 | [`api-error-budget-tracker`](./skills/api-error-budget-tracker) | Vendor-neutral skill to analyze API reliability metrics and summarize error budget burn with mitigation guidance. |
+| [`api-rate-limit-impact-analyzer`](./skills/api-rate-limit-impact-analyzer) | Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact. |
 | [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
 | [`cache-invalidation-planner`](./skills/cache-invalidation-planner) | Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates. |
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
 | [`compliance-evidence-collector`](./skills/compliance-evidence-collector) | Vendor-neutral skill to map controls to evidence artifacts and flag audit readiness gaps. |
+| [`cost-anomaly-explainer`](./skills/cost-anomaly-explainer) | Vendor-neutral skill to explain cloud cost anomalies by service, tag, and recent infrastructure changes. |
 | [`crm-opportunity-summarizer`](./skills/crm-opportunity-summarizer) | Use when a sales rep or RevOps lead needs a concise opportunity summary from Salesforce or HubSpot — pulling stage, amount, contacts, recent activity, and risks, then producing a deal brief and recommended next-best-action. |
 | [`csv-pii-redactor`](./skills/csv-pii-redactor) | Vendor-neutral skill to detect and redact common PII in CSV files and produce a redaction report. |
 | [`csv-pii-scanner`](./skills/csv-pii-scanner) | Vendor-neutral skill to scan CSV exports for likely PII columns and risky values, producing a remediation-focused report. |
@@ -48,6 +50,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
 | [`data-retention-policy-checker`](./skills/data-retention-policy-checker) | Vendor-neutral skill to check a data retention schedule for completeness and risk (coverage, deletion handling, legal holds) and produce a structured findings report. |
 | [`dependency-vuln-triager`](./skills/dependency-vuln-triager) | Use to triage dependency vulnerability scanner output (npm audit, pip-audit, OSV, GitHub advisories) and produce a ranked, deduplicated action list. |
+| [`docs-freshness-linter`](./skills/docs-freshness-linter) | Vendor-neutral skill to flag outdated documentation based on code churn and broken references. |
 | [`docx-style-auditor`](./skills/docx-style-auditor) | Audits .docx documents for vendor-neutral style consistency issues (headings, spacing) and outputs an actionable report. |
 | [`etl-lineage-explainer`](./skills/etl-lineage-explainer) | Vendor-neutral skill for extracting and summarizing table-level lineage from SQL-based ETL jobs. |
 | [`etl-retry-backoff-simulator`](./skills/etl-retry-backoff-simulator) | Simulate retry and exponential backoff strategies against a failure-rate model to estimate expected runtime and cost (vendor-neutral). |
@@ -64,6 +67,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`incident-postmortem-builder`](./skills/incident-postmortem-builder) | Use after a production incident to build a blameless postmortem. |
 | [`incident-postmortem-drafter`](./skills/incident-postmortem-drafter) | Vendor-neutral skill to draft a blameless incident postmortem from structured incident inputs (timeline, impact, contributing factors) and produce an actionable report. |
 | [`incident-postmortem-qa-checklist`](./skills/incident-postmortem-qa-checklist) | Vendor-neutral skill to turn an incident timeline into a postmortem QA checklist and identify missing or weak evidence. |
+| [`incident-severity-calibrator`](./skills/incident-severity-calibrator) | Vendor-neutral skill to calibrate incident severity from impact scope, duration, and customer tier. |
 | [`incident-timeline-builder`](./skills/incident-timeline-builder) | Vendor-neutral skill to turn semi-structured incident logs into a normalized chronological timeline with clusters and gaps. |
 | [`incident-timeline-normalizer`](./skills/incident-timeline-normalizer) | Vendor-neutral skill to normalize incident event logs into an ordered timeline and compute phase durations. |
 | [`inventory-staleness-auditor`](./skills/inventory-staleness-auditor) | Vendor-neutral skill to detect stale service inventory records and recommend ownership updates. |
@@ -100,6 +104,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`saas-spend-optimizer`](./skills/saas-spend-optimizer) | Use to analyze SaaS billing/usage exports (Zuora, Stripe, vendor invoices) and surface optimization opportunities — unused seats, duplicate tools, over-provisioned tiers, autorenewals coming up, and ARR-at-risk. |
 | [`sales-call-objection-clusterer`](./skills/sales-call-objection-clusterer) | Vendor-neutral skill to cluster sales call objections and extract response patterns for enablement. |
 | [`sbom-license-risk-checker`](./skills/sbom-license-risk-checker) | Vendor-neutral skill to check a CycloneDX SBOM for license policy compliance and emit a risk report. |
+| [`schema-migration-risk-checker`](./skills/schema-migration-risk-checker) | Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
 | [`shift-handover-checklist-builder`](./skills/shift-handover-checklist-builder) | Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure. |
 | [`sql-anti-pattern-linter`](./skills/sql-anti-pattern-linter) | Vendor-neutral skill to lint SQL text for common anti-patterns and output actionable findings. |
