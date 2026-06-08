@@ -47,6 +47,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`customer-health-score-explainer`](./skills/customer-health-score-explainer) | Vendor-neutral skill to explain customer health score movement with leading indicator breakdowns. |
 | [`customer-interview-analyzer`](./skills/customer-interview-analyzer) | Use when a PM or UX researcher has interview transcripts (text/Notion/Drive) and needs themes, pain points, JTBD, and verbatim quotes synthesized into a research report. |
 | [`customer-journey-gap-analyzer`](./skills/customer-journey-gap-analyzer) | Analyze a CSV of funnel stages and drop-offs to identify the biggest customer journey gaps and suggest prioritized experiments (vendor-neutral). |
+| [`customer-reference-request-triager`](./skills/customer-reference-request-triager) | Vendor-neutral skill to triage reference requests by account fit, risk, and sales urgency. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
@@ -55,6 +56,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`dependency-vuln-triager`](./skills/dependency-vuln-triager) | Use to triage dependency vulnerability scanner output (npm audit, pip-audit, OSV, GitHub advisories) and produce a ranked, deduplicated action list. |
 | [`docs-freshness-linter`](./skills/docs-freshness-linter) | Vendor-neutral skill to flag outdated documentation based on code churn and broken references. |
 | [`docx-style-auditor`](./skills/docx-style-auditor) | Audits .docx documents for vendor-neutral style consistency issues (headings, spacing) and outputs an actionable report. |
+| [`error-budget-policy-linter`](./skills/error-budget-policy-linter) | Vendor-neutral skill to lint SLO and error budget policies for ambiguity and enforcement gaps. |
 | [`etl-lineage-explainer`](./skills/etl-lineage-explainer) | Vendor-neutral skill for extracting and summarizing table-level lineage from SQL-based ETL jobs. |
 | [`etl-retry-backoff-simulator`](./skills/etl-retry-backoff-simulator) | Simulate retry and exponential backoff strategies against a failure-rate model to estimate expected runtime and cost (vendor-neutral). |
 | [`experiment-metric-audit`](./skills/experiment-metric-audit) | Vendor-neutral skill for auditing experiment metrics definitions for common analytics pitfalls and inconsistencies. |
@@ -63,6 +65,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`feature-flag-risk-assessor`](./skills/feature-flag-risk-assessor) | Vendor-neutral skill to assess risk in feature-flag configurations (stale flags, kill-switch coverage, conflicting rules) and produce actionable recommendations. |
 | [`feature-flag-rollout-planner`](./skills/feature-flag-rollout-planner) | Vendor-neutral skill to generate a staged feature-flag rollout plan (phases, metrics, guardrails, rollback criteria) from feature context and risk inputs. |
 | [`feature-request-deduplicator`](./skills/feature-request-deduplicator) | Vendor-neutral skill to cluster duplicate feature requests and summarize merged customer demand. |
+| [`finops-chargeback-reporter`](./skills/finops-chargeback-reporter) | Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes. |
 | [`forecast-assumption-drift-checker`](./skills/forecast-assumption-drift-checker) | Vendor-neutral skill to compare forecast assumptions over time and flag high-impact drift. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
@@ -86,6 +89,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`meeting-decision-log-extractor`](./skills/meeting-decision-log-extractor) | Vendor-neutral skill to extract decisions and action items from a meeting transcript and produce a decision log plus an action register. |
 | [`meeting-notes-distiller`](./skills/meeting-notes-distiller) | Use when given a meeting transcript or raw notes to produce a structured summary — decisions made, action items (with owner + due date), risks/blockers, open questions, and a follow-up email draft. |
 | [`mobile-crash-triage-assistant`](./skills/mobile-crash-triage-assistant) | Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact. |
+| [`multi-tenant-noise-isolator`](./skills/multi-tenant-noise-isolator) | Vendor-neutral skill to isolate noisy-neighbor incidents across tenants using usage and latency signals. |
 | [`nps-verbatim-theme-extractor`](./skills/nps-verbatim-theme-extractor) | Vendor-neutral skill to extract themes and sentiment drivers from NPS verbatim responses. |
 | [`onboarding-dropoff-explainer`](./skills/onboarding-dropoff-explainer) | Vendor-neutral skill to analyze onboarding funnel dropoff and propose prioritized interventions. |
 | [`oncall-handoff-summarizer`](./skills/oncall-handoff-summarizer) | Vendor-neutral skill to summarize on-call handoffs with open incidents, risks, and follow-up tasks. |
@@ -109,6 +113,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-train-risk-ranker`](./skills/release-train-risk-ranker) | Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity. |
 | [`renewal-churn-playbook-builder`](./skills/renewal-churn-playbook-builder) | Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals. |
 | [`roadmap-dependency-heatmap`](./skills/roadmap-dependency-heatmap) | Vendor-neutral skill to map roadmap dependencies and surface delivery risk concentrations. |
+| [`rollback-readiness-checker`](./skills/rollback-readiness-checker) | Vendor-neutral skill to evaluate rollback readiness for releases using config, schema, and feature flags. |
 | [`runbook-freshness-auditor`](./skills/runbook-freshness-auditor) | Vendor-neutral skill to identify stale runbooks and recommend updates based on recent incidents and ownership gaps. |
 | [`saas-spend-optimizer`](./skills/saas-spend-optimizer) | Use to analyze SaaS billing/usage exports (Zuora, Stripe, vendor invoices) and surface optimization opportunities — unused seats, duplicate tools, over-provisioned tiers, autorenewals coming up, and ARR-at-risk. |
 | [`sales-call-objection-clusterer`](./skills/sales-call-objection-clusterer) | Vendor-neutral skill to cluster sales call objections and extract response patterns for enablement. |
