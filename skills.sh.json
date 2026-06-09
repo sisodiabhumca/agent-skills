@@ -9,6 +9,7 @@
         "ab-test-power-calculator",
         "accessibility-alt-text-auditor",
         "ai-eval-regression-tester",
+        "ai-prompt-regression-tracker",
         "api-changelog-impact-analyzer",
         "api-changelog-summarizer",
         "api-contract-diff",
@@ -60,6 +61,7 @@
         "incident-severity-calibrator",
         "incident-timeline-builder",
         "incident-timeline-normalizer",
+        "integration-test-gap-analyzer",
         "inventory-staleness-auditor",
         "json-schema-drift-detector",
         "kpi-anomaly-triage",
@@ -84,6 +86,7 @@
         "pr-review-summarizer",
         "privacy-dsar-triage-assistant",
         "privacy-policy-diff-summarizer",
+        "procurement-rfp-comparator",
         "product-analytics-investigator",
         "product-feedback-router",
         "prompt-injection-risk-linter",
@@ -106,6 +109,7 @@
         "shift-handover-checklist-builder",
         "sql-anti-pattern-linter",
         "sqlite-schema-report",
+        "status-page-comms-drafter",
         "subscription-downgrade-risk-scorer",
         "support-macro-gap-analyzer",
         "support-macro-personalizer",
@@ -113,7 +117,8 @@
         "usage-based-pricing-simulator",
         "utm-campaign-governor",
         "vendor-contract-renewal-planner",
-        "vendor-sla-breach-summarizer"
+        "vendor-sla-breach-summarizer",
+        "warehouse-query-cost-optimizer"
       ]
     }
   ]
