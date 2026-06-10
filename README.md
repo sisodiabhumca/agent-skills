@@ -24,6 +24,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | Skill | Description |
 |---|---|
 | [`ab-test-power-calculator`](./skills/ab-test-power-calculator) | Vendor-neutral skill to estimate experiment power, sample size, and runtime for product experiments. |
+| [`access-review-coverage-auditor`](./skills/access-review-coverage-auditor) | Vendor-neutral skill to audit access review coverage and flag stale grants or missing attestations. |
 | [`accessibility-alt-text-auditor`](./skills/accessibility-alt-text-auditor) | Vendor-neutral skill to audit image alt-text coverage and basic quality heuristics for accessibility. |
 | [`ai-eval-regression-tester`](./skills/ai-eval-regression-tester) | Use to run a regression eval suite over an LLM application — fixed test cases with deterministic graders (exact match, JSON schema, regex, embedding similarity, LLM-as-judge). |
 | [`ai-prompt-regression-tracker`](./skills/ai-prompt-regression-tracker) | Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes. |
@@ -80,6 +81,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`incident-timeline-normalizer`](./skills/incident-timeline-normalizer) | Vendor-neutral skill to normalize incident event logs into an ordered timeline and compute phase durations. |
 | [`integration-test-gap-analyzer`](./skills/integration-test-gap-analyzer) | Vendor-neutral skill to find integration paths lacking automated tests after recent service changes. |
 | [`inventory-staleness-auditor`](./skills/inventory-staleness-auditor) | Vendor-neutral skill to detect stale service inventory records and recommend ownership updates. |
+| [`invoice-anomaly-detector`](./skills/invoice-anomaly-detector) | Vendor-neutral skill to flag billing anomalies in vendor invoices and produce reconciliation actions. |
 | [`json-schema-drift-detector`](./skills/json-schema-drift-detector) | Detects vendor-neutral JSON Schema drift between two versions and produces an actionable change report. |
 | [`kpi-anomaly-triage`](./skills/kpi-anomaly-triage) | Vendor-neutral skill to analyze KPI time-series data, detect anomalies, and generate a triage summary with likely drivers. |
 | [`kpi-definition-consistency-checker`](./skills/kpi-definition-consistency-checker) | Vendor-neutral skill to check a KPI dictionary for conflicting definitions, grain mismatches, and missing ownership. |
@@ -99,6 +101,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |
 | [`pager-noise-reduction-advisor`](./skills/pager-noise-reduction-advisor) | Vendor-neutral skill to identify noisy alerts and propose paging policy improvements. |
 | [`partner-api-health-monitor`](./skills/partner-api-health-monitor) | Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks. |
+| [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
 | [`policy-as-code-linter`](./skills/policy-as-code-linter) | Vendor-neutral skill for linting simple policy-as-code rules (YAML) for style, safety, and completeness. |
 | [`pr-review-summarizer`](./skills/pr-review-summarizer) | Use when reviewing a code pull request or merge request. |
 | [`privacy-dsar-triage-assistant`](./skills/privacy-dsar-triage-assistant) | Vendor-neutral skill to triage data subject requests and map required systems and timelines. |
@@ -106,6 +109,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`procurement-rfp-comparator`](./skills/procurement-rfp-comparator) | Vendor-neutral skill to compare vendor RFP responses against weighted evaluation criteria. |
 | [`product-analytics-investigator`](./skills/product-analytics-investigator) | Use when a PM, data PM, or analyst needs to investigate product metrics in Amplitude or Mixpanel — diagnosing drops in activation, retention, or funnel conversion, or attributing changes to releases, segments, or experiments. |
 | [`product-feedback-router`](./skills/product-feedback-router) | Vendor-neutral skill to route product feedback to owners with priority and duplicate detection. |
+| [`product-trial-conversion-explainer`](./skills/product-trial-conversion-explainer) | Vendor-neutral skill to explain trial conversion changes across cohorts, channels, and onboarding paths. |
 | [`prompt-injection-risk-linter`](./skills/prompt-injection-risk-linter) | Vendor-neutral skill to lint agent prompts and untrusted retrieved content for prompt-injection risk patterns and missing safety boundaries. |
 | [`pseudonymization-field-mapper`](./skills/pseudonymization-field-mapper) | Vendor-neutral skill to generate a consistent pseudonymization field map and implementation plan for datasets. |
 | [`queue-backlog-prioritizer`](./skills/queue-backlog-prioritizer) | Vendor-neutral skill to prioritize engineering backlog items using impact, urgency, and dependency cost. |
@@ -131,6 +135,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
+| [`threat-model-gap-finder`](./skills/threat-model-gap-finder) | Vendor-neutral skill to compare threat models against architecture changes and surface missing controls. |
 | [`usage-based-pricing-simulator`](./skills/usage-based-pricing-simulator) | Vendor-neutral skill to simulate usage-based pricing scenarios and margin outcomes. |
 | [`utm-campaign-governor`](./skills/utm-campaign-governor) | Enforces vendor-neutral UTM naming conventions by validating marketing links and generating a normalized, policy-compliant output. |
 | [`vendor-contract-renewal-planner`](./skills/vendor-contract-renewal-planner) | Vendor-neutral skill to prioritize upcoming vendor renewals from contract metadata and usage signals. |
