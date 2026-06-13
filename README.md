@@ -135,12 +135,15 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sales-forecast-bias-checker`](./skills/sales-forecast-bias-checker) | Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage. |
 | [`sbom-license-risk-checker`](./skills/sbom-license-risk-checker) | Vendor-neutral skill to check a CycloneDX SBOM for license policy compliance and emit a risk report. |
 | [`schema-migration-risk-checker`](./skills/schema-migration-risk-checker) | Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage. |
+| [`secrets-rotation-planner`](./skills/secrets-rotation-planner) | Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
 | [`shift-handover-checklist-builder`](./skills/shift-handover-checklist-builder) | Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure. |
+| [`sla-credit-calculator`](./skills/sla-credit-calculator) | Vendor-neutral skill to calculate SLA credits from incident timelines and contractual thresholds. |
 | [`sql-anti-pattern-linter`](./skills/sql-anti-pattern-linter) | Vendor-neutral skill to lint SQL text for common anti-patterns and output actionable findings. |
 | [`sqlite-schema-report`](./skills/sqlite-schema-report) | Vendor-neutral skill to summarize a SQLite database schema (tables, columns, indexes, foreign keys) and emit a portable report. |
 | [`status-page-comms-drafter`](./skills/status-page-comms-drafter) | Vendor-neutral skill to draft status page updates from incident timelines and customer impact data. |
 | [`subscription-downgrade-risk-scorer`](./skills/subscription-downgrade-risk-scorer) | Vendor-neutral skill to score downgrade risk from product usage and support interaction signals. |
+| [`support-escalation-router`](./skills/support-escalation-router) | Vendor-neutral skill to route support escalations based on severity, customer tier, and SLA exposure. |
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
