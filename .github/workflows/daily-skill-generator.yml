@@ -32,11 +32,16 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: pip install openai
+
       - name: Record existing skills
         run: |
           find skills -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort > /tmp/skills-before.txt
 
       - name: Generate 5 daily skills
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/generate_daily_skills.py
 
       - name: Collect generated skills
@@ -70,7 +75,7 @@ jobs:
           fi
           git config user.name "sisodiabhumca"
           git config user.email "sisodiabhumca@users.noreply.github.com"
-          git add skills samples README.md skills.sh.json
+          git add skills samples README.md skills.sh.json scripts/skill_templates.json
           git commit -m "Add generated vendor-neutral skills (daily auto-run $(date -u +%Y-%m-%d))"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

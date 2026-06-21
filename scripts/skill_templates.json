@@ -1,0 +1,317 @@
+[
+  {
+    "slug": "vendor-contract-renewal-planner",
+    "title": "Vendor Contract Renewal Planner",
+    "description": "Vendor-neutral skill to prioritize upcoming vendor renewals from contract metadata and usage signals."
+  },
+  {
+    "slug": "capacity-planning-signal-analyzer",
+    "title": "Capacity Planning Signal Analyzer",
+    "description": "Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams."
+  },
+  {
+    "slug": "change-request-risk-scorer",
+    "title": "Change Request Risk Scorer",
+    "description": "Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact."
+  },
+  {
+    "slug": "data-quality-sla-monitor",
+    "title": "Data Quality SLA Monitor",
+    "description": "Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams."
+  },
+  {
+    "slug": "pricing-experiment-readout-builder",
+    "title": "Pricing Experiment Readout Builder",
+    "description": "Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations."
+  },
+  {
+    "slug": "support-escalation-router",
+    "title": "Support Escalation Router",
+    "description": "Vendor-neutral skill to route support escalations based on severity, customer tier, and SLA exposure."
+  },
+  {
+    "slug": "access-review-coverage-auditor",
+    "title": "Access Review Coverage Auditor",
+    "description": "Vendor-neutral skill to audit access review coverage and flag stale grants or missing attestations."
+  },
+  {
+    "slug": "pipeline-flake-detector",
+    "title": "Pipeline Flake Detector",
+    "description": "Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions."
+  },
+  {
+    "slug": "product-trial-conversion-explainer",
+    "title": "Product Trial Conversion Explainer",
+    "description": "Vendor-neutral skill to explain trial conversion changes across cohorts, channels, and onboarding paths."
+  },
+  {
+    "slug": "threat-model-gap-finder",
+    "title": "Threat Model Gap Finder",
+    "description": "Vendor-neutral skill to compare threat models against architecture changes and surface missing controls."
+  },
+  {
+    "slug": "invoice-anomaly-detector",
+    "title": "Invoice Anomaly Detector",
+    "description": "Vendor-neutral skill to flag billing anomalies in vendor invoices and produce reconciliation actions."
+  },
+  {
+    "slug": "sla-credit-calculator",
+    "title": "SLA Credit Calculator",
+    "description": "Vendor-neutral skill to calculate SLA credits from incident timelines and contractual thresholds."
+  },
+  {
+    "slug": "feature-request-deduplicator",
+    "title": "Feature Request Deduplicator",
+    "description": "Vendor-neutral skill to cluster duplicate feature requests and summarize merged customer demand."
+  },
+  {
+    "slug": "competitive-win-loss-analyzer",
+    "title": "Competitive Win-Loss Analyzer",
+    "description": "Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes."
+  },
+  {
+    "slug": "nps-verbatim-theme-extractor",
+    "title": "NPS Verbatim Theme Extractor",
+    "description": "Vendor-neutral skill to extract themes and sentiment drivers from NPS verbatim responses."
+  },
+  {
+    "slug": "billing-dispute-triage-assistant",
+    "title": "Billing Dispute Triage Assistant",
+    "description": "Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks."
+  },
+  {
+    "slug": "partner-api-health-monitor",
+    "title": "Partner API Health Monitor",
+    "description": "Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks."
+  },
+  {
+    "slug": "secrets-rotation-planner",
+    "title": "Secrets Rotation Planner",
+    "description": "Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius."
+  },
+  {
+    "slug": "deployment-freeze-advisor",
+    "title": "Deployment Freeze Advisor",
+    "description": "Vendor-neutral skill to recommend deployment freeze windows from incident load and release risk signals."
+  },
+  {
+    "slug": "cost-anomaly-explainer",
+    "title": "Cost Anomaly Explainer",
+    "description": "Vendor-neutral skill to explain cloud cost anomalies by service, tag, and recent infrastructure changes."
+  },
+  {
+    "slug": "schema-migration-risk-checker",
+    "title": "Schema Migration Risk Checker",
+    "description": "Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage."
+  },
+  {
+    "slug": "ab-test-power-calculator",
+    "title": "A/B Test Power Calculator",
+    "description": "Vendor-neutral skill to estimate experiment power, sample size, and runtime for product experiments."
+  },
+  {
+    "slug": "renewal-churn-playbook-builder",
+    "title": "Renewal Churn Playbook Builder",
+    "description": "Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals."
+  },
+  {
+    "slug": "compliance-evidence-collector",
+    "title": "Compliance Evidence Collector",
+    "description": "Vendor-neutral skill to map controls to evidence artifacts and flag audit readiness gaps."
+  },
+  {
+    "slug": "inventory-staleness-auditor",
+    "title": "Inventory Staleness Auditor",
+    "description": "Vendor-neutral skill to detect stale service inventory records and recommend ownership updates."
+  },
+  {
+    "slug": "queue-backlog-prioritizer",
+    "title": "Queue Backlog Prioritizer",
+    "description": "Vendor-neutral skill to prioritize engineering backlog items using impact, urgency, and dependency cost."
+  },
+  {
+    "slug": "marketing-attribution-sanity-checker",
+    "title": "Marketing Attribution Sanity Checker",
+    "description": "Vendor-neutral skill to audit marketing attribution models for double counting and channel bias."
+  },
+  {
+    "slug": "pager-noise-reduction-advisor",
+    "title": "Pager Noise Reduction Advisor",
+    "description": "Vendor-neutral skill to identify noisy alerts and propose paging policy improvements."
+  },
+  {
+    "slug": "data-pipeline-freshness-auditor",
+    "title": "Data Pipeline Freshness Auditor",
+    "description": "Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays."
+  },
+  {
+    "slug": "license-usage-optimizer",
+    "title": "License Usage Optimizer",
+    "description": "Vendor-neutral skill to find underused software licenses and recommend seat right-sizing actions."
+  },
+  {
+    "slug": "customer-health-score-explainer",
+    "title": "Customer Health Score Explainer",
+    "description": "Vendor-neutral skill to explain customer health score movement with leading indicator breakdowns."
+  },
+  {
+    "slug": "api-rate-limit-impact-analyzer",
+    "title": "API Rate Limit Impact Analyzer",
+    "description": "Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact."
+  },
+  {
+    "slug": "incident-severity-calibrator",
+    "title": "Incident Severity Calibrator",
+    "description": "Vendor-neutral skill to calibrate incident severity from impact scope, duration, and customer tier."
+  },
+  {
+    "slug": "docs-freshness-linter",
+    "title": "Docs Freshness Linter",
+    "description": "Vendor-neutral skill to flag outdated documentation based on code churn and broken references."
+  },
+  {
+    "slug": "quota-forecast-builder",
+    "title": "Quota Forecast Builder",
+    "description": "Vendor-neutral skill to forecast sales quota attainment from pipeline stage and historical conversion."
+  },
+  {
+    "slug": "entitlement-drift-detector",
+    "title": "Entitlement Drift Detector",
+    "description": "Vendor-neutral skill to detect entitlement mismatches between billing, product, and access systems."
+  },
+  {
+    "slug": "synthetic-monitor-gap-finder",
+    "title": "Synthetic Monitor Gap Finder",
+    "description": "Vendor-neutral skill to find critical user journeys missing synthetic monitoring coverage."
+  },
+  {
+    "slug": "rollback-readiness-checker",
+    "title": "Rollback Readiness Checker",
+    "description": "Vendor-neutral skill to evaluate rollback readiness for releases using config, schema, and feature flags."
+  },
+  {
+    "slug": "support-macro-gap-analyzer",
+    "title": "Support Macro Gap Analyzer",
+    "description": "Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates."
+  },
+  {
+    "slug": "vendor-sla-breach-summarizer",
+    "title": "Vendor SLA Breach Summarizer",
+    "description": "Vendor-neutral skill to summarize vendor SLA breaches and contract remedy options."
+  },
+  {
+    "slug": "product-feedback-router",
+    "title": "Product Feedback Router",
+    "description": "Vendor-neutral skill to route product feedback to owners with priority and duplicate detection."
+  },
+  {
+    "slug": "identity-provisioning-auditor",
+    "title": "Identity Provisioning Auditor",
+    "description": "Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations."
+  },
+  {
+    "slug": "cache-invalidation-planner",
+    "title": "Cache Invalidation Planner",
+    "description": "Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates."
+  },
+  {
+    "slug": "finops-chargeback-reporter",
+    "title": "FinOps Chargeback Reporter",
+    "description": "Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes."
+  },
+  {
+    "slug": "error-budget-policy-linter",
+    "title": "Error Budget Policy Linter",
+    "description": "Vendor-neutral skill to lint SLO and error budget policies for ambiguity and enforcement gaps."
+  },
+  {
+    "slug": "customer-reference-request-triager",
+    "title": "Customer Reference Request Triager",
+    "description": "Vendor-neutral skill to triage reference requests by account fit, risk, and sales urgency."
+  },
+  {
+    "slug": "multi-tenant-noise-isolator",
+    "title": "Multi-Tenant Noise Isolator",
+    "description": "Vendor-neutral skill to isolate noisy-neighbor incidents across tenants using usage and latency signals."
+  },
+  {
+    "slug": "data-retention-enforcement-planner",
+    "title": "Data Retention Enforcement Planner",
+    "description": "Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards."
+  },
+  {
+    "slug": "release-train-risk-ranker",
+    "title": "Release Train Risk Ranker",
+    "description": "Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity."
+  },
+  {
+    "slug": "oncall-handoff-summarizer",
+    "title": "On-Call Handoff Summarizer",
+    "description": "Vendor-neutral skill to summarize on-call handoffs with open incidents, risks, and follow-up tasks."
+  },
+  {
+    "slug": "usage-based-pricing-simulator",
+    "title": "Usage-Based Pricing Simulator",
+    "description": "Vendor-neutral skill to simulate usage-based pricing scenarios and margin outcomes."
+  },
+  {
+    "slug": "privacy-dsar-triage-assistant",
+    "title": "Privacy DSAR Triage Assistant",
+    "description": "Vendor-neutral skill to triage data subject requests and map required systems and timelines."
+  },
+  {
+    "slug": "config-drift-detector",
+    "title": "Config Drift Detector",
+    "description": "Vendor-neutral skill to detect configuration drift across environments and suggest normalization actions."
+  },
+  {
+    "slug": "sales-forecast-bias-checker",
+    "title": "Sales Forecast Bias Checker",
+    "description": "Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage."
+  },
+  {
+    "slug": "integration-test-gap-analyzer",
+    "title": "Integration Test Gap Analyzer",
+    "description": "Vendor-neutral skill to find integration paths lacking automated tests after recent service changes."
+  },
+  {
+    "slug": "status-page-comms-drafter",
+    "title": "Status Page Comms Drafter",
+    "description": "Vendor-neutral skill to draft status page updates from incident timelines and customer impact data."
+  },
+  {
+    "slug": "warehouse-query-cost-optimizer",
+    "title": "Warehouse Query Cost Optimizer",
+    "description": "Vendor-neutral skill to identify expensive warehouse queries and recommend optimization actions."
+  },
+  {
+    "slug": "ai-prompt-regression-tracker",
+    "title": "AI Prompt Regression Tracker",
+    "description": "Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes."
+  },
+  {
+    "slug": "procurement-rfp-comparator",
+    "title": "Procurement RFP Comparator",
+    "description": "Vendor-neutral skill to compare vendor RFP responses against weighted evaluation criteria."
+  },
+  {
+    "slug": "subscription-downgrade-risk-scorer",
+    "title": "Subscription Downgrade Risk Scorer",
+    "description": "Vendor-neutral skill to score downgrade risk from product usage and support interaction signals."
+  },
+  {
+    "slug": "mobile-crash-triage-assistant",
+    "title": "Mobile Crash Triage Assistant",
+    "description": "Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact."
+  },
+  {
+    "slug": "api-deprecation-impact-analyzer",
+    "title": "API Deprecation Impact Analyzer",
+    "description": "Vendor-neutral skill to analyze API deprecation impact on consumers and migration urgency."
+  },
+  {
+    "slug": "shift-handover-checklist-builder",
+    "title": "Shift Handover Checklist Builder",
+    "description": "Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure."
+  }
+]

@@ -7,6 +7,8 @@ from a day-rotated offset in the catalog.
 
 from __future__ import annotations
 
+import json
+import os
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / "skills"
 SAMPLES_DIR = ROOT / "samples"
+TEMPLATES_FILE = ROOT / "scripts" / "skill_templates.json"
 
 
 @dataclass(frozen=True)
@@ -23,324 +26,87 @@ class SkillTemplate:
     description: str
 
 
-# Candidate skills for the daily generator. Existing repo skills are skipped automatically.
-TEMPLATES = [
-    SkillTemplate(
-        slug="vendor-contract-renewal-planner",
-        title="Vendor Contract Renewal Planner",
-        description="Vendor-neutral skill to prioritize upcoming vendor renewals from contract metadata and usage signals.",
-    ),
-    SkillTemplate(
-        slug="capacity-planning-signal-analyzer",
-        title="Capacity Planning Signal Analyzer",
-        description="Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams.",
-    ),
-    SkillTemplate(
-        slug="change-request-risk-scorer",
-        title="Change Request Risk Scorer",
-        description="Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact.",
-    ),
-    SkillTemplate(
-        slug="data-quality-sla-monitor",
-        title="Data Quality SLA Monitor",
-        description="Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams.",
-    ),
-    SkillTemplate(
-        slug="pricing-experiment-readout-builder",
-        title="Pricing Experiment Readout Builder",
-        description="Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations.",
-    ),
-    SkillTemplate(
-        slug="support-escalation-router",
-        title="Support Escalation Router",
-        description="Vendor-neutral skill to route support escalations based on severity, customer tier, and SLA exposure.",
-    ),
-    SkillTemplate(
-        slug="access-review-coverage-auditor",
-        title="Access Review Coverage Auditor",
-        description="Vendor-neutral skill to audit access review coverage and flag stale grants or missing attestations.",
-    ),
-    SkillTemplate(
-        slug="pipeline-flake-detector",
-        title="Pipeline Flake Detector",
-        description="Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions.",
-    ),
-    SkillTemplate(
-        slug="product-trial-conversion-explainer",
-        title="Product Trial Conversion Explainer",
-        description="Vendor-neutral skill to explain trial conversion changes across cohorts, channels, and onboarding paths.",
-    ),
-    SkillTemplate(
-        slug="threat-model-gap-finder",
-        title="Threat Model Gap Finder",
-        description="Vendor-neutral skill to compare threat models against architecture changes and surface missing controls.",
-    ),
-    SkillTemplate(
-        slug="invoice-anomaly-detector",
-        title="Invoice Anomaly Detector",
-        description="Vendor-neutral skill to flag billing anomalies in vendor invoices and produce reconciliation actions.",
-    ),
-    SkillTemplate(
-        slug="sla-credit-calculator",
-        title="SLA Credit Calculator",
-        description="Vendor-neutral skill to calculate SLA credits from incident timelines and contractual thresholds.",
-    ),
-    SkillTemplate(
-        slug="feature-request-deduplicator",
-        title="Feature Request Deduplicator",
-        description="Vendor-neutral skill to cluster duplicate feature requests and summarize merged customer demand.",
-    ),
-    SkillTemplate(
-        slug="competitive-win-loss-analyzer",
-        title="Competitive Win-Loss Analyzer",
-        description="Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes.",
-    ),
-    SkillTemplate(
-        slug="nps-verbatim-theme-extractor",
-        title="NPS Verbatim Theme Extractor",
-        description="Vendor-neutral skill to extract themes and sentiment drivers from NPS verbatim responses.",
-    ),
-    SkillTemplate(
-        slug="billing-dispute-triage-assistant",
-        title="Billing Dispute Triage Assistant",
-        description="Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks.",
-    ),
-    SkillTemplate(
-        slug="partner-api-health-monitor",
-        title="Partner API Health Monitor",
-        description="Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks.",
-    ),
-    SkillTemplate(
-        slug="secrets-rotation-planner",
-        title="Secrets Rotation Planner",
-        description="Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius.",
-    ),
-    SkillTemplate(
-        slug="deployment-freeze-advisor",
-        title="Deployment Freeze Advisor",
-        description="Vendor-neutral skill to recommend deployment freeze windows from incident load and release risk signals.",
-    ),
-    SkillTemplate(
-        slug="cost-anomaly-explainer",
-        title="Cost Anomaly Explainer",
-        description="Vendor-neutral skill to explain cloud cost anomalies by service, tag, and recent infrastructure changes.",
-    ),
-    SkillTemplate(
-        slug="schema-migration-risk-checker",
-        title="Schema Migration Risk Checker",
-        description="Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage.",
-    ),
-    SkillTemplate(
-        slug="ab-test-power-calculator",
-        title="A/B Test Power Calculator",
-        description="Vendor-neutral skill to estimate experiment power, sample size, and runtime for product experiments.",
-    ),
-    SkillTemplate(
-        slug="renewal-churn-playbook-builder",
-        title="Renewal Churn Playbook Builder",
-        description="Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals.",
-    ),
-    SkillTemplate(
-        slug="compliance-evidence-collector",
-        title="Compliance Evidence Collector",
-        description="Vendor-neutral skill to map controls to evidence artifacts and flag audit readiness gaps.",
-    ),
-    SkillTemplate(
-        slug="inventory-staleness-auditor",
-        title="Inventory Staleness Auditor",
-        description="Vendor-neutral skill to detect stale service inventory records and recommend ownership updates.",
-    ),
-    SkillTemplate(
-        slug="queue-backlog-prioritizer",
-        title="Queue Backlog Prioritizer",
-        description="Vendor-neutral skill to prioritize engineering backlog items using impact, urgency, and dependency cost.",
-    ),
-    SkillTemplate(
-        slug="marketing-attribution-sanity-checker",
-        title="Marketing Attribution Sanity Checker",
-        description="Vendor-neutral skill to audit marketing attribution models for double counting and channel bias.",
-    ),
-    SkillTemplate(
-        slug="pager-noise-reduction-advisor",
-        title="Pager Noise Reduction Advisor",
-        description="Vendor-neutral skill to identify noisy alerts and propose paging policy improvements.",
-    ),
-    SkillTemplate(
-        slug="data-pipeline-freshness-auditor",
-        title="Data Pipeline Freshness Auditor",
-        description="Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays.",
-    ),
-    SkillTemplate(
-        slug="license-usage-optimizer",
-        title="License Usage Optimizer",
-        description="Vendor-neutral skill to find underused software licenses and recommend seat right-sizing actions.",
-    ),
-    SkillTemplate(
-        slug="customer-health-score-explainer",
-        title="Customer Health Score Explainer",
-        description="Vendor-neutral skill to explain customer health score movement with leading indicator breakdowns.",
-    ),
-    SkillTemplate(
-        slug="api-rate-limit-impact-analyzer",
-        title="API Rate Limit Impact Analyzer",
-        description="Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact.",
-    ),
-    SkillTemplate(
-        slug="incident-severity-calibrator",
-        title="Incident Severity Calibrator",
-        description="Vendor-neutral skill to calibrate incident severity from impact scope, duration, and customer tier.",
-    ),
-    SkillTemplate(
-        slug="docs-freshness-linter",
-        title="Docs Freshness Linter",
-        description="Vendor-neutral skill to flag outdated documentation based on code churn and broken references.",
-    ),
-    SkillTemplate(
-        slug="quota-forecast-builder",
-        title="Quota Forecast Builder",
-        description="Vendor-neutral skill to forecast sales quota attainment from pipeline stage and historical conversion.",
-    ),
-    SkillTemplate(
-        slug="entitlement-drift-detector",
-        title="Entitlement Drift Detector",
-        description="Vendor-neutral skill to detect entitlement mismatches between billing, product, and access systems.",
-    ),
-    SkillTemplate(
-        slug="synthetic-monitor-gap-finder",
-        title="Synthetic Monitor Gap Finder",
-        description="Vendor-neutral skill to find critical user journeys missing synthetic monitoring coverage.",
-    ),
-    SkillTemplate(
-        slug="rollback-readiness-checker",
-        title="Rollback Readiness Checker",
-        description="Vendor-neutral skill to evaluate rollback readiness for releases using config, schema, and feature flags.",
-    ),
-    SkillTemplate(
-        slug="support-macro-gap-analyzer",
-        title="Support Macro Gap Analyzer",
-        description="Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates.",
-    ),
-    SkillTemplate(
-        slug="vendor-sla-breach-summarizer",
-        title="Vendor SLA Breach Summarizer",
-        description="Vendor-neutral skill to summarize vendor SLA breaches and contract remedy options.",
-    ),
-    SkillTemplate(
-        slug="product-feedback-router",
-        title="Product Feedback Router",
-        description="Vendor-neutral skill to route product feedback to owners with priority and duplicate detection.",
-    ),
-    SkillTemplate(
-        slug="identity-provisioning-auditor",
-        title="Identity Provisioning Auditor",
-        description="Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations.",
-    ),
-    SkillTemplate(
-        slug="cache-invalidation-planner",
-        title="Cache Invalidation Planner",
-        description="Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates.",
-    ),
-    SkillTemplate(
-        slug="finops-chargeback-reporter",
-        title="FinOps Chargeback Reporter",
-        description="Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes.",
-    ),
-    SkillTemplate(
-        slug="error-budget-policy-linter",
-        title="Error Budget Policy Linter",
-        description="Vendor-neutral skill to lint SLO and error budget policies for ambiguity and enforcement gaps.",
-    ),
-    SkillTemplate(
-        slug="customer-reference-request-triager",
-        title="Customer Reference Request Triager",
-        description="Vendor-neutral skill to triage reference requests by account fit, risk, and sales urgency.",
-    ),
-    SkillTemplate(
-        slug="multi-tenant-noise-isolator",
-        title="Multi-Tenant Noise Isolator",
-        description="Vendor-neutral skill to isolate noisy-neighbor incidents across tenants using usage and latency signals.",
-    ),
-    SkillTemplate(
-        slug="data-retention-enforcement-planner",
-        title="Data Retention Enforcement Planner",
-        description="Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards.",
-    ),
-    SkillTemplate(
-        slug="release-train-risk-ranker",
-        title="Release Train Risk Ranker",
-        description="Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity.",
-    ),
-    SkillTemplate(
-        slug="oncall-handoff-summarizer",
-        title="On-Call Handoff Summarizer",
-        description="Vendor-neutral skill to summarize on-call handoffs with open incidents, risks, and follow-up tasks.",
-    ),
-    SkillTemplate(
-        slug="usage-based-pricing-simulator",
-        title="Usage-Based Pricing Simulator",
-        description="Vendor-neutral skill to simulate usage-based pricing scenarios and margin outcomes.",
-    ),
-    SkillTemplate(
-        slug="privacy-dsar-triage-assistant",
-        title="Privacy DSAR Triage Assistant",
-        description="Vendor-neutral skill to triage data subject requests and map required systems and timelines.",
-    ),
-    SkillTemplate(
-        slug="config-drift-detector",
-        title="Config Drift Detector",
-        description="Vendor-neutral skill to detect configuration drift across environments and suggest normalization actions.",
-    ),
-    SkillTemplate(
-        slug="sales-forecast-bias-checker",
-        title="Sales Forecast Bias Checker",
-        description="Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage.",
-    ),
-    SkillTemplate(
-        slug="integration-test-gap-analyzer",
-        title="Integration Test Gap Analyzer",
-        description="Vendor-neutral skill to find integration paths lacking automated tests after recent service changes.",
-    ),
-    SkillTemplate(
-        slug="status-page-comms-drafter",
-        title="Status Page Comms Drafter",
-        description="Vendor-neutral skill to draft status page updates from incident timelines and customer impact data.",
-    ),
-    SkillTemplate(
-        slug="warehouse-query-cost-optimizer",
-        title="Warehouse Query Cost Optimizer",
-        description="Vendor-neutral skill to identify expensive warehouse queries and recommend optimization actions.",
-    ),
-    SkillTemplate(
-        slug="ai-prompt-regression-tracker",
-        title="AI Prompt Regression Tracker",
-        description="Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes.",
-    ),
-    SkillTemplate(
-        slug="procurement-rfp-comparator",
-        title="Procurement RFP Comparator",
-        description="Vendor-neutral skill to compare vendor RFP responses against weighted evaluation criteria.",
-    ),
-    SkillTemplate(
-        slug="subscription-downgrade-risk-scorer",
-        title="Subscription Downgrade Risk Scorer",
-        description="Vendor-neutral skill to score downgrade risk from product usage and support interaction signals.",
-    ),
-    SkillTemplate(
-        slug="mobile-crash-triage-assistant",
-        title="Mobile Crash Triage Assistant",
-        description="Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact.",
-    ),
-    SkillTemplate(
-        slug="api-deprecation-impact-analyzer",
-        title="API Deprecation Impact Analyzer",
-        description="Vendor-neutral skill to analyze API deprecation impact on consumers and migration urgency.",
-    ),
-    SkillTemplate(
-        slug="shift-handover-checklist-builder",
-        title="Shift Handover Checklist Builder",
-        description="Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure.",
-    ),
+def load_templates() -> list[SkillTemplate]:
+    """Load templates from the JSON file."""
+    if not TEMPLATES_FILE.exists():
+        return []
+    with open(TEMPLATES_FILE) as f:
+        data = json.load(f)
+    return [SkillTemplate(**item) for item in data]
+
+
+def save_templates(templates: list[SkillTemplate]) -> None:
+    """Save templates to the JSON file."""
+    data = [{"slug": t.slug, "title": t.title, "description": t.description} for t in templates]
+    with open(TEMPLATES_FILE, "w") as f:
+        json.dump(data, f, indent=2)
+
+
+def generate_new_templates(count: int = 5) -> list[SkillTemplate]:
+    """Generate new skill templates using OpenAI API."""
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        print("Warning: OPENAI_API_KEY not set. Cannot generate new templates.")
+        return []
+
+    try:
+        import openai
+    except ImportError:
+        print("Warning: openai package not installed. Run: pip install openai")
+        return []
+
+    client = openai.OpenAI(api_key=api_key)
+
+    existing_slugs = {t.slug for t in load_templates()}
+    existing_slugs.update(existing_slugs())
+
+    prompt = f"""Generate {count} new vendor-neutral skill templates for an AI agent skills catalog.
+
+Each template should have:
+- slug: a kebab-case identifier (e.g., "api-rate-limit-analyzer")
+- title: a human-readable title (e.g., "API Rate Limit Analyzer")
+- description: a concise description starting with "Vendor-neutral skill to..."
+
+The skills should be practical, business-focused tools similar to these existing examples:
+- incident-postmortem-builder
+- customer-churn-risk-ranker
+- data-contract-validator
+- feature-flag-rollout-planner
+- compliance-evidence-collector
+
+Avoid these existing slugs: {', '.join(sorted(existing_slugs))}
+
+Return ONLY valid JSON in this exact format:
+[
+  {{"slug": "example-slug", "title": "Example Title", "description": "Vendor-neutral skill to..."}},
+  ...
 ]
+"""
+
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+        )
+        content = response.choices[0].message.content.strip()
+        
+        # Parse JSON response
+        new_data = json.loads(content)
+        new_templates = [SkillTemplate(**item) for item in new_data]
+        
+        # Filter out any that already exist
+        unique_templates = [t for t in new_templates if t.slug not in existing_slugs]
+        
+        if unique_templates:
+            print(f"Generated {len(unique_templates)} new skill templates via OpenAI.")
+        else:
+            print("No unique new templates generated.")
+        
+        return unique_templates
+    except Exception as e:
+        print(f"Error generating templates with OpenAI: {e}")
+        return []
 
 
 def render_skill_md(skill_name: str, description: str) -> str:
@@ -424,7 +190,8 @@ def existing_slugs() -> set[str]:
 
 def available_templates() -> list[SkillTemplate]:
     present = existing_slugs()
-    return [template for template in TEMPLATES if template.slug not in present]
+    templates = load_templates()
+    return [template for template in templates if template.slug not in present]
 
 
 def daily_selection(templates: list[SkillTemplate], day_key: str, count: int) -> list[SkillTemplate]:
@@ -461,12 +228,24 @@ def create_skill(template: SkillTemplate) -> bool:
 def generate(count: int = 5) -> int:
     day_key = datetime.now(timezone.utc).strftime("%Y%m%d")
     candidates = available_templates()
+    
+    # If no templates available, try to generate new ones
     if not candidates:
-        print(
-            "Created 0 skill(s). All templates in the daily catalog already exist in skills/. "
-            "Add more entries to TEMPLATES in scripts/generate_daily_skills.py.",
-        )
-        return 0
+        print("No templates available. Attempting to generate new ones...")
+        new_templates = generate_new_templates(count)
+        if new_templates:
+            # Add new templates to the file
+            existing_templates = load_templates()
+            all_templates = existing_templates + new_templates
+            save_templates(all_templates)
+            candidates = available_templates()
+        
+        if not candidates:
+            print(
+                "Created 0 skill(s). All templates in the daily catalog already exist in skills/. "
+                "Could not generate new templates (OPENAI_API_KEY not set or API error).",
+            )
+            return 0
 
     created = 0
     for template in daily_selection(candidates, day_key, count):
