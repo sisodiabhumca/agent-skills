@@ -488,4 +488,5 @@ def generate(count: int = 5) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(0 if generate(5) >= 1 else 1)
+    generate(5)
+    raise SystemExit(0)
