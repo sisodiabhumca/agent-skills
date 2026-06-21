@@ -43,10 +43,10 @@ def save_templates(templates: list[SkillTemplate]) -> None:
 
 
 def generate_new_templates(count: int = 5) -> list[SkillTemplate]:
-    """Generate new skill templates using OpenAI API."""
-    api_key = os.environ.get("OPENAI_API_KEY")
+    """Generate new skill templates using free LLM API (Groq)."""
+    api_key = os.environ.get("GROQ_API_KEY") or os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        print("Warning: OPENAI_API_KEY not set. Cannot generate new templates.")
+        print("Warning: GROQ_API_KEY or OPENAI_API_KEY not set. Cannot generate new templates.")
         return []
 
     try:
@@ -55,10 +55,17 @@ def generate_new_templates(count: int = 5) -> list[SkillTemplate]:
         print("Warning: openai package not installed. Run: pip install openai")
         return []
 
-    client = openai.OpenAI(api_key=api_key)
+    # Use Groq for free tier with open-source models
+    base_url = os.environ.get("GROQ_API_KEY", "")
+    if base_url:
+        client = openai.OpenAI(api_key=api_key, base_url="https://api.groq.com/openai/v1")
+        model = "llama-3.3-70b-versatile"  # Free model on Groq
+    else:
+        client = openai.OpenAI(api_key=api_key)
+        model = "gpt-4o-mini"  # Fallback to cheapest OpenAI model
 
-    existing_slugs = {t.slug for t in load_templates()}
-    existing_slugs.update(existing_slugs())
+    existing_slugs_set = {t.slug for t in load_templates()}
+    existing_slugs_set.update(existing_slugs())
 
     prompt = f"""Generate {count} new vendor-neutral skill templates for an AI agent skills catalog.
 
@@ -74,7 +81,7 @@ The skills should be practical, business-focused tools similar to these existing
 - feature-flag-rollout-planner
 - compliance-evidence-collector
 
-Avoid these existing slugs: {', '.join(sorted(existing_slugs))}
+Avoid these existing slugs: {', '.join(sorted(existing_slugs_set))}
 
 Return ONLY valid JSON in this exact format:
 [
@@ -85,7 +92,7 @@ Return ONLY valid JSON in this exact format:
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
         )
@@ -96,16 +103,16 @@ Return ONLY valid JSON in this exact format:
         new_templates = [SkillTemplate(**item) for item in new_data]
         
         # Filter out any that already exist
-        unique_templates = [t for t in new_templates if t.slug not in existing_slugs]
+        unique_templates = [t for t in new_templates if t.slug not in existing_slugs_set]
         
         if unique_templates:
-            print(f"Generated {len(unique_templates)} new skill templates via OpenAI.")
+            print(f"Generated {len(unique_templates)} new skill templates via {model}.")
         else:
             print("No unique new templates generated.")
         
         return unique_templates
     except Exception as e:
-        print(f"Error generating templates with OpenAI: {e}")
+        print(f"Error generating templates: {e}")
         return []
 
 
@@ -243,7 +250,7 @@ def generate(count: int = 5) -> int:
         if not candidates:
             print(
                 "Created 0 skill(s). All templates in the daily catalog already exist in skills/. "
-                "Could not generate new templates (OPENAI_API_KEY not set or API error).",
+                "Could not generate new templates (GROQ_API_KEY or OPENAI_API_KEY not set or API error).",
             )
             return 0
 
