@@ -45,24 +45,37 @@ def repo_skill_names(skills_dir: Path) -> list[str]:
     )
 
 
+def fetch_text_with_curl(url: str, timeout: int, original_error: Exception) -> str:
+    try:
+        result = subprocess.run(
+            ["curl", "-fsSL", "--max-time", str(timeout), url],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+    except FileNotFoundError as exc:
+        raise RuntimeError(f"could not fetch {url}: {original_error}") from exc
+    if result.returncode != 0:
+        raise RuntimeError(f"could not fetch {url}: {result.stderr.strip() or original_error}")
+    return result.stdout
+
+
 def fetch_text(url: str, timeout: int) -> str:
     request = Request(url, headers={"User-Agent": "agent-skills-publish-check/1.0"})
-    try:
-        with urlopen(request, timeout=timeout, context=ssl_context()) as response:
-            return response.read().decode("utf-8", "ignore")
-    except URLError as original_error:
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
         try:
-            result = subprocess.run(
-                ["curl", "-fsSL", "--max-time", str(timeout), url],
-                check=False,
-                capture_output=True,
-                text=True,
-            )
-        except FileNotFoundError as exc:
-            raise RuntimeError(f"could not fetch {url}: {original_error}") from exc
-        if result.returncode != 0:
-            raise RuntimeError(f"could not fetch {url}: {result.stderr.strip()}")
-        return result.stdout
+            with urlopen(request, timeout=timeout, context=ssl_context()) as response:
+                return response.read().decode("utf-8", "ignore")
+        except (URLError, TimeoutError, OSError) as original_error:
+            last_error = original_error
+            try:
+                return fetch_text_with_curl(url, timeout, original_error)
+            except RuntimeError as curl_error:
+                last_error = curl_error
+                if attempt < 3:
+                    time.sleep(attempt)
+    raise RuntimeError(f"could not fetch {url}: {last_error}") from last_error
 
 
 def collection_skill_names(base_url: str, repo: str, timeout: int) -> set[str]:
@@ -173,7 +186,7 @@ def cmd_missing(args: argparse.Namespace) -> int:
     skills = repo_skill_names(Path(args.skills_dir))
     try:
         indexed = collection_skill_names(args.base_url, args.repo, args.timeout)
-    except CollectionUnavailableError as exc:
+    except (CollectionUnavailableError, RuntimeError, TimeoutError, OSError) as exc:
         print(f"names=")
         print(f"::warning::{exc}; skipping backfill indexing", file=sys.stderr)
         return 0

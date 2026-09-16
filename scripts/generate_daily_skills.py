@@ -55,14 +55,13 @@ def generate_new_templates(count: int = 5) -> list[SkillTemplate]:
         print("Warning: openai package not installed. Run: pip install openai")
         return []
 
-    # Use Groq for free tier with open-source models
-    base_url = os.environ.get("GROQ_API_KEY", "")
-    if base_url:
-        client = openai.OpenAI(api_key=api_key, base_url="https://api.groq.com/openai/v1")
-        model = "llama-3.3-70b-versatile"  # Free model on Groq
+    groq_key = os.environ.get("GROQ_API_KEY")
+    if groq_key:
+        client = openai.OpenAI(api_key=groq_key, base_url="https://api.groq.com/openai/v1")
+        model = "llama-3.3-70b-versatile"
     else:
         client = openai.OpenAI(api_key=api_key)
-        model = "gpt-4o-mini"  # Fallback to cheapest OpenAI model
+        model = "gpt-4o-mini"
 
     existing_slugs_set = {t.slug for t in load_templates()}
     existing_slugs_set.update(existing_slugs())
@@ -97,8 +96,12 @@ Return ONLY valid JSON in this exact format:
             temperature=0.7,
         )
         content = response.choices[0].message.content.strip()
-        
-        # Parse JSON response
+        if content.startswith("```"):
+            content = content.split("\n", 1)[-1]
+            if content.endswith("```"):
+                content = content.rsplit("```", 1)[0]
+            content = content.strip()
+
         new_data = json.loads(content)
         new_templates = [SkillTemplate(**item) for item in new_data]
         
@@ -274,5 +277,4 @@ def generate(count: int = 5) -> int:
 
 
 if __name__ == "__main__":
-    generate(5)
-    raise SystemExit(0)
+    raise SystemExit(0 if generate(5) >= 5 else 1)
