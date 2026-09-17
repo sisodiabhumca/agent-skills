@@ -10,6 +10,7 @@
         "access-review-coverage-auditor",
         "accessibility-alt-text-auditor",
         "ai-eval-regression-tester",
+        "ai-guardrail-coverage-auditor",
         "ai-prompt-regression-tracker",
         "api-changelog-impact-analyzer",
         "api-changelog-summarizer",
@@ -20,8 +21,10 @@
         "architecture-map-builder",
         "backlog-prioritization-assistant",
         "billing-dispute-triage-assistant",
+        "board-metric-narrative-builder",
         "cache-invalidation-planner",
         "capacity-planning-signal-analyzer",
+        "capacity-reservation-optimizer",
         "change-request-risk-scorer",
         "cloud-cost-tag-coverage-auditor",
         "competitive-win-loss-analyzer",
@@ -136,7 +139,9 @@
         "utm-campaign-governor",
         "vendor-contract-renewal-planner",
         "vendor-sla-breach-summarizer",
-        "warehouse-query-cost-optimizer"
+        "warehouse-query-cost-optimizer",
+        "zendesk-macro-effectiveness-scorer",
+        "zero-downtime-migration-checklist-builder"
       ]
     }
   ]

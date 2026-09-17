@@ -27,6 +27,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`access-review-coverage-auditor`](./skills/access-review-coverage-auditor) | Vendor-neutral skill to audit access review coverage and flag stale grants or missing attestations. |
 | [`accessibility-alt-text-auditor`](./skills/accessibility-alt-text-auditor) | Vendor-neutral skill to audit image alt-text coverage and basic quality heuristics for accessibility. |
 | [`ai-eval-regression-tester`](./skills/ai-eval-regression-tester) | Use to run a regression eval suite over an LLM application — fixed test cases with deterministic graders (exact match, JSON schema, regex, embedding similarity, LLM-as-judge). |
+| [`ai-guardrail-coverage-auditor`](./skills/ai-guardrail-coverage-auditor) | Vendor-neutral skill to audit AI feature guardrail coverage for prompt injection and unsafe output paths. |
 | [`ai-prompt-regression-tracker`](./skills/ai-prompt-regression-tracker) | Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes. |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
 | [`api-changelog-summarizer`](./skills/api-changelog-summarizer) | Vendor-neutral skill to convert an API diff (before/after schemas or endpoints) into a structured changelog with breaking changes and migration guidance. |
@@ -37,8 +38,10 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
+| [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
 | [`cache-invalidation-planner`](./skills/cache-invalidation-planner) | Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates. |
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
+| [`capacity-reservation-optimizer`](./skills/capacity-reservation-optimizer) | Vendor-neutral skill to optimize capacity reservations from forecast demand and utilization history. |
 | [`change-request-risk-scorer`](./skills/change-request-risk-scorer) | Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact. |
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
@@ -154,6 +157,8 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`vendor-contract-renewal-planner`](./skills/vendor-contract-renewal-planner) | Vendor-neutral skill to prioritize upcoming vendor renewals from contract metadata and usage signals. |
 | [`vendor-sla-breach-summarizer`](./skills/vendor-sla-breach-summarizer) | Vendor-neutral skill to summarize vendor SLA breaches and contract remedy options. |
 | [`warehouse-query-cost-optimizer`](./skills/warehouse-query-cost-optimizer) | Vendor-neutral skill to identify expensive warehouse queries and recommend optimization actions. |
+| [`zendesk-macro-effectiveness-scorer`](./skills/zendesk-macro-effectiveness-scorer) | Vendor-neutral skill to score support macros by reuse, resolution lift, and CSAT impact. |
+| [`zero-downtime-migration-checklist-builder`](./skills/zero-downtime-migration-checklist-builder) | Vendor-neutral skill to build zero-downtime migration checklists from schema and traffic constraints. |
 <!-- SKILLS-TABLE-END -->
 
 ## Skill format
