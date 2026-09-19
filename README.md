@@ -56,14 +56,19 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`customer-interview-analyzer`](./skills/customer-interview-analyzer) | Use when a PM or UX researcher has interview transcripts (text/Notion/Drive) and needs themes, pain points, JTBD, and verbatim quotes synthesized into a research report. |
 | [`customer-journey-gap-analyzer`](./skills/customer-journey-gap-analyzer) | Analyze a CSV of funnel stages and drop-offs to identify the biggest customer journey gaps and suggest prioritized experiments (vendor-neutral). |
 | [`customer-reference-request-triager`](./skills/customer-reference-request-triager) | Vendor-neutral skill to triage reference requests by account fit, risk, and sales urgency. |
+| [`data-catalog-coverage-auditor`](./skills/data-catalog-coverage-auditor) | Vendor-neutral skill to audit data catalog coverage for critical tables and ownership gaps. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
 | [`data-quality-sla-monitor`](./skills/data-quality-sla-monitor) | Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams. |
 | [`data-retention-enforcement-planner`](./skills/data-retention-enforcement-planner) | Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards. |
 | [`data-retention-policy-checker`](./skills/data-retention-policy-checker) | Vendor-neutral skill to check a data retention schedule for completeness and risk (coverage, deletion handling, legal holds) and produce a structured findings report. |
+| [`dead-letter-queue-triager`](./skills/dead-letter-queue-triager) | Vendor-neutral skill to triage dead-letter queue messages by failure pattern and replay safety. |
+| [`dependency-upgrade-risk-ranker`](./skills/dependency-upgrade-risk-ranker) | Vendor-neutral skill to rank dependency upgrades by breakage likelihood and security urgency. |
 | [`dependency-vuln-triager`](./skills/dependency-vuln-triager) | Use to triage dependency vulnerability scanner output (npm audit, pip-audit, OSV, GitHub advisories) and produce a ranked, deduplicated action list. |
 | [`deployment-freeze-advisor`](./skills/deployment-freeze-advisor) | Vendor-neutral skill to recommend deployment freeze windows from incident load and release risk signals. |
+| [`devops-dora-metric-explainer`](./skills/devops-dora-metric-explainer) | Vendor-neutral skill to explain DORA metric movement with release and incident context. |
+| [`discount-margin-impact-simulator`](./skills/discount-margin-impact-simulator) | Vendor-neutral skill to simulate discount scenarios and estimate margin and close-rate tradeoffs. |
 | [`docs-freshness-linter`](./skills/docs-freshness-linter) | Vendor-neutral skill to flag outdated documentation based on code churn and broken references. |
 | [`docx-style-auditor`](./skills/docx-style-auditor) | Audits .docx documents for vendor-neutral style consistency issues (headings, spacing) and outputs an actionable report. |
 | [`entitlement-drift-detector`](./skills/entitlement-drift-detector) | Vendor-neutral skill to detect entitlement mismatches between billing, product, and access systems. |
