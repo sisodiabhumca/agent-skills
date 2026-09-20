@@ -26,17 +26,22 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ab-test-power-calculator`](./skills/ab-test-power-calculator) | Vendor-neutral skill to estimate experiment power, sample size, and runtime for product experiments. |
 | [`access-review-coverage-auditor`](./skills/access-review-coverage-auditor) | Vendor-neutral skill to audit access review coverage and flag stale grants or missing attestations. |
 | [`accessibility-alt-text-auditor`](./skills/accessibility-alt-text-auditor) | Vendor-neutral skill to audit image alt-text coverage and basic quality heuristics for accessibility. |
+| [`account-expansion-signal-scorer`](./skills/account-expansion-signal-scorer) | Vendor-neutral skill to score expansion readiness from usage growth, seat utilization, and support health. |
 | [`ai-eval-regression-tester`](./skills/ai-eval-regression-tester) | Use to run a regression eval suite over an LLM application — fixed test cases with deterministic graders (exact match, JSON schema, regex, embedding similarity, LLM-as-judge). |
 | [`ai-guardrail-coverage-auditor`](./skills/ai-guardrail-coverage-auditor) | Vendor-neutral skill to audit AI feature guardrail coverage for prompt injection and unsafe output paths. |
 | [`ai-prompt-regression-tracker`](./skills/ai-prompt-regression-tracker) | Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes. |
+| [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
 | [`api-changelog-summarizer`](./skills/api-changelog-summarizer) | Vendor-neutral skill to convert an API diff (before/after schemas or endpoints) into a structured changelog with breaking changes and migration guidance. |
 | [`api-contract-diff`](./skills/api-contract-diff) | Vendor-neutral skill to compare two OpenAPI 3 specifications and produce a structured contract change report with breaking-change detection. |
 | [`api-deprecation-impact-analyzer`](./skills/api-deprecation-impact-analyzer) | Vendor-neutral skill to analyze API deprecation impact on consumers and migration urgency. |
 | [`api-error-budget-tracker`](./skills/api-error-budget-tracker) | Vendor-neutral skill to analyze API reliability metrics and summarize error budget burn with mitigation guidance. |
+| [`api-latency-budget-tracker`](./skills/api-latency-budget-tracker) | Vendor-neutral skill to track API latency budgets and surface endpoints burning remaining budget. |
 | [`api-rate-limit-impact-analyzer`](./skills/api-rate-limit-impact-analyzer) | Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact. |
 | [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
+| [`audience-cohort-overlap-checker`](./skills/audience-cohort-overlap-checker) | Vendor-neutral skill to detect overlapping marketing cohorts and estimate double-count risk. |
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
+| [`backup-restore-readiness-auditor`](./skills/backup-restore-readiness-auditor) | Vendor-neutral skill to audit backup coverage and restore-test freshness for critical systems. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
 | [`cache-invalidation-planner`](./skills/cache-invalidation-planner) | Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates. |
