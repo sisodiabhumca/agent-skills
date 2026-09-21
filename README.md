@@ -52,11 +52,13 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
 | [`compliance-evidence-collector`](./skills/compliance-evidence-collector) | Vendor-neutral skill to map controls to evidence artifacts and flag audit readiness gaps. |
 | [`config-drift-detector`](./skills/config-drift-detector) | Vendor-neutral skill to detect configuration drift across environments and suggest normalization actions. |
+| [`conversion-funnel-anomaly-detector`](./skills/conversion-funnel-anomaly-detector) | Vendor-neutral skill to detect funnel conversion anomalies and attribute likely stage-level causes. |
 | [`cost-anomaly-explainer`](./skills/cost-anomaly-explainer) | Vendor-neutral skill to explain cloud cost anomalies by service, tag, and recent infrastructure changes. |
 | [`crm-opportunity-summarizer`](./skills/crm-opportunity-summarizer) | Use when a sales rep or RevOps lead needs a concise opportunity summary from Salesforce or HubSpot — pulling stage, amount, contacts, recent activity, and risks, then producing a deal brief and recommended next-best-action. |
 | [`csv-pii-redactor`](./skills/csv-pii-redactor) | Vendor-neutral skill to detect and redact common PII in CSV files and produce a redaction report. |
 | [`csv-pii-scanner`](./skills/csv-pii-scanner) | Vendor-neutral skill to scan CSV exports for likely PII columns and risky values, producing a remediation-focused report. |
 | [`customer-churn-risk-ranker`](./skills/customer-churn-risk-ranker) | Vendor-neutral skill to score customer churn risk from account signals and produce prioritized retention actions. |
+| [`customer-effort-score-analyzer`](./skills/customer-effort-score-analyzer) | Vendor-neutral skill to analyze CES survey text and identify high-effort workflow friction. |
 | [`customer-health-score-explainer`](./skills/customer-health-score-explainer) | Vendor-neutral skill to explain customer health score movement with leading indicator breakdowns. |
 | [`customer-interview-analyzer`](./skills/customer-interview-analyzer) | Use when a PM or UX researcher has interview transcripts (text/Notion/Drive) and needs themes, pain points, JTBD, and verbatim quotes synthesized into a research report. |
 | [`customer-journey-gap-analyzer`](./skills/customer-journey-gap-analyzer) | Analyze a CSV of funnel stages and drop-offs to identify the biggest customer journey gaps and suggest prioritized experiments (vendor-neutral). |
@@ -76,16 +78,19 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`discount-margin-impact-simulator`](./skills/discount-margin-impact-simulator) | Vendor-neutral skill to simulate discount scenarios and estimate margin and close-rate tradeoffs. |
 | [`docs-freshness-linter`](./skills/docs-freshness-linter) | Vendor-neutral skill to flag outdated documentation based on code churn and broken references. |
 | [`docx-style-auditor`](./skills/docx-style-auditor) | Audits .docx documents for vendor-neutral style consistency issues (headings, spacing) and outputs an actionable report. |
+| [`email-deliverability-health-checker`](./skills/email-deliverability-health-checker) | Vendor-neutral skill to check deliverability health from bounce, spam, and engagement signals. |
 | [`entitlement-drift-detector`](./skills/entitlement-drift-detector) | Vendor-neutral skill to detect entitlement mismatches between billing, product, and access systems. |
 | [`error-budget-policy-linter`](./skills/error-budget-policy-linter) | Vendor-neutral skill to lint SLO and error budget policies for ambiguity and enforcement gaps. |
 | [`etl-lineage-explainer`](./skills/etl-lineage-explainer) | Vendor-neutral skill for extracting and summarizing table-level lineage from SQL-based ETL jobs. |
 | [`etl-retry-backoff-simulator`](./skills/etl-retry-backoff-simulator) | Simulate retry and exponential backoff strategies against a failure-rate model to estimate expected runtime and cost (vendor-neutral). |
+| [`experiment-guardrail-linter`](./skills/experiment-guardrail-linter) | Vendor-neutral skill to lint experiment designs for missing guardrails and underpowered metrics. |
 | [`experiment-metric-audit`](./skills/experiment-metric-audit) | Vendor-neutral skill for auditing experiment metrics definitions for common analytics pitfalls and inconsistencies. |
 | [`feature-adoption-funnel-builder`](./skills/feature-adoption-funnel-builder) | Builds vendor-neutral feature adoption funnels from event logs to quantify conversion, drop-off, and time-to-adopt. |
 | [`feature-flag-cleanup-planner`](./skills/feature-flag-cleanup-planner) | Vendor-neutral skill to prioritize feature flags for cleanup using simple heuristics and produce a deprecation plan. |
 | [`feature-flag-risk-assessor`](./skills/feature-flag-risk-assessor) | Vendor-neutral skill to assess risk in feature-flag configurations (stale flags, kill-switch coverage, conflicting rules) and produce actionable recommendations. |
 | [`feature-flag-rollout-planner`](./skills/feature-flag-rollout-planner) | Vendor-neutral skill to generate a staged feature-flag rollout plan (phases, metrics, guardrails, rollback criteria) from feature context and risk inputs. |
 | [`feature-request-deduplicator`](./skills/feature-request-deduplicator) | Vendor-neutral skill to cluster duplicate feature requests and summarize merged customer demand. |
+| [`feature-usage-adoption-scorer`](./skills/feature-usage-adoption-scorer) | Vendor-neutral skill to score feature adoption depth across cohorts and recommend enablement actions. |
 | [`finops-chargeback-reporter`](./skills/finops-chargeback-reporter) | Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes. |
 | [`forecast-assumption-drift-checker`](./skills/forecast-assumption-drift-checker) | Vendor-neutral skill to compare forecast assumptions over time and flag high-impact drift. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
