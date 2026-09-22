@@ -166,14 +166,19 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sqlite-schema-report`](./skills/sqlite-schema-report) | Vendor-neutral skill to summarize a SQLite database schema (tables, columns, indexes, foreign keys) and emit a portable report. |
 | [`status-page-comms-drafter`](./skills/status-page-comms-drafter) | Vendor-neutral skill to draft status page updates from incident timelines and customer impact data. |
 | [`subscription-downgrade-risk-scorer`](./skills/subscription-downgrade-risk-scorer) | Vendor-neutral skill to score downgrade risk from product usage and support interaction signals. |
+| [`support-deflection-opportunity-finder`](./skills/support-deflection-opportunity-finder) | Vendor-neutral skill to find support deflection opportunities from repetitive ticket patterns. |
 | [`support-escalation-router`](./skills/support-escalation-router) | Vendor-neutral skill to route support escalations based on severity, customer tier, and SLA exposure. |
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
 | [`synthetic-monitor-gap-finder`](./skills/synthetic-monitor-gap-finder) | Vendor-neutral skill to find critical user journeys missing synthetic monitoring coverage. |
+| [`taxonomy-consistency-linter`](./skills/taxonomy-consistency-linter) | Vendor-neutral skill to lint product and analytics taxonomies for naming and hierarchy inconsistencies. |
+| [`tenant-isolation-test-planner`](./skills/tenant-isolation-test-planner) | Vendor-neutral skill to plan tenant isolation tests from shared-resource and permission boundaries. |
 | [`threat-model-gap-finder`](./skills/threat-model-gap-finder) | Vendor-neutral skill to compare threat models against architecture changes and surface missing controls. |
+| [`uptime-incident-correlation-analyzer`](./skills/uptime-incident-correlation-analyzer) | Vendor-neutral skill to correlate uptime incidents with deploys, traffic, and dependency failures. |
 | [`usage-based-pricing-simulator`](./skills/usage-based-pricing-simulator) | Vendor-neutral skill to simulate usage-based pricing scenarios and margin outcomes. |
 | [`utm-campaign-governor`](./skills/utm-campaign-governor) | Enforces vendor-neutral UTM naming conventions by validating marketing links and generating a normalized, policy-compliant output. |
+| [`ux-copy-accessibility-linter`](./skills/ux-copy-accessibility-linter) | Vendor-neutral skill to lint UX copy for accessibility, clarity, and inclusive language issues. |
 | [`vendor-contract-renewal-planner`](./skills/vendor-contract-renewal-planner) | Vendor-neutral skill to prioritize upcoming vendor renewals from contract metadata and usage signals. |
 | [`vendor-sla-breach-summarizer`](./skills/vendor-sla-breach-summarizer) | Vendor-neutral skill to summarize vendor SLA breaches and contract remedy options. |
 | [`warehouse-query-cost-optimizer`](./skills/warehouse-query-cost-optimizer) | Vendor-neutral skill to identify expensive warehouse queries and recommend optimization actions. |
