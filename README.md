@@ -160,8 +160,12 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`schema-migration-risk-checker`](./skills/schema-migration-risk-checker) | Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage. |
 | [`secrets-rotation-planner`](./skills/secrets-rotation-planner) | Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
+| [`service-ownership-mapper`](./skills/service-ownership-mapper) | Vendor-neutral skill to map services to owners and flag orphaned or dual-owned components. |
+| [`session-replay-issue-miner`](./skills/session-replay-issue-miner) | Vendor-neutral skill to mine session replays for recurring UX failures and convert them into backlog items. |
 | [`shift-handover-checklist-builder`](./skills/shift-handover-checklist-builder) | Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure. |
 | [`sla-credit-calculator`](./skills/sla-credit-calculator) | Vendor-neutral skill to calculate SLA credits from incident timelines and contractual thresholds. |
+| [`sla-report-consistency-checker`](./skills/sla-report-consistency-checker) | Vendor-neutral skill to check SLA report consistency across dashboards, tickets, and contracts. |
+| [`spend-commitment-utilization-tracker`](./skills/spend-commitment-utilization-tracker) | Vendor-neutral skill to track cloud commitment utilization and forecast unused spend risk. |
 | [`sql-anti-pattern-linter`](./skills/sql-anti-pattern-linter) | Vendor-neutral skill to lint SQL text for common anti-patterns and output actionable findings. |
 | [`sqlite-schema-report`](./skills/sqlite-schema-report) | Vendor-neutral skill to summarize a SQLite database schema (tables, columns, indexes, foreign keys) and emit a portable report. |
 | [`status-page-comms-drafter`](./skills/status-page-comms-drafter) | Vendor-neutral skill to draft status page updates from incident timelines and customer impact data. |
@@ -180,6 +184,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`utm-campaign-governor`](./skills/utm-campaign-governor) | Enforces vendor-neutral UTM naming conventions by validating marketing links and generating a normalized, policy-compliant output. |
 | [`ux-copy-accessibility-linter`](./skills/ux-copy-accessibility-linter) | Vendor-neutral skill to lint UX copy for accessibility, clarity, and inclusive language issues. |
 | [`vendor-contract-renewal-planner`](./skills/vendor-contract-renewal-planner) | Vendor-neutral skill to prioritize upcoming vendor renewals from contract metadata and usage signals. |
+| [`vendor-risk-questionnaire-scorer`](./skills/vendor-risk-questionnaire-scorer) | Vendor-neutral skill to score vendor risk questionnaires and highlight residual control gaps. |
 | [`vendor-sla-breach-summarizer`](./skills/vendor-sla-breach-summarizer) | Vendor-neutral skill to summarize vendor SLA breaches and contract remedy options. |
 | [`warehouse-query-cost-optimizer`](./skills/warehouse-query-cost-optimizer) | Vendor-neutral skill to identify expensive warehouse queries and recommend optimization actions. |
 | [`zendesk-macro-effectiveness-scorer`](./skills/zendesk-macro-effectiveness-scorer) | Vendor-neutral skill to score support macros by reuse, resolution lift, and CSAT impact. |
