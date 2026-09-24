@@ -107,10 +107,13 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`inventory-staleness-auditor`](./skills/inventory-staleness-auditor) | Vendor-neutral skill to detect stale service inventory records and recommend ownership updates. |
 | [`invoice-anomaly-detector`](./skills/invoice-anomaly-detector) | Vendor-neutral skill to flag billing anomalies in vendor invoices and produce reconciliation actions. |
 | [`json-schema-drift-detector`](./skills/json-schema-drift-detector) | Detects vendor-neutral JSON Schema drift between two versions and produces an actionable change report. |
+| [`knowledge-base-gap-mapper`](./skills/knowledge-base-gap-mapper) | Vendor-neutral skill to map support themes to missing knowledge-base articles. |
 | [`kpi-anomaly-triage`](./skills/kpi-anomaly-triage) | Vendor-neutral skill to analyze KPI time-series data, detect anomalies, and generate a triage summary with likely drivers. |
 | [`kpi-definition-consistency-checker`](./skills/kpi-definition-consistency-checker) | Vendor-neutral skill to check a KPI dictionary for conflicting definitions, grain mismatches, and missing ownership. |
+| [`lead-scoring-drift-detector`](./skills/lead-scoring-drift-detector) | Vendor-neutral skill to detect lead-scoring drift and recommend recalibration windows. |
 | [`license-usage-optimizer`](./skills/license-usage-optimizer) | Vendor-neutral skill to find underused software licenses and recommend seat right-sizing actions. |
 | [`log-redaction-auditor`](./skills/log-redaction-auditor) | Vendor-neutral skill to audit application logs for potential sensitive-data leakage and redaction coverage. |
+| [`log-volume-cost-optimizer`](./skills/log-volume-cost-optimizer) | Vendor-neutral skill to identify high-cost log sources and recommend retention or sampling changes. |
 | [`marketing-attribution-sanity-checker`](./skills/marketing-attribution-sanity-checker) | Vendor-neutral skill to audit marketing attribution models for double counting and channel bias. |
 | [`marketplace-listing-quality-auditor`](./skills/marketplace-listing-quality-auditor) | Vendor-neutral skill to audit marketplace listing quality for completeness and conversion blockers. |
 | [`meeting-action-item-extractor`](./skills/meeting-action-item-extractor) | Vendor-neutral skill to extract action items (task, owner, due date) from a meeting transcript into structured JSON. |
@@ -130,7 +133,9 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pager-noise-reduction-advisor`](./skills/pager-noise-reduction-advisor) | Vendor-neutral skill to identify noisy alerts and propose paging policy improvements. |
 | [`partner-api-health-monitor`](./skills/partner-api-health-monitor) | Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
+| [`permission-creep-detector`](./skills/permission-creep-detector) | Vendor-neutral skill to detect permission creep from unused grants and role expansion patterns. |
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
+| [`pipeline-stage-velocity-analyzer`](./skills/pipeline-stage-velocity-analyzer) | Vendor-neutral skill to analyze sales pipeline stage velocity and identify bottleneck stages. |
 | [`policy-as-code-linter`](./skills/policy-as-code-linter) | Vendor-neutral skill for linting simple policy-as-code rules (YAML) for style, safety, and completeness. |
 | [`pr-review-summarizer`](./skills/pr-review-summarizer) | Use when reviewing a code pull request or merge request. |
 | [`pricing-experiment-readout-builder`](./skills/pricing-experiment-readout-builder) | Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations. |
