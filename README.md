@@ -150,11 +150,13 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`queue-backlog-prioritizer`](./skills/queue-backlog-prioritizer) | Vendor-neutral skill to prioritize engineering backlog items using impact, urgency, and dependency cost. |
 | [`quota-forecast-builder`](./skills/quota-forecast-builder) | Vendor-neutral skill to forecast sales quota attainment from pipeline stage and historical conversion. |
 | [`regulatory-guardrail-checker`](./skills/regulatory-guardrail-checker) | Use to screen a feature spec or product change for compliance risks across GDPR, CCPA, HIPAA, PCI-DSS, SOC2, and accessibility (WCAG 2.2). |
+| [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
 | [`release-notes-changelog-normalizer`](./skills/release-notes-changelog-normalizer) | Vendor-neutral skill to normalize raw release notes into Keep a Changelog-style entries with consistent headings. |
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
 | [`release-risk-checklist-builder`](./skills/release-risk-checklist-builder) | Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints. |
 | [`release-train-risk-ranker`](./skills/release-train-risk-ranker) | Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity. |
 | [`renewal-churn-playbook-builder`](./skills/renewal-churn-playbook-builder) | Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals. |
+| [`revenue-leakage-detector`](./skills/revenue-leakage-detector) | Vendor-neutral skill to detect revenue leakage from billing mismatches and unused entitlements. |
 | [`roadmap-dependency-heatmap`](./skills/roadmap-dependency-heatmap) | Vendor-neutral skill to map roadmap dependencies and surface delivery risk concentrations. |
 | [`rollback-readiness-checker`](./skills/rollback-readiness-checker) | Vendor-neutral skill to evaluate rollback readiness for releases using config, schema, and feature flags. |
 | [`runbook-freshness-auditor`](./skills/runbook-freshness-auditor) | Vendor-neutral skill to identify stale runbooks and recommend updates based on recent incidents and ownership gaps. |
@@ -165,6 +167,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`schema-migration-risk-checker`](./skills/schema-migration-risk-checker) | Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage. |
 | [`secrets-rotation-planner`](./skills/secrets-rotation-planner) | Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
+| [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
 | [`service-ownership-mapper`](./skills/service-ownership-mapper) | Vendor-neutral skill to map services to owners and flag orphaned or dual-owned components. |
 | [`session-replay-issue-miner`](./skills/session-replay-issue-miner) | Vendor-neutral skill to mine session replays for recurring UX failures and convert them into backlog items. |
 | [`shift-handover-checklist-builder`](./skills/shift-handover-checklist-builder) | Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure. |
@@ -192,6 +195,8 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`vendor-risk-questionnaire-scorer`](./skills/vendor-risk-questionnaire-scorer) | Vendor-neutral skill to score vendor risk questionnaires and highlight residual control gaps. |
 | [`vendor-sla-breach-summarizer`](./skills/vendor-sla-breach-summarizer) | Vendor-neutral skill to summarize vendor SLA breaches and contract remedy options. |
 | [`warehouse-query-cost-optimizer`](./skills/warehouse-query-cost-optimizer) | Vendor-neutral skill to identify expensive warehouse queries and recommend optimization actions. |
+| [`webhook-reliability-auditor`](./skills/webhook-reliability-auditor) | Vendor-neutral skill to audit webhook reliability from retry, latency, and failure signature data. |
+| [`workflow-automation-roi-estimator`](./skills/workflow-automation-roi-estimator) | Vendor-neutral skill to estimate workflow automation ROI from volume, handle time, and error rates. |
 | [`zendesk-macro-effectiveness-scorer`](./skills/zendesk-macro-effectiveness-scorer) | Vendor-neutral skill to score support macros by reuse, resolution lift, and CSAT impact. |
 | [`zero-downtime-migration-checklist-builder`](./skills/zero-downtime-migration-checklist-builder) | Vendor-neutral skill to build zero-downtime migration checklists from schema and traffic constraints. |
 <!-- SKILLS-TABLE-END -->
