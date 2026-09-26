@@ -76,9 +76,12 @@
         "feature-usage-adoption-scorer",
         "finops-chargeback-reporter",
         "forecast-assumption-drift-checker",
+        "fraud-signal-prioritizer",
+        "governance-policy-gap-finder",
         "growth-experiment-planner",
         "http-api-smoke-tester",
         "identity-provisioning-auditor",
+        "incident-action-item-tracker",
         "incident-comms-clarity-linter",
         "incident-postmortem-builder",
         "incident-postmortem-drafter",
@@ -127,6 +130,7 @@
         "procurement-rfp-comparator",
         "product-analytics-investigator",
         "product-feedback-router",
+        "product-ops-ticket-clusterer",
         "product-trial-conversion-explainer",
         "prompt-injection-risk-linter",
         "pseudonymization-field-mapper",
@@ -180,6 +184,7 @@
         "warehouse-query-cost-optimizer",
         "webhook-reliability-auditor",
         "workflow-automation-roi-estimator",
+        "workspace-seat-utilization-auditor",
         "zendesk-macro-effectiveness-scorer",
         "zero-downtime-migration-checklist-builder"
       ]
