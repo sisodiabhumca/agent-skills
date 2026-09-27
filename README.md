@@ -45,13 +45,17 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
 | [`cache-invalidation-planner`](./skills/cache-invalidation-planner) | Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates. |
+| [`canary-release-decision-helper`](./skills/canary-release-decision-helper) | Vendor-neutral skill to recommend canary continue/abort decisions from guardrail metrics. |
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
 | [`capacity-reservation-optimizer`](./skills/capacity-reservation-optimizer) | Vendor-neutral skill to optimize capacity reservations from forecast demand and utilization history. |
 | [`change-request-risk-scorer`](./skills/change-request-risk-scorer) | Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact. |
+| [`churn-winback-offer-ranker`](./skills/churn-winback-offer-ranker) | Vendor-neutral skill to rank winback offers by expected save rate and margin impact. |
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
 | [`compliance-evidence-collector`](./skills/compliance-evidence-collector) | Vendor-neutral skill to map controls to evidence artifacts and flag audit readiness gaps. |
 | [`config-drift-detector`](./skills/config-drift-detector) | Vendor-neutral skill to detect configuration drift across environments and suggest normalization actions. |
+| [`content-freshness-auditor`](./skills/content-freshness-auditor) | Vendor-neutral skill to flag stale knowledge-base content based on traffic and last update age. |
+| [`contract-clause-risk-scanner`](./skills/contract-clause-risk-scanner) | Vendor-neutral skill to scan contract clauses for high-risk indemnity, liability, and termination terms. |
 | [`conversion-funnel-anomaly-detector`](./skills/conversion-funnel-anomaly-detector) | Vendor-neutral skill to detect funnel conversion anomalies and attribute likely stage-level causes. |
 | [`cost-anomaly-explainer`](./skills/cost-anomaly-explainer) | Vendor-neutral skill to explain cloud cost anomalies by service, tag, and recent infrastructure changes. |
 | [`crm-opportunity-summarizer`](./skills/crm-opportunity-summarizer) | Use when a sales rep or RevOps lead needs a concise opportunity summary from Salesforce or HubSpot — pulling stage, amount, contacts, recent activity, and risks, then producing a deal brief and recommended next-best-action. |
@@ -63,6 +67,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`customer-interview-analyzer`](./skills/customer-interview-analyzer) | Use when a PM or UX researcher has interview transcripts (text/Notion/Drive) and needs themes, pain points, JTBD, and verbatim quotes synthesized into a research report. |
 | [`customer-journey-gap-analyzer`](./skills/customer-journey-gap-analyzer) | Analyze a CSV of funnel stages and drop-offs to identify the biggest customer journey gaps and suggest prioritized experiments (vendor-neutral). |
 | [`customer-reference-request-triager`](./skills/customer-reference-request-triager) | Vendor-neutral skill to triage reference requests by account fit, risk, and sales urgency. |
+| [`customer-success-playbook-matcher`](./skills/customer-success-playbook-matcher) | Vendor-neutral skill to match accounts to success playbooks using health and lifecycle signals. |
 | [`data-catalog-coverage-auditor`](./skills/data-catalog-coverage-auditor) | Vendor-neutral skill to audit data catalog coverage for critical tables and ownership gaps. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
