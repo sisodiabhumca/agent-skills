@@ -44,6 +44,8 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`backup-restore-readiness-auditor`](./skills/backup-restore-readiness-auditor) | Vendor-neutral skill to audit backup coverage and restore-test freshness for critical systems. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
+| [`brand-mention-sentiment-tracker`](./skills/brand-mention-sentiment-tracker) | Vendor-neutral skill to summarize brand mention sentiment and escalate material reputation risks. |
+| [`budget-variance-explainer`](./skills/budget-variance-explainer) | Vendor-neutral skill to explain budget variance by owner, category, and timing drivers. |
 | [`cache-invalidation-planner`](./skills/cache-invalidation-planner) | Vendor-neutral skill to plan cache invalidation strategies for high-risk data updates. |
 | [`canary-release-decision-helper`](./skills/canary-release-decision-helper) | Vendor-neutral skill to recommend canary continue/abort decisions from guardrail metrics. |
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
@@ -71,6 +73,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-catalog-coverage-auditor`](./skills/data-catalog-coverage-auditor) | Vendor-neutral skill to audit data catalog coverage for critical tables and ownership gaps. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
+| [`data-lineage-breakage-detector`](./skills/data-lineage-breakage-detector) | Vendor-neutral skill to detect lineage breakages after schema or pipeline changes. |
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
 | [`data-quality-sla-monitor`](./skills/data-quality-sla-monitor) | Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams. |
 | [`data-retention-enforcement-planner`](./skills/data-retention-enforcement-planner) | Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards. |
@@ -90,6 +93,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`etl-retry-backoff-simulator`](./skills/etl-retry-backoff-simulator) | Simulate retry and exponential backoff strategies against a failure-rate model to estimate expected runtime and cost (vendor-neutral). |
 | [`experiment-guardrail-linter`](./skills/experiment-guardrail-linter) | Vendor-neutral skill to lint experiment designs for missing guardrails and underpowered metrics. |
 | [`experiment-metric-audit`](./skills/experiment-metric-audit) | Vendor-neutral skill for auditing experiment metrics definitions for common analytics pitfalls and inconsistencies. |
+| [`experiment-sample-ratio-mismatch-checker`](./skills/experiment-sample-ratio-mismatch-checker) | Vendor-neutral skill to check A/B tests for sample ratio mismatch and assign validity risk. |
 | [`feature-adoption-funnel-builder`](./skills/feature-adoption-funnel-builder) | Builds vendor-neutral feature adoption funnels from event logs to quantify conversion, drop-off, and time-to-adopt. |
 | [`feature-flag-cleanup-planner`](./skills/feature-flag-cleanup-planner) | Vendor-neutral skill to prioritize feature flags for cleanup using simple heuristics and produce a deprecation plan. |
 | [`feature-flag-risk-assessor`](./skills/feature-flag-risk-assessor) | Vendor-neutral skill to assess risk in feature-flag configurations (stale flags, kill-switch coverage, conflicting rules) and produce actionable recommendations. |
@@ -111,6 +115,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`incident-severity-calibrator`](./skills/incident-severity-calibrator) | Vendor-neutral skill to calibrate incident severity from impact scope, duration, and customer tier. |
 | [`incident-timeline-builder`](./skills/incident-timeline-builder) | Vendor-neutral skill to turn semi-structured incident logs into a normalized chronological timeline with clusters and gaps. |
 | [`incident-timeline-normalizer`](./skills/incident-timeline-normalizer) | Vendor-neutral skill to normalize incident event logs into an ordered timeline and compute phase durations. |
+| [`infra-cost-tag-policy-enforcer`](./skills/infra-cost-tag-policy-enforcer) | Vendor-neutral skill to enforce cost-tag policies and list noncompliant resources by owner. |
 | [`integration-test-gap-analyzer`](./skills/integration-test-gap-analyzer) | Vendor-neutral skill to find integration paths lacking automated tests after recent service changes. |
 | [`inventory-staleness-auditor`](./skills/inventory-staleness-auditor) | Vendor-neutral skill to detect stale service inventory records and recommend ownership updates. |
 | [`invoice-anomaly-detector`](./skills/invoice-anomaly-detector) | Vendor-neutral skill to flag billing anomalies in vendor invoices and produce reconciliation actions. |
