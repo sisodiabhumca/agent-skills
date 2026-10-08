@@ -3,6 +3,13 @@ name: Daily Skill Generator
 on:
   schedule:
     - cron: "15 6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate_daily_skills.py"
+      - "scripts/skill_templates.json"
+      - ".github/workflows/daily-skill-generator.yml"
   workflow_dispatch:
     inputs:
       publish_existing:
