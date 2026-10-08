@@ -613,5 +613,105 @@
     "slug": "infra-cost-tag-policy-enforcer",
     "title": "Infra Cost Tag Policy Enforcer",
     "description": "Vendor-neutral skill to enforce cost-tag policies and list noncompliant resources by owner."
+  },
+  {
+    "slug": "security-webhook-analyzer",
+    "title": "Security Webhook Analyzer",
+    "description": "Vendor-neutral skill to security webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-webhook-analyzer",
+    "title": "Release Webhook Analyzer",
+    "description": "Vendor-neutral skill to release webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-webhook-analyzer",
+    "title": "Analytics Webhook Analyzer",
+    "description": "Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-webhook-analyzer",
+    "title": "Ops Webhook Analyzer",
+    "description": "Vendor-neutral skill to ops webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-webhook-analyzer",
+    "title": "Growth Webhook Analyzer",
+    "description": "Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-webhook-analyzer",
+    "title": "Data Webhook Analyzer",
+    "description": "Vendor-neutral skill to data webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-webhook-analyzer",
+    "title": "Infra Webhook Analyzer",
+    "description": "Vendor-neutral skill to infra webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-webhook-analyzer",
+    "title": "Product Webhook Analyzer",
+    "description": "Vendor-neutral skill to product webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-webhook-analyzer",
+    "title": "Sales Webhook Analyzer",
+    "description": "Vendor-neutral skill to sales webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-webhook-analyzer",
+    "title": "Finance Webhook Analyzer",
+    "description": "Vendor-neutral skill to finance webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-webhook-analyzer",
+    "title": "Privacy Webhook Analyzer",
+    "description": "Vendor-neutral skill to privacy webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-webhook-analyzer",
+    "title": "Identity Webhook Analyzer",
+    "description": "Vendor-neutral skill to identity webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-webhook-analyzer",
+    "title": "Catalog Webhook Analyzer",
+    "description": "Vendor-neutral skill to catalog webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-webhook-analyzer",
+    "title": "Pipeline Webhook Analyzer",
+    "description": "Vendor-neutral skill to pipeline webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-webhook-analyzer",
+    "title": "Partner Webhook Analyzer",
+    "description": "Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-webhook-analyzer",
+    "title": "Mobile Webhook Analyzer",
+    "description": "Vendor-neutral skill to mobile webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-webhook-analyzer",
+    "title": "Cloud Webhook Analyzer",
+    "description": "Vendor-neutral skill to cloud webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-forecast-analyzer",
+    "title": "Api Forecast Analyzer",
+    "description": "Vendor-neutral skill to api forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-forecast-analyzer",
+    "title": "Billing Forecast Analyzer",
+    "description": "Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-forecast-analyzer",
+    "title": "Support Forecast Analyzer",
+    "description": "Vendor-neutral skill to support forecast analyzer and produce prioritized, actionable findings."
   }
 ]
