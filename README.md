@@ -31,6 +31,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ai-guardrail-coverage-auditor`](./skills/ai-guardrail-coverage-auditor) | Vendor-neutral skill to audit AI feature guardrail coverage for prompt injection and unsafe output paths. |
 | [`ai-prompt-regression-tracker`](./skills/ai-prompt-regression-tracker) | Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes. |
 | [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
+| [`analytics-webhook-analyzer`](./skills/analytics-webhook-analyzer) | Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings. |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
 | [`api-changelog-summarizer`](./skills/api-changelog-summarizer) | Vendor-neutral skill to convert an API diff (before/after schemas or endpoints) into a structured changelog with breaking changes and migration guidance. |
 | [`api-contract-diff`](./skills/api-contract-diff) | Vendor-neutral skill to compare two OpenAPI 3 specifications and produce a structured contract change report with breaking-change detection. |
@@ -43,6 +44,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
 | [`backup-restore-readiness-auditor`](./skills/backup-restore-readiness-auditor) | Vendor-neutral skill to audit backup coverage and restore-test freshness for critical systems. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
+| [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
 | [`brand-mention-sentiment-tracker`](./skills/brand-mention-sentiment-tracker) | Vendor-neutral skill to summarize brand mention sentiment and escalate material reputation risks. |
 | [`budget-variance-explainer`](./skills/budget-variance-explainer) | Vendor-neutral skill to explain budget variance by owner, category, and timing drivers. |
@@ -174,6 +176,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
 | [`release-risk-checklist-builder`](./skills/release-risk-checklist-builder) | Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints. |
 | [`release-train-risk-ranker`](./skills/release-train-risk-ranker) | Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity. |
+| [`release-webhook-analyzer`](./skills/release-webhook-analyzer) | Vendor-neutral skill to release webhook analyzer and produce prioritized, actionable findings. |
 | [`renewal-churn-playbook-builder`](./skills/renewal-churn-playbook-builder) | Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals. |
 | [`revenue-leakage-detector`](./skills/revenue-leakage-detector) | Vendor-neutral skill to detect revenue leakage from billing mismatches and unused entitlements. |
 | [`roadmap-dependency-heatmap`](./skills/roadmap-dependency-heatmap) | Vendor-neutral skill to map roadmap dependencies and surface delivery risk concentrations. |
@@ -187,6 +190,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`secrets-rotation-planner`](./skills/secrets-rotation-planner) | Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
+| [`security-webhook-analyzer`](./skills/security-webhook-analyzer) | Vendor-neutral skill to security webhook analyzer and produce prioritized, actionable findings. |
 | [`service-ownership-mapper`](./skills/service-ownership-mapper) | Vendor-neutral skill to map services to owners and flag orphaned or dual-owned components. |
 | [`session-replay-issue-miner`](./skills/session-replay-issue-miner) | Vendor-neutral skill to mine session replays for recurring UX failures and convert them into backlog items. |
 | [`shift-handover-checklist-builder`](./skills/shift-handover-checklist-builder) | Vendor-neutral skill to build shift handover checklists from open work, risks, and SLA exposure. |
@@ -199,6 +203,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`subscription-downgrade-risk-scorer`](./skills/subscription-downgrade-risk-scorer) | Vendor-neutral skill to score downgrade risk from product usage and support interaction signals. |
 | [`support-deflection-opportunity-finder`](./skills/support-deflection-opportunity-finder) | Vendor-neutral skill to find support deflection opportunities from repetitive ticket patterns. |
 | [`support-escalation-router`](./skills/support-escalation-router) | Vendor-neutral skill to route support escalations based on severity, customer tier, and SLA exposure. |
+| [`support-forecast-analyzer`](./skills/support-forecast-analyzer) | Vendor-neutral skill to support forecast analyzer and produce prioritized, actionable findings. |
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
