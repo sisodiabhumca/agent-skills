@@ -53,6 +53,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`canary-release-decision-helper`](./skills/canary-release-decision-helper) | Vendor-neutral skill to recommend canary continue/abort decisions from guardrail metrics. |
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
 | [`capacity-reservation-optimizer`](./skills/capacity-reservation-optimizer) | Vendor-neutral skill to optimize capacity reservations from forecast demand and utilization history. |
+| [`catalog-forecast-analyzer`](./skills/catalog-forecast-analyzer) | Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings. |
 | [`catalog-webhook-analyzer`](./skills/catalog-webhook-analyzer) | Vendor-neutral skill to catalog webhook analyzer and produce prioritized, actionable findings. |
 | [`change-request-risk-scorer`](./skills/change-request-risk-scorer) | Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact. |
 | [`churn-winback-offer-ranker`](./skills/churn-winback-offer-ranker) | Vendor-neutral skill to rank winback offers by expected save rate and margin impact. |
@@ -114,6 +115,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
+| [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
 | [`identity-provisioning-auditor`](./skills/identity-provisioning-auditor) | Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations. |
 | [`identity-webhook-analyzer`](./skills/identity-webhook-analyzer) | Vendor-neutral skill to identity webhook analyzer and produce prioritized, actionable findings. |
 | [`incident-action-item-tracker`](./skills/incident-action-item-tracker) | Vendor-neutral skill to track post-incident action items and flag overdue remediations. |
@@ -144,6 +146,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`meeting-decision-log-extractor`](./skills/meeting-decision-log-extractor) | Vendor-neutral skill to extract decisions and action items from a meeting transcript and produce a decision log plus an action register. |
 | [`meeting-notes-distiller`](./skills/meeting-notes-distiller) | Use when given a meeting transcript or raw notes to produce a structured summary — decisions made, action items (with owner + due date), risks/blockers, open questions, and a follow-up email draft. |
 | [`mobile-crash-triage-assistant`](./skills/mobile-crash-triage-assistant) | Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact. |
+| [`mobile-dependency-analyzer`](./skills/mobile-dependency-analyzer) | Vendor-neutral skill to mobile dependency analyzer and produce prioritized, actionable findings. |
 | [`mobile-webhook-analyzer`](./skills/mobile-webhook-analyzer) | Vendor-neutral skill to mobile webhook analyzer and produce prioritized, actionable findings. |
 | [`model-eval-suite-coverage-checker`](./skills/model-eval-suite-coverage-checker) | Vendor-neutral skill to check LLM eval suite coverage for critical prompts and failure modes. |
 | [`multi-tenant-noise-isolator`](./skills/multi-tenant-noise-isolator) | Vendor-neutral skill to isolate noisy-neighbor incidents across tenants using usage and latency signals. |
@@ -157,10 +160,12 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ops-webhook-analyzer`](./skills/ops-webhook-analyzer) | Vendor-neutral skill to ops webhook analyzer and produce prioritized, actionable findings. |
 | [`pager-noise-reduction-advisor`](./skills/pager-noise-reduction-advisor) | Vendor-neutral skill to identify noisy alerts and propose paging policy improvements. |
 | [`partner-api-health-monitor`](./skills/partner-api-health-monitor) | Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks. |
+| [`partner-dependency-analyzer`](./skills/partner-dependency-analyzer) | Vendor-neutral skill to partner dependency analyzer and produce prioritized, actionable findings. |
 | [`partner-webhook-analyzer`](./skills/partner-webhook-analyzer) | Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
 | [`permission-creep-detector`](./skills/permission-creep-detector) | Vendor-neutral skill to detect permission creep from unused grants and role expansion patterns. |
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
+| [`pipeline-forecast-analyzer`](./skills/pipeline-forecast-analyzer) | Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings. |
 | [`pipeline-stage-velocity-analyzer`](./skills/pipeline-stage-velocity-analyzer) | Vendor-neutral skill to analyze sales pipeline stage velocity and identify bottleneck stages. |
 | [`pipeline-webhook-analyzer`](./skills/pipeline-webhook-analyzer) | Vendor-neutral skill to pipeline webhook analyzer and produce prioritized, actionable findings. |
 | [`policy-as-code-linter`](./skills/policy-as-code-linter) | Vendor-neutral skill for linting simple policy-as-code rules (YAML) for style, safety, and completeness. |

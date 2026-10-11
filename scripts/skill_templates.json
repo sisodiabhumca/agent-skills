@@ -713,5 +713,105 @@
     "slug": "support-forecast-analyzer",
     "title": "Support Forecast Analyzer",
     "description": "Vendor-neutral skill to support forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-dependency-analyzer",
+    "title": "Partner Dependency Analyzer",
+    "description": "Vendor-neutral skill to partner dependency analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-dependency-analyzer",
+    "title": "Mobile Dependency Analyzer",
+    "description": "Vendor-neutral skill to mobile dependency analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-dependency-analyzer",
+    "title": "Cloud Dependency Analyzer",
+    "description": "Vendor-neutral skill to cloud dependency analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-webhook-analyzer",
+    "title": "Api Webhook Analyzer",
+    "description": "Vendor-neutral skill to api webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-webhook-analyzer",
+    "title": "Billing Webhook Analyzer",
+    "description": "Vendor-neutral skill to billing webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-webhook-analyzer",
+    "title": "Support Webhook Analyzer",
+    "description": "Vendor-neutral skill to support webhook analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-forecast-analyzer",
+    "title": "Security Forecast Analyzer",
+    "description": "Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-forecast-analyzer",
+    "title": "Release Forecast Analyzer",
+    "description": "Vendor-neutral skill to release forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-forecast-analyzer",
+    "title": "Analytics Forecast Analyzer",
+    "description": "Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-forecast-analyzer",
+    "title": "Ops Forecast Analyzer",
+    "description": "Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-forecast-analyzer",
+    "title": "Growth Forecast Analyzer",
+    "description": "Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-forecast-analyzer",
+    "title": "Data Forecast Analyzer",
+    "description": "Vendor-neutral skill to data forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-forecast-analyzer",
+    "title": "Infra Forecast Analyzer",
+    "description": "Vendor-neutral skill to infra forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-forecast-analyzer",
+    "title": "Product Forecast Analyzer",
+    "description": "Vendor-neutral skill to product forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-forecast-analyzer",
+    "title": "Sales Forecast Analyzer",
+    "description": "Vendor-neutral skill to sales forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-forecast-analyzer",
+    "title": "Finance Forecast Analyzer",
+    "description": "Vendor-neutral skill to finance forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-forecast-analyzer",
+    "title": "Privacy Forecast Analyzer",
+    "description": "Vendor-neutral skill to privacy forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-forecast-analyzer",
+    "title": "Identity Forecast Analyzer",
+    "description": "Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-forecast-analyzer",
+    "title": "Catalog Forecast Analyzer",
+    "description": "Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-forecast-analyzer",
+    "title": "Pipeline Forecast Analyzer",
+    "description": "Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings."
   }
 ]
