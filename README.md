@@ -79,6 +79,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-catalog-coverage-auditor`](./skills/data-catalog-coverage-auditor) | Vendor-neutral skill to audit data catalog coverage for critical tables and ownership gaps. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
+| [`data-forecast-analyzer`](./skills/data-forecast-analyzer) | Vendor-neutral skill to data forecast analyzer and produce prioritized, actionable findings. |
 | [`data-lineage-breakage-detector`](./skills/data-lineage-breakage-detector) | Vendor-neutral skill to detect lineage breakages after schema or pipeline changes. |
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
 | [`data-quality-sla-monitor`](./skills/data-quality-sla-monitor) | Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams. |
@@ -113,6 +114,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`fraud-signal-prioritizer`](./skills/fraud-signal-prioritizer) | Vendor-neutral skill to prioritize fraud signals by confidence, exposure, and investigation cost. |
 | [`governance-policy-gap-finder`](./skills/governance-policy-gap-finder) | Vendor-neutral skill to find governance policy gaps against current system ownership and controls. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
+| [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
 | [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
@@ -127,6 +129,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`incident-timeline-builder`](./skills/incident-timeline-builder) | Vendor-neutral skill to turn semi-structured incident logs into a normalized chronological timeline with clusters and gaps. |
 | [`incident-timeline-normalizer`](./skills/incident-timeline-normalizer) | Vendor-neutral skill to normalize incident event logs into an ordered timeline and compute phase durations. |
 | [`infra-cost-tag-policy-enforcer`](./skills/infra-cost-tag-policy-enforcer) | Vendor-neutral skill to enforce cost-tag policies and list noncompliant resources by owner. |
+| [`infra-forecast-analyzer`](./skills/infra-forecast-analyzer) | Vendor-neutral skill to infra forecast analyzer and produce prioritized, actionable findings. |
 | [`infra-webhook-analyzer`](./skills/infra-webhook-analyzer) | Vendor-neutral skill to infra webhook analyzer and produce prioritized, actionable findings. |
 | [`integration-test-gap-analyzer`](./skills/integration-test-gap-analyzer) | Vendor-neutral skill to find integration paths lacking automated tests after recent service changes. |
 | [`inventory-staleness-auditor`](./skills/inventory-staleness-auditor) | Vendor-neutral skill to detect stale service inventory records and recommend ownership updates. |
@@ -177,6 +180,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`procurement-rfp-comparator`](./skills/procurement-rfp-comparator) | Vendor-neutral skill to compare vendor RFP responses against weighted evaluation criteria. |
 | [`product-analytics-investigator`](./skills/product-analytics-investigator) | Use when a PM, data PM, or analyst needs to investigate product metrics in Amplitude or Mixpanel — diagnosing drops in activation, retention, or funnel conversion, or attributing changes to releases, segments, or experiments. |
 | [`product-feedback-router`](./skills/product-feedback-router) | Vendor-neutral skill to route product feedback to owners with priority and duplicate detection. |
+| [`product-forecast-analyzer`](./skills/product-forecast-analyzer) | Vendor-neutral skill to product forecast analyzer and produce prioritized, actionable findings. |
 | [`product-ops-ticket-clusterer`](./skills/product-ops-ticket-clusterer) | Vendor-neutral skill to cluster product ops tickets into themes with owner recommendations. |
 | [`product-trial-conversion-explainer`](./skills/product-trial-conversion-explainer) | Vendor-neutral skill to explain trial conversion changes across cohorts, channels, and onboarding paths. |
 | [`product-webhook-analyzer`](./skills/product-webhook-analyzer) | Vendor-neutral skill to product webhook analyzer and produce prioritized, actionable findings. |
@@ -198,6 +202,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`runbook-freshness-auditor`](./skills/runbook-freshness-auditor) | Vendor-neutral skill to identify stale runbooks and recommend updates based on recent incidents and ownership gaps. |
 | [`saas-spend-optimizer`](./skills/saas-spend-optimizer) | Use to analyze SaaS billing/usage exports (Zuora, Stripe, vendor invoices) and surface optimization opportunities — unused seats, duplicate tools, over-provisioned tiers, autorenewals coming up, and ARR-at-risk. |
 | [`sales-call-objection-clusterer`](./skills/sales-call-objection-clusterer) | Vendor-neutral skill to cluster sales call objections and extract response patterns for enablement. |
+| [`sales-forecast-analyzer`](./skills/sales-forecast-analyzer) | Vendor-neutral skill to sales forecast analyzer and produce prioritized, actionable findings. |
 | [`sales-forecast-bias-checker`](./skills/sales-forecast-bias-checker) | Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage. |
 | [`sales-webhook-analyzer`](./skills/sales-webhook-analyzer) | Vendor-neutral skill to sales webhook analyzer and produce prioritized, actionable findings. |
 | [`sbom-license-risk-checker`](./skills/sbom-license-risk-checker) | Vendor-neutral skill to check a CycloneDX SBOM for license policy compliance and emit a risk report. |
