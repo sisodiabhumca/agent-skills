@@ -40,12 +40,14 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`api-forecast-analyzer`](./skills/api-forecast-analyzer) | Vendor-neutral skill to api forecast analyzer and produce prioritized, actionable findings. |
 | [`api-latency-budget-tracker`](./skills/api-latency-budget-tracker) | Vendor-neutral skill to track API latency budgets and surface endpoints burning remaining budget. |
 | [`api-rate-limit-impact-analyzer`](./skills/api-rate-limit-impact-analyzer) | Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact. |
+| [`api-webhook-analyzer`](./skills/api-webhook-analyzer) | Vendor-neutral skill to api webhook analyzer and produce prioritized, actionable findings. |
 | [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
 | [`audience-cohort-overlap-checker`](./skills/audience-cohort-overlap-checker) | Vendor-neutral skill to detect overlapping marketing cohorts and estimate double-count risk. |
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
 | [`backup-restore-readiness-auditor`](./skills/backup-restore-readiness-auditor) | Vendor-neutral skill to audit backup coverage and restore-test freshness for critical systems. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
 | [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
+| [`billing-webhook-analyzer`](./skills/billing-webhook-analyzer) | Vendor-neutral skill to billing webhook analyzer and produce prioritized, actionable findings. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
 | [`brand-mention-sentiment-tracker`](./skills/brand-mention-sentiment-tracker) | Vendor-neutral skill to summarize brand mention sentiment and escalate material reputation risks. |
 | [`budget-variance-explainer`](./skills/budget-variance-explainer) | Vendor-neutral skill to explain budget variance by owner, category, and timing drivers. |
@@ -58,6 +60,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`change-request-risk-scorer`](./skills/change-request-risk-scorer) | Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact. |
 | [`churn-winback-offer-ranker`](./skills/churn-winback-offer-ranker) | Vendor-neutral skill to rank winback offers by expected save rate and margin impact. |
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
+| [`cloud-dependency-analyzer`](./skills/cloud-dependency-analyzer) | Vendor-neutral skill to cloud dependency analyzer and produce prioritized, actionable findings. |
 | [`cloud-webhook-analyzer`](./skills/cloud-webhook-analyzer) | Vendor-neutral skill to cloud webhook analyzer and produce prioritized, actionable findings. |
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
 | [`compliance-evidence-collector`](./skills/compliance-evidence-collector) | Vendor-neutral skill to map controls to evidence artifacts and flag audit readiness gaps. |
@@ -175,6 +178,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pr-review-summarizer`](./skills/pr-review-summarizer) | Use when reviewing a code pull request or merge request. |
 | [`pricing-experiment-readout-builder`](./skills/pricing-experiment-readout-builder) | Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations. |
 | [`privacy-dsar-triage-assistant`](./skills/privacy-dsar-triage-assistant) | Vendor-neutral skill to triage data subject requests and map required systems and timelines. |
+| [`privacy-forecast-analyzer`](./skills/privacy-forecast-analyzer) | Vendor-neutral skill to privacy forecast analyzer and produce prioritized, actionable findings. |
 | [`privacy-policy-diff-summarizer`](./skills/privacy-policy-diff-summarizer) | Diff two privacy policy texts and produce a vendor-neutral summary of materially changed sections and risk flags. |
 | [`privacy-webhook-analyzer`](./skills/privacy-webhook-analyzer) | Vendor-neutral skill to privacy webhook analyzer and produce prioritized, actionable findings. |
 | [`procurement-rfp-comparator`](./skills/procurement-rfp-comparator) | Vendor-neutral skill to compare vendor RFP responses against weighted evaluation criteria. |
@@ -227,6 +231,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
+| [`support-webhook-analyzer`](./skills/support-webhook-analyzer) | Vendor-neutral skill to support webhook analyzer and produce prioritized, actionable findings. |
 | [`synthetic-monitor-gap-finder`](./skills/synthetic-monitor-gap-finder) | Vendor-neutral skill to find critical user journeys missing synthetic monitoring coverage. |
 | [`taxonomy-consistency-linter`](./skills/taxonomy-consistency-linter) | Vendor-neutral skill to lint product and analytics taxonomies for naming and hierarchy inconsistencies. |
 | [`tenant-isolation-test-planner`](./skills/tenant-isolation-test-planner) | Vendor-neutral skill to plan tenant isolation tests from shared-resource and permission boundaries. |
