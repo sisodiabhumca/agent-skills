@@ -813,5 +813,105 @@
     "slug": "pipeline-forecast-analyzer",
     "title": "Pipeline Forecast Analyzer",
     "description": "Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-forecast-analyzer",
+    "title": "Partner Forecast Analyzer",
+    "description": "Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-forecast-analyzer",
+    "title": "Mobile Forecast Analyzer",
+    "description": "Vendor-neutral skill to mobile forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-forecast-analyzer",
+    "title": "Cloud Forecast Analyzer",
+    "description": "Vendor-neutral skill to cloud forecast analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-budget-analyzer",
+    "title": "Api Budget Analyzer",
+    "description": "Vendor-neutral skill to api budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-budget-analyzer",
+    "title": "Billing Budget Analyzer",
+    "description": "Vendor-neutral skill to billing budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-budget-analyzer",
+    "title": "Support Budget Analyzer",
+    "description": "Vendor-neutral skill to support budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-budget-analyzer",
+    "title": "Security Budget Analyzer",
+    "description": "Vendor-neutral skill to security budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-budget-analyzer",
+    "title": "Release Budget Analyzer",
+    "description": "Vendor-neutral skill to release budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-budget-analyzer",
+    "title": "Analytics Budget Analyzer",
+    "description": "Vendor-neutral skill to analytics budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-budget-analyzer",
+    "title": "Ops Budget Analyzer",
+    "description": "Vendor-neutral skill to ops budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-budget-analyzer",
+    "title": "Growth Budget Analyzer",
+    "description": "Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-budget-analyzer",
+    "title": "Data Budget Analyzer",
+    "description": "Vendor-neutral skill to data budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-budget-analyzer",
+    "title": "Infra Budget Analyzer",
+    "description": "Vendor-neutral skill to infra budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-budget-analyzer",
+    "title": "Product Budget Analyzer",
+    "description": "Vendor-neutral skill to product budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-budget-analyzer",
+    "title": "Sales Budget Analyzer",
+    "description": "Vendor-neutral skill to sales budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-budget-analyzer",
+    "title": "Finance Budget Analyzer",
+    "description": "Vendor-neutral skill to finance budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-budget-analyzer",
+    "title": "Privacy Budget Analyzer",
+    "description": "Vendor-neutral skill to privacy budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-budget-analyzer",
+    "title": "Identity Budget Analyzer",
+    "description": "Vendor-neutral skill to identity budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-budget-analyzer",
+    "title": "Catalog Budget Analyzer",
+    "description": "Vendor-neutral skill to catalog budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-budget-analyzer",
+    "title": "Pipeline Budget Analyzer",
+    "description": "Vendor-neutral skill to pipeline budget analyzer and produce prioritized, actionable findings."
   }
 ]
