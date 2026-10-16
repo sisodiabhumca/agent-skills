@@ -58,6 +58,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`canary-release-decision-helper`](./skills/canary-release-decision-helper) | Vendor-neutral skill to recommend canary continue/abort decisions from guardrail metrics. |
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
 | [`capacity-reservation-optimizer`](./skills/capacity-reservation-optimizer) | Vendor-neutral skill to optimize capacity reservations from forecast demand and utilization history. |
+| [`catalog-budget-analyzer`](./skills/catalog-budget-analyzer) | Vendor-neutral skill to catalog budget analyzer and produce prioritized, actionable findings. |
 | [`catalog-forecast-analyzer`](./skills/catalog-forecast-analyzer) | Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings. |
 | [`catalog-webhook-analyzer`](./skills/catalog-webhook-analyzer) | Vendor-neutral skill to catalog webhook analyzer and produce prioritized, actionable findings. |
 | [`change-request-risk-scorer`](./skills/change-request-risk-scorer) | Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact. |
@@ -125,6 +126,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
+| [`identity-budget-analyzer`](./skills/identity-budget-analyzer) | Vendor-neutral skill to identity budget analyzer and produce prioritized, actionable findings. |
 | [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
 | [`identity-provisioning-auditor`](./skills/identity-provisioning-auditor) | Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations. |
 | [`identity-webhook-analyzer`](./skills/identity-webhook-analyzer) | Vendor-neutral skill to identity webhook analyzer and produce prioritized, actionable findings. |
@@ -174,9 +176,11 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pager-noise-reduction-advisor`](./skills/pager-noise-reduction-advisor) | Vendor-neutral skill to identify noisy alerts and propose paging policy improvements. |
 | [`partner-api-health-monitor`](./skills/partner-api-health-monitor) | Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks. |
 | [`partner-dependency-analyzer`](./skills/partner-dependency-analyzer) | Vendor-neutral skill to partner dependency analyzer and produce prioritized, actionable findings. |
+| [`partner-forecast-analyzer`](./skills/partner-forecast-analyzer) | Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings. |
 | [`partner-webhook-analyzer`](./skills/partner-webhook-analyzer) | Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
 | [`permission-creep-detector`](./skills/permission-creep-detector) | Vendor-neutral skill to detect permission creep from unused grants and role expansion patterns. |
+| [`pipeline-budget-analyzer`](./skills/pipeline-budget-analyzer) | Vendor-neutral skill to pipeline budget analyzer and produce prioritized, actionable findings. |
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
 | [`pipeline-forecast-analyzer`](./skills/pipeline-forecast-analyzer) | Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings. |
 | [`pipeline-stage-velocity-analyzer`](./skills/pipeline-stage-velocity-analyzer) | Vendor-neutral skill to analyze sales pipeline stage velocity and identify bottleneck stages. |
@@ -220,6 +224,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sbom-license-risk-checker`](./skills/sbom-license-risk-checker) | Vendor-neutral skill to check a CycloneDX SBOM for license policy compliance and emit a risk report. |
 | [`schema-migration-risk-checker`](./skills/schema-migration-risk-checker) | Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage. |
 | [`secrets-rotation-planner`](./skills/secrets-rotation-planner) | Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius. |
+| [`security-budget-analyzer`](./skills/security-budget-analyzer) | Vendor-neutral skill to security budget analyzer and produce prioritized, actionable findings. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
 | [`security-forecast-analyzer`](./skills/security-forecast-analyzer) | Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
