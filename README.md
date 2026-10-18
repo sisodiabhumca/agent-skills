@@ -31,6 +31,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ai-guardrail-coverage-auditor`](./skills/ai-guardrail-coverage-auditor) | Vendor-neutral skill to audit AI feature guardrail coverage for prompt injection and unsafe output paths. |
 | [`ai-prompt-regression-tracker`](./skills/ai-prompt-regression-tracker) | Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes. |
 | [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
+| [`analytics-budget-analyzer`](./skills/analytics-budget-analyzer) | Vendor-neutral skill to analytics budget analyzer and produce prioritized, actionable findings. |
 | [`analytics-forecast-analyzer`](./skills/analytics-forecast-analyzer) | Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings. |
 | [`analytics-webhook-analyzer`](./skills/analytics-webhook-analyzer) | Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings. |
 | [`api-budget-analyzer`](./skills/api-budget-analyzer) | Vendor-neutral skill to api budget analyzer and produce prioritized, actionable findings. |
@@ -117,6 +118,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`feature-flag-rollout-planner`](./skills/feature-flag-rollout-planner) | Vendor-neutral skill to generate a staged feature-flag rollout plan (phases, metrics, guardrails, rollback criteria) from feature context and risk inputs. |
 | [`feature-request-deduplicator`](./skills/feature-request-deduplicator) | Vendor-neutral skill to cluster duplicate feature requests and summarize merged customer demand. |
 | [`feature-usage-adoption-scorer`](./skills/feature-usage-adoption-scorer) | Vendor-neutral skill to score feature adoption depth across cohorts and recommend enablement actions. |
+| [`finance-budget-analyzer`](./skills/finance-budget-analyzer) | Vendor-neutral skill to finance budget analyzer and produce prioritized, actionable findings. |
 | [`finance-forecast-analyzer`](./skills/finance-forecast-analyzer) | Vendor-neutral skill to finance forecast analyzer and produce prioritized, actionable findings. |
 | [`finance-webhook-analyzer`](./skills/finance-webhook-analyzer) | Vendor-neutral skill to finance webhook analyzer and produce prioritized, actionable findings. |
 | [`finops-chargeback-reporter`](./skills/finops-chargeback-reporter) | Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes. |
@@ -173,6 +175,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`onboarding-dropoff-explainer`](./skills/onboarding-dropoff-explainer) | Vendor-neutral skill to analyze onboarding funnel dropoff and propose prioritized interventions. |
 | [`oncall-handoff-summarizer`](./skills/oncall-handoff-summarizer) | Vendor-neutral skill to summarize on-call handoffs with open incidents, risks, and follow-up tasks. |
 | [`oncall-runbook-executor`](./skills/oncall-runbook-executor) | Use during an incident or routine on-call task to execute a YAML-defined runbook step by step. |
+| [`ops-budget-analyzer`](./skills/ops-budget-analyzer) | Vendor-neutral skill to ops budget analyzer and produce prioritized, actionable findings. |
 | [`ops-forecast-analyzer`](./skills/ops-forecast-analyzer) | Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings. |
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |
 | [`ops-webhook-analyzer`](./skills/ops-webhook-analyzer) | Vendor-neutral skill to ops webhook analyzer and produce prioritized, actionable findings. |
@@ -191,6 +194,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`policy-as-code-linter`](./skills/policy-as-code-linter) | Vendor-neutral skill for linting simple policy-as-code rules (YAML) for style, safety, and completeness. |
 | [`pr-review-summarizer`](./skills/pr-review-summarizer) | Use when reviewing a code pull request or merge request. |
 | [`pricing-experiment-readout-builder`](./skills/pricing-experiment-readout-builder) | Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations. |
+| [`privacy-budget-analyzer`](./skills/privacy-budget-analyzer) | Vendor-neutral skill to privacy budget analyzer and produce prioritized, actionable findings. |
 | [`privacy-dsar-triage-assistant`](./skills/privacy-dsar-triage-assistant) | Vendor-neutral skill to triage data subject requests and map required systems and timelines. |
 | [`privacy-forecast-analyzer`](./skills/privacy-forecast-analyzer) | Vendor-neutral skill to privacy forecast analyzer and produce prioritized, actionable findings. |
 | [`privacy-policy-diff-summarizer`](./skills/privacy-policy-diff-summarizer) | Diff two privacy policy texts and produce a vendor-neutral summary of materially changed sections and risk flags. |
@@ -208,6 +212,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`queue-backlog-prioritizer`](./skills/queue-backlog-prioritizer) | Vendor-neutral skill to prioritize engineering backlog items using impact, urgency, and dependency cost. |
 | [`quota-forecast-builder`](./skills/quota-forecast-builder) | Vendor-neutral skill to forecast sales quota attainment from pipeline stage and historical conversion. |
 | [`regulatory-guardrail-checker`](./skills/regulatory-guardrail-checker) | Use to screen a feature spec or product change for compliance risks across GDPR, CCPA, HIPAA, PCI-DSS, SOC2, and accessibility (WCAG 2.2). |
+| [`release-budget-analyzer`](./skills/release-budget-analyzer) | Vendor-neutral skill to release budget analyzer and produce prioritized, actionable findings. |
 | [`release-forecast-analyzer`](./skills/release-forecast-analyzer) | Vendor-neutral skill to release forecast analyzer and produce prioritized, actionable findings. |
 | [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
 | [`release-notes-changelog-normalizer`](./skills/release-notes-changelog-normalizer) | Vendor-neutral skill to normalize raw release notes into Keep a Changelog-style entries with consistent headings. |
