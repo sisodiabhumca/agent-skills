@@ -33,6 +33,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
 | [`analytics-budget-analyzer`](./skills/analytics-budget-analyzer) | Vendor-neutral skill to analytics budget analyzer and produce prioritized, actionable findings. |
 | [`analytics-forecast-analyzer`](./skills/analytics-forecast-analyzer) | Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings. |
+| [`analytics-usage-analyzer`](./skills/analytics-usage-analyzer) | Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings. |
 | [`analytics-webhook-analyzer`](./skills/analytics-webhook-analyzer) | Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings. |
 | [`api-budget-analyzer`](./skills/api-budget-analyzer) | Vendor-neutral skill to api budget analyzer and produce prioritized, actionable findings. |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
@@ -178,6 +179,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ops-budget-analyzer`](./skills/ops-budget-analyzer) | Vendor-neutral skill to ops budget analyzer and produce prioritized, actionable findings. |
 | [`ops-forecast-analyzer`](./skills/ops-forecast-analyzer) | Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings. |
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |
+| [`ops-usage-analyzer`](./skills/ops-usage-analyzer) | Vendor-neutral skill to ops usage analyzer and produce prioritized, actionable findings. |
 | [`ops-webhook-analyzer`](./skills/ops-webhook-analyzer) | Vendor-neutral skill to ops webhook analyzer and produce prioritized, actionable findings. |
 | [`pager-noise-reduction-advisor`](./skills/pager-noise-reduction-advisor) | Vendor-neutral skill to identify noisy alerts and propose paging policy improvements. |
 | [`partner-api-health-monitor`](./skills/partner-api-health-monitor) | Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks. |
@@ -219,6 +221,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
 | [`release-risk-checklist-builder`](./skills/release-risk-checklist-builder) | Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints. |
 | [`release-train-risk-ranker`](./skills/release-train-risk-ranker) | Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity. |
+| [`release-usage-analyzer`](./skills/release-usage-analyzer) | Vendor-neutral skill to release usage analyzer and produce prioritized, actionable findings. |
 | [`release-webhook-analyzer`](./skills/release-webhook-analyzer) | Vendor-neutral skill to release webhook analyzer and produce prioritized, actionable findings. |
 | [`renewal-churn-playbook-builder`](./skills/renewal-churn-playbook-builder) | Vendor-neutral skill to build renewal save playbooks from account health and usage decline signals. |
 | [`revenue-leakage-detector`](./skills/revenue-leakage-detector) | Vendor-neutral skill to detect revenue leakage from billing mismatches and unused entitlements. |
@@ -238,6 +241,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
 | [`security-forecast-analyzer`](./skills/security-forecast-analyzer) | Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
+| [`security-usage-analyzer`](./skills/security-usage-analyzer) | Vendor-neutral skill to security usage analyzer and produce prioritized, actionable findings. |
 | [`security-webhook-analyzer`](./skills/security-webhook-analyzer) | Vendor-neutral skill to security webhook analyzer and produce prioritized, actionable findings. |
 | [`service-ownership-mapper`](./skills/service-ownership-mapper) | Vendor-neutral skill to map services to owners and flag orphaned or dual-owned components. |
 | [`session-replay-issue-miner`](./skills/session-replay-issue-miner) | Vendor-neutral skill to mine session replays for recurring UX failures and convert them into backlog items. |
@@ -256,6 +260,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
+| [`support-usage-analyzer`](./skills/support-usage-analyzer) | Vendor-neutral skill to support usage analyzer and produce prioritized, actionable findings. |
 | [`support-webhook-analyzer`](./skills/support-webhook-analyzer) | Vendor-neutral skill to support webhook analyzer and produce prioritized, actionable findings. |
 | [`synthetic-monitor-gap-finder`](./skills/synthetic-monitor-gap-finder) | Vendor-neutral skill to find critical user journeys missing synthetic monitoring coverage. |
 | [`taxonomy-consistency-linter`](./skills/taxonomy-consistency-linter) | Vendor-neutral skill to lint product and analytics taxonomies for naming and hierarchy inconsistencies. |

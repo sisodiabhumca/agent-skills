@@ -913,5 +913,105 @@
     "slug": "pipeline-budget-analyzer",
     "title": "Pipeline Budget Analyzer",
     "description": "Vendor-neutral skill to pipeline budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-budget-analyzer",
+    "title": "Partner Budget Analyzer",
+    "description": "Vendor-neutral skill to partner budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-budget-analyzer",
+    "title": "Mobile Budget Analyzer",
+    "description": "Vendor-neutral skill to mobile budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-budget-analyzer",
+    "title": "Cloud Budget Analyzer",
+    "description": "Vendor-neutral skill to cloud budget analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-usage-analyzer",
+    "title": "Api Usage Analyzer",
+    "description": "Vendor-neutral skill to api usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-usage-analyzer",
+    "title": "Billing Usage Analyzer",
+    "description": "Vendor-neutral skill to billing usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-usage-analyzer",
+    "title": "Support Usage Analyzer",
+    "description": "Vendor-neutral skill to support usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-usage-analyzer",
+    "title": "Security Usage Analyzer",
+    "description": "Vendor-neutral skill to security usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-usage-analyzer",
+    "title": "Release Usage Analyzer",
+    "description": "Vendor-neutral skill to release usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-usage-analyzer",
+    "title": "Analytics Usage Analyzer",
+    "description": "Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-usage-analyzer",
+    "title": "Ops Usage Analyzer",
+    "description": "Vendor-neutral skill to ops usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-usage-analyzer",
+    "title": "Growth Usage Analyzer",
+    "description": "Vendor-neutral skill to growth usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-usage-analyzer",
+    "title": "Data Usage Analyzer",
+    "description": "Vendor-neutral skill to data usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-usage-analyzer",
+    "title": "Infra Usage Analyzer",
+    "description": "Vendor-neutral skill to infra usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-usage-analyzer",
+    "title": "Product Usage Analyzer",
+    "description": "Vendor-neutral skill to product usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-usage-analyzer",
+    "title": "Sales Usage Analyzer",
+    "description": "Vendor-neutral skill to sales usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-usage-analyzer",
+    "title": "Finance Usage Analyzer",
+    "description": "Vendor-neutral skill to finance usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-usage-analyzer",
+    "title": "Privacy Usage Analyzer",
+    "description": "Vendor-neutral skill to privacy usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-usage-analyzer",
+    "title": "Identity Usage Analyzer",
+    "description": "Vendor-neutral skill to identity usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-usage-analyzer",
+    "title": "Catalog Usage Analyzer",
+    "description": "Vendor-neutral skill to catalog usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-usage-analyzer",
+    "title": "Pipeline Usage Analyzer",
+    "description": "Vendor-neutral skill to pipeline usage analyzer and produce prioritized, actionable findings."
   }
 ]
