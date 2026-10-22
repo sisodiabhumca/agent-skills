@@ -44,6 +44,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`api-forecast-analyzer`](./skills/api-forecast-analyzer) | Vendor-neutral skill to api forecast analyzer and produce prioritized, actionable findings. |
 | [`api-latency-budget-tracker`](./skills/api-latency-budget-tracker) | Vendor-neutral skill to track API latency budgets and surface endpoints burning remaining budget. |
 | [`api-rate-limit-impact-analyzer`](./skills/api-rate-limit-impact-analyzer) | Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact. |
+| [`api-usage-analyzer`](./skills/api-usage-analyzer) | Vendor-neutral skill to api usage analyzer and produce prioritized, actionable findings. |
 | [`api-webhook-analyzer`](./skills/api-webhook-analyzer) | Vendor-neutral skill to api webhook analyzer and produce prioritized, actionable findings. |
 | [`architecture-map-builder`](./skills/architecture-map-builder) | Use to build a service / component map from a GitHub or GitLab monorepo or set of repos. |
 | [`audience-cohort-overlap-checker`](./skills/audience-cohort-overlap-checker) | Vendor-neutral skill to detect overlapping marketing cohorts and estimate double-count risk. |
@@ -52,6 +53,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`billing-budget-analyzer`](./skills/billing-budget-analyzer) | Vendor-neutral skill to billing budget analyzer and produce prioritized, actionable findings. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
 | [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
+| [`billing-usage-analyzer`](./skills/billing-usage-analyzer) | Vendor-neutral skill to billing usage analyzer and produce prioritized, actionable findings. |
 | [`billing-webhook-analyzer`](./skills/billing-webhook-analyzer) | Vendor-neutral skill to billing webhook analyzer and produce prioritized, actionable findings. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
 | [`brand-mention-sentiment-tracker`](./skills/brand-mention-sentiment-tracker) | Vendor-neutral skill to summarize brand mention sentiment and escalate material reputation risks. |
@@ -98,6 +100,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-quality-sla-monitor`](./skills/data-quality-sla-monitor) | Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams. |
 | [`data-retention-enforcement-planner`](./skills/data-retention-enforcement-planner) | Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards. |
 | [`data-retention-policy-checker`](./skills/data-retention-policy-checker) | Vendor-neutral skill to check a data retention schedule for completeness and risk (coverage, deletion handling, legal holds) and produce a structured findings report. |
+| [`data-usage-analyzer`](./skills/data-usage-analyzer) | Vendor-neutral skill to data usage analyzer and produce prioritized, actionable findings. |
 | [`data-webhook-analyzer`](./skills/data-webhook-analyzer) | Vendor-neutral skill to data webhook analyzer and produce prioritized, actionable findings. |
 | [`dead-letter-queue-triager`](./skills/dead-letter-queue-triager) | Vendor-neutral skill to triage dead-letter queue messages by failure pattern and replay safety. |
 | [`dependency-upgrade-risk-ranker`](./skills/dependency-upgrade-risk-ranker) | Vendor-neutral skill to rank dependency upgrades by breakage likelihood and security urgency. |
@@ -132,11 +135,13 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-budget-analyzer`](./skills/growth-budget-analyzer) | Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
+| [`growth-usage-analyzer`](./skills/growth-usage-analyzer) | Vendor-neutral skill to growth usage analyzer and produce prioritized, actionable findings. |
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
 | [`identity-budget-analyzer`](./skills/identity-budget-analyzer) | Vendor-neutral skill to identity budget analyzer and produce prioritized, actionable findings. |
 | [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
 | [`identity-provisioning-auditor`](./skills/identity-provisioning-auditor) | Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations. |
+| [`identity-usage-analyzer`](./skills/identity-usage-analyzer) | Vendor-neutral skill to identity usage analyzer and produce prioritized, actionable findings. |
 | [`identity-webhook-analyzer`](./skills/identity-webhook-analyzer) | Vendor-neutral skill to identity webhook analyzer and produce prioritized, actionable findings. |
 | [`incident-action-item-tracker`](./skills/incident-action-item-tracker) | Vendor-neutral skill to track post-incident action items and flag overdue remediations. |
 | [`incident-comms-clarity-linter`](./skills/incident-comms-clarity-linter) | Vendor-neutral skill to lint incident communications for clarity, completeness, and stakeholder alignment. |
