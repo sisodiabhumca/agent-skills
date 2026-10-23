@@ -1013,5 +1013,105 @@
     "slug": "pipeline-usage-analyzer",
     "title": "Pipeline Usage Analyzer",
     "description": "Vendor-neutral skill to pipeline usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-usage-analyzer",
+    "title": "Partner Usage Analyzer",
+    "description": "Vendor-neutral skill to partner usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-usage-analyzer",
+    "title": "Mobile Usage Analyzer",
+    "description": "Vendor-neutral skill to mobile usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-usage-analyzer",
+    "title": "Cloud Usage Analyzer",
+    "description": "Vendor-neutral skill to cloud usage analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-migration-analyzer",
+    "title": "Api Migration Analyzer",
+    "description": "Vendor-neutral skill to api migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-migration-analyzer",
+    "title": "Billing Migration Analyzer",
+    "description": "Vendor-neutral skill to billing migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-migration-analyzer",
+    "title": "Support Migration Analyzer",
+    "description": "Vendor-neutral skill to support migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-migration-analyzer",
+    "title": "Security Migration Analyzer",
+    "description": "Vendor-neutral skill to security migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-migration-analyzer",
+    "title": "Release Migration Analyzer",
+    "description": "Vendor-neutral skill to release migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-migration-analyzer",
+    "title": "Analytics Migration Analyzer",
+    "description": "Vendor-neutral skill to analytics migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-migration-analyzer",
+    "title": "Ops Migration Analyzer",
+    "description": "Vendor-neutral skill to ops migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-migration-analyzer",
+    "title": "Growth Migration Analyzer",
+    "description": "Vendor-neutral skill to growth migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-migration-analyzer",
+    "title": "Data Migration Analyzer",
+    "description": "Vendor-neutral skill to data migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-migration-analyzer",
+    "title": "Infra Migration Analyzer",
+    "description": "Vendor-neutral skill to infra migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-migration-analyzer",
+    "title": "Product Migration Analyzer",
+    "description": "Vendor-neutral skill to product migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-migration-analyzer",
+    "title": "Sales Migration Analyzer",
+    "description": "Vendor-neutral skill to sales migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-migration-analyzer",
+    "title": "Finance Migration Analyzer",
+    "description": "Vendor-neutral skill to finance migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-migration-analyzer",
+    "title": "Privacy Migration Analyzer",
+    "description": "Vendor-neutral skill to privacy migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-migration-analyzer",
+    "title": "Identity Migration Analyzer",
+    "description": "Vendor-neutral skill to identity migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-migration-analyzer",
+    "title": "Catalog Migration Analyzer",
+    "description": "Vendor-neutral skill to catalog migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-migration-analyzer",
+    "title": "Pipeline Migration Analyzer",
+    "description": "Vendor-neutral skill to pipeline migration analyzer and produce prioritized, actionable findings."
   }
 ]
