@@ -33,6 +33,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
 | [`analytics-budget-analyzer`](./skills/analytics-budget-analyzer) | Vendor-neutral skill to analytics budget analyzer and produce prioritized, actionable findings. |
 | [`analytics-forecast-analyzer`](./skills/analytics-forecast-analyzer) | Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings. |
+| [`analytics-migration-analyzer`](./skills/analytics-migration-analyzer) | Vendor-neutral skill to analytics migration analyzer and produce prioritized, actionable findings. |
 | [`analytics-usage-analyzer`](./skills/analytics-usage-analyzer) | Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings. |
 | [`analytics-webhook-analyzer`](./skills/analytics-webhook-analyzer) | Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings. |
 | [`api-budget-analyzer`](./skills/api-budget-analyzer) | Vendor-neutral skill to api budget analyzer and produce prioritized, actionable findings. |
@@ -100,6 +101,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
 | [`data-forecast-analyzer`](./skills/data-forecast-analyzer) | Vendor-neutral skill to data forecast analyzer and produce prioritized, actionable findings. |
 | [`data-lineage-breakage-detector`](./skills/data-lineage-breakage-detector) | Vendor-neutral skill to detect lineage breakages after schema or pipeline changes. |
+| [`data-migration-analyzer`](./skills/data-migration-analyzer) | Vendor-neutral skill to data migration analyzer and produce prioritized, actionable findings. |
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
 | [`data-quality-sla-monitor`](./skills/data-quality-sla-monitor) | Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams. |
 | [`data-retention-enforcement-planner`](./skills/data-retention-enforcement-planner) | Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards. |
@@ -139,6 +141,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-budget-analyzer`](./skills/growth-budget-analyzer) | Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
+| [`growth-migration-analyzer`](./skills/growth-migration-analyzer) | Vendor-neutral skill to growth migration analyzer and produce prioritized, actionable findings. |
 | [`growth-usage-analyzer`](./skills/growth-usage-analyzer) | Vendor-neutral skill to growth usage analyzer and produce prioritized, actionable findings. |
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
@@ -159,6 +162,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`infra-budget-analyzer`](./skills/infra-budget-analyzer) | Vendor-neutral skill to infra budget analyzer and produce prioritized, actionable findings. |
 | [`infra-cost-tag-policy-enforcer`](./skills/infra-cost-tag-policy-enforcer) | Vendor-neutral skill to enforce cost-tag policies and list noncompliant resources by owner. |
 | [`infra-forecast-analyzer`](./skills/infra-forecast-analyzer) | Vendor-neutral skill to infra forecast analyzer and produce prioritized, actionable findings. |
+| [`infra-migration-analyzer`](./skills/infra-migration-analyzer) | Vendor-neutral skill to infra migration analyzer and produce prioritized, actionable findings. |
 | [`infra-usage-analyzer`](./skills/infra-usage-analyzer) | Vendor-neutral skill to infra usage analyzer and produce prioritized, actionable findings. |
 | [`infra-webhook-analyzer`](./skills/infra-webhook-analyzer) | Vendor-neutral skill to infra webhook analyzer and produce prioritized, actionable findings. |
 | [`integration-test-gap-analyzer`](./skills/integration-test-gap-analyzer) | Vendor-neutral skill to find integration paths lacking automated tests after recent service changes. |
@@ -194,6 +198,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`oncall-runbook-executor`](./skills/oncall-runbook-executor) | Use during an incident or routine on-call task to execute a YAML-defined runbook step by step. |
 | [`ops-budget-analyzer`](./skills/ops-budget-analyzer) | Vendor-neutral skill to ops budget analyzer and produce prioritized, actionable findings. |
 | [`ops-forecast-analyzer`](./skills/ops-forecast-analyzer) | Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings. |
+| [`ops-migration-analyzer`](./skills/ops-migration-analyzer) | Vendor-neutral skill to ops migration analyzer and produce prioritized, actionable findings. |
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |
 | [`ops-usage-analyzer`](./skills/ops-usage-analyzer) | Vendor-neutral skill to ops usage analyzer and produce prioritized, actionable findings. |
 | [`ops-webhook-analyzer`](./skills/ops-webhook-analyzer) | Vendor-neutral skill to ops webhook analyzer and produce prioritized, actionable findings. |
