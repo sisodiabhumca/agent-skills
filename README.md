@@ -132,6 +132,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`feature-usage-adoption-scorer`](./skills/feature-usage-adoption-scorer) | Vendor-neutral skill to score feature adoption depth across cohorts and recommend enablement actions. |
 | [`finance-budget-analyzer`](./skills/finance-budget-analyzer) | Vendor-neutral skill to finance budget analyzer and produce prioritized, actionable findings. |
 | [`finance-forecast-analyzer`](./skills/finance-forecast-analyzer) | Vendor-neutral skill to finance forecast analyzer and produce prioritized, actionable findings. |
+| [`finance-migration-analyzer`](./skills/finance-migration-analyzer) | Vendor-neutral skill to finance migration analyzer and produce prioritized, actionable findings. |
 | [`finance-usage-analyzer`](./skills/finance-usage-analyzer) | Vendor-neutral skill to finance usage analyzer and produce prioritized, actionable findings. |
 | [`finance-webhook-analyzer`](./skills/finance-webhook-analyzer) | Vendor-neutral skill to finance webhook analyzer and produce prioritized, actionable findings. |
 | [`finops-chargeback-reporter`](./skills/finops-chargeback-reporter) | Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes. |
@@ -233,6 +234,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`product-budget-analyzer`](./skills/product-budget-analyzer) | Vendor-neutral skill to product budget analyzer and produce prioritized, actionable findings. |
 | [`product-feedback-router`](./skills/product-feedback-router) | Vendor-neutral skill to route product feedback to owners with priority and duplicate detection. |
 | [`product-forecast-analyzer`](./skills/product-forecast-analyzer) | Vendor-neutral skill to product forecast analyzer and produce prioritized, actionable findings. |
+| [`product-migration-analyzer`](./skills/product-migration-analyzer) | Vendor-neutral skill to product migration analyzer and produce prioritized, actionable findings. |
 | [`product-ops-ticket-clusterer`](./skills/product-ops-ticket-clusterer) | Vendor-neutral skill to cluster product ops tickets into themes with owner recommendations. |
 | [`product-trial-conversion-explainer`](./skills/product-trial-conversion-explainer) | Vendor-neutral skill to explain trial conversion changes across cohorts, channels, and onboarding paths. |
 | [`product-usage-analyzer`](./skills/product-usage-analyzer) | Vendor-neutral skill to product usage analyzer and produce prioritized, actionable findings. |
@@ -244,6 +246,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`regulatory-guardrail-checker`](./skills/regulatory-guardrail-checker) | Use to screen a feature spec or product change for compliance risks across GDPR, CCPA, HIPAA, PCI-DSS, SOC2, and accessibility (WCAG 2.2). |
 | [`release-budget-analyzer`](./skills/release-budget-analyzer) | Vendor-neutral skill to release budget analyzer and produce prioritized, actionable findings. |
 | [`release-forecast-analyzer`](./skills/release-forecast-analyzer) | Vendor-neutral skill to release forecast analyzer and produce prioritized, actionable findings. |
+| [`release-migration-analyzer`](./skills/release-migration-analyzer) | Vendor-neutral skill to release migration analyzer and produce prioritized, actionable findings. |
 | [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
 | [`release-notes-changelog-normalizer`](./skills/release-notes-changelog-normalizer) | Vendor-neutral skill to normalize raw release notes into Keep a Changelog-style entries with consistent headings. |
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
@@ -261,6 +264,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sales-call-objection-clusterer`](./skills/sales-call-objection-clusterer) | Vendor-neutral skill to cluster sales call objections and extract response patterns for enablement. |
 | [`sales-forecast-analyzer`](./skills/sales-forecast-analyzer) | Vendor-neutral skill to sales forecast analyzer and produce prioritized, actionable findings. |
 | [`sales-forecast-bias-checker`](./skills/sales-forecast-bias-checker) | Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage. |
+| [`sales-migration-analyzer`](./skills/sales-migration-analyzer) | Vendor-neutral skill to sales migration analyzer and produce prioritized, actionable findings. |
 | [`sales-usage-analyzer`](./skills/sales-usage-analyzer) | Vendor-neutral skill to sales usage analyzer and produce prioritized, actionable findings. |
 | [`sales-webhook-analyzer`](./skills/sales-webhook-analyzer) | Vendor-neutral skill to sales webhook analyzer and produce prioritized, actionable findings. |
 | [`sbom-license-risk-checker`](./skills/sbom-license-risk-checker) | Vendor-neutral skill to check a CycloneDX SBOM for license policy compliance and emit a risk report. |
@@ -269,6 +273,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`security-budget-analyzer`](./skills/security-budget-analyzer) | Vendor-neutral skill to security budget analyzer and produce prioritized, actionable findings. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
 | [`security-forecast-analyzer`](./skills/security-forecast-analyzer) | Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings. |
+| [`security-migration-analyzer`](./skills/security-migration-analyzer) | Vendor-neutral skill to security migration analyzer and produce prioritized, actionable findings. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
 | [`security-usage-analyzer`](./skills/security-usage-analyzer) | Vendor-neutral skill to security usage analyzer and produce prioritized, actionable findings. |
 | [`security-webhook-analyzer`](./skills/security-webhook-analyzer) | Vendor-neutral skill to security webhook analyzer and produce prioritized, actionable findings. |
