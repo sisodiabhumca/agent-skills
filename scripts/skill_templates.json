@@ -1113,5 +1113,105 @@
     "slug": "pipeline-migration-analyzer",
     "title": "Pipeline Migration Analyzer",
     "description": "Vendor-neutral skill to pipeline migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-migration-analyzer",
+    "title": "Partner Migration Analyzer",
+    "description": "Vendor-neutral skill to partner migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-migration-analyzer",
+    "title": "Mobile Migration Analyzer",
+    "description": "Vendor-neutral skill to mobile migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-migration-analyzer",
+    "title": "Cloud Migration Analyzer",
+    "description": "Vendor-neutral skill to cloud migration analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-access-analyzer",
+    "title": "Api Access Analyzer",
+    "description": "Vendor-neutral skill to api access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-access-analyzer",
+    "title": "Billing Access Analyzer",
+    "description": "Vendor-neutral skill to billing access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-access-analyzer",
+    "title": "Support Access Analyzer",
+    "description": "Vendor-neutral skill to support access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-access-analyzer",
+    "title": "Security Access Analyzer",
+    "description": "Vendor-neutral skill to security access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-access-analyzer",
+    "title": "Release Access Analyzer",
+    "description": "Vendor-neutral skill to release access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-access-analyzer",
+    "title": "Analytics Access Analyzer",
+    "description": "Vendor-neutral skill to analytics access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-access-analyzer",
+    "title": "Ops Access Analyzer",
+    "description": "Vendor-neutral skill to ops access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-access-analyzer",
+    "title": "Growth Access Analyzer",
+    "description": "Vendor-neutral skill to growth access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-access-analyzer",
+    "title": "Data Access Analyzer",
+    "description": "Vendor-neutral skill to data access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-access-analyzer",
+    "title": "Infra Access Analyzer",
+    "description": "Vendor-neutral skill to infra access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-access-analyzer",
+    "title": "Product Access Analyzer",
+    "description": "Vendor-neutral skill to product access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-access-analyzer",
+    "title": "Sales Access Analyzer",
+    "description": "Vendor-neutral skill to sales access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-access-analyzer",
+    "title": "Finance Access Analyzer",
+    "description": "Vendor-neutral skill to finance access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-access-analyzer",
+    "title": "Privacy Access Analyzer",
+    "description": "Vendor-neutral skill to privacy access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-access-analyzer",
+    "title": "Identity Access Analyzer",
+    "description": "Vendor-neutral skill to identity access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-access-analyzer",
+    "title": "Catalog Access Analyzer",
+    "description": "Vendor-neutral skill to catalog access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-access-analyzer",
+    "title": "Pipeline Access Analyzer",
+    "description": "Vendor-neutral skill to pipeline access analyzer and produce prioritized, actionable findings."
   }
 ]
