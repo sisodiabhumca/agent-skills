@@ -37,6 +37,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`analytics-migration-analyzer`](./skills/analytics-migration-analyzer) | Vendor-neutral skill to analytics migration analyzer and produce prioritized, actionable findings. |
 | [`analytics-usage-analyzer`](./skills/analytics-usage-analyzer) | Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings. |
 | [`analytics-webhook-analyzer`](./skills/analytics-webhook-analyzer) | Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings. |
+| [`api-access-analyzer`](./skills/api-access-analyzer) | Vendor-neutral skill to api access analyzer and produce prioritized, actionable findings. |
 | [`api-budget-analyzer`](./skills/api-budget-analyzer) | Vendor-neutral skill to api budget analyzer and produce prioritized, actionable findings. |
 | [`api-changelog-impact-analyzer`](./skills/api-changelog-impact-analyzer) | Vendor-neutral skill for analyzing an API changelog and identifying likely breaking changes and downstream impacts. |
 | [`api-changelog-summarizer`](./skills/api-changelog-summarizer) | Vendor-neutral skill to convert an API diff (before/after schemas or endpoints) into a structured changelog with breaking changes and migration guidance. |
@@ -78,6 +79,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
 | [`cloud-dependency-analyzer`](./skills/cloud-dependency-analyzer) | Vendor-neutral skill to cloud dependency analyzer and produce prioritized, actionable findings. |
 | [`cloud-forecast-analyzer`](./skills/cloud-forecast-analyzer) | Vendor-neutral skill to cloud forecast analyzer and produce prioritized, actionable findings. |
+| [`cloud-migration-analyzer`](./skills/cloud-migration-analyzer) | Vendor-neutral skill to cloud migration analyzer and produce prioritized, actionable findings. |
 | [`cloud-usage-analyzer`](./skills/cloud-usage-analyzer) | Vendor-neutral skill to cloud usage analyzer and produce prioritized, actionable findings. |
 | [`cloud-webhook-analyzer`](./skills/cloud-webhook-analyzer) | Vendor-neutral skill to cloud webhook analyzer and produce prioritized, actionable findings. |
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
@@ -189,6 +191,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`mobile-crash-triage-assistant`](./skills/mobile-crash-triage-assistant) | Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact. |
 | [`mobile-dependency-analyzer`](./skills/mobile-dependency-analyzer) | Vendor-neutral skill to mobile dependency analyzer and produce prioritized, actionable findings. |
 | [`mobile-forecast-analyzer`](./skills/mobile-forecast-analyzer) | Vendor-neutral skill to mobile forecast analyzer and produce prioritized, actionable findings. |
+| [`mobile-migration-analyzer`](./skills/mobile-migration-analyzer) | Vendor-neutral skill to mobile migration analyzer and produce prioritized, actionable findings. |
 | [`mobile-usage-analyzer`](./skills/mobile-usage-analyzer) | Vendor-neutral skill to mobile usage analyzer and produce prioritized, actionable findings. |
 | [`mobile-webhook-analyzer`](./skills/mobile-webhook-analyzer) | Vendor-neutral skill to mobile webhook analyzer and produce prioritized, actionable findings. |
 | [`model-eval-suite-coverage-checker`](./skills/model-eval-suite-coverage-checker) | Vendor-neutral skill to check LLM eval suite coverage for critical prompts and failure modes. |
@@ -199,6 +202,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`onboarding-dropoff-explainer`](./skills/onboarding-dropoff-explainer) | Vendor-neutral skill to analyze onboarding funnel dropoff and propose prioritized interventions. |
 | [`oncall-handoff-summarizer`](./skills/oncall-handoff-summarizer) | Vendor-neutral skill to summarize on-call handoffs with open incidents, risks, and follow-up tasks. |
 | [`oncall-runbook-executor`](./skills/oncall-runbook-executor) | Use during an incident or routine on-call task to execute a YAML-defined runbook step by step. |
+| [`ops-access-analyzer`](./skills/ops-access-analyzer) | Vendor-neutral skill to ops access analyzer and produce prioritized, actionable findings. |
 | [`ops-budget-analyzer`](./skills/ops-budget-analyzer) | Vendor-neutral skill to ops budget analyzer and produce prioritized, actionable findings. |
 | [`ops-forecast-analyzer`](./skills/ops-forecast-analyzer) | Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings. |
 | [`ops-migration-analyzer`](./skills/ops-migration-analyzer) | Vendor-neutral skill to ops migration analyzer and produce prioritized, actionable findings. |
@@ -210,6 +214,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`partner-budget-analyzer`](./skills/partner-budget-analyzer) | Vendor-neutral skill to partner budget analyzer and produce prioritized, actionable findings. |
 | [`partner-dependency-analyzer`](./skills/partner-dependency-analyzer) | Vendor-neutral skill to partner dependency analyzer and produce prioritized, actionable findings. |
 | [`partner-forecast-analyzer`](./skills/partner-forecast-analyzer) | Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings. |
+| [`partner-migration-analyzer`](./skills/partner-migration-analyzer) | Vendor-neutral skill to partner migration analyzer and produce prioritized, actionable findings. |
 | [`partner-usage-analyzer`](./skills/partner-usage-analyzer) | Vendor-neutral skill to partner usage analyzer and produce prioritized, actionable findings. |
 | [`partner-webhook-analyzer`](./skills/partner-webhook-analyzer) | Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
