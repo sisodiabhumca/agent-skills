@@ -68,6 +68,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`canary-release-decision-helper`](./skills/canary-release-decision-helper) | Vendor-neutral skill to recommend canary continue/abort decisions from guardrail metrics. |
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
 | [`capacity-reservation-optimizer`](./skills/capacity-reservation-optimizer) | Vendor-neutral skill to optimize capacity reservations from forecast demand and utilization history. |
+| [`catalog-access-analyzer`](./skills/catalog-access-analyzer) | Vendor-neutral skill to catalog access analyzer and produce prioritized, actionable findings. |
 | [`catalog-budget-analyzer`](./skills/catalog-budget-analyzer) | Vendor-neutral skill to catalog budget analyzer and produce prioritized, actionable findings. |
 | [`catalog-forecast-analyzer`](./skills/catalog-forecast-analyzer) | Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings. |
 | [`catalog-migration-analyzer`](./skills/catalog-migration-analyzer) | Vendor-neutral skill to catalog migration analyzer and produce prioritized, actionable findings. |
@@ -143,6 +144,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`forecast-assumption-drift-checker`](./skills/forecast-assumption-drift-checker) | Vendor-neutral skill to compare forecast assumptions over time and flag high-impact drift. |
 | [`fraud-signal-prioritizer`](./skills/fraud-signal-prioritizer) | Vendor-neutral skill to prioritize fraud signals by confidence, exposure, and investigation cost. |
 | [`governance-policy-gap-finder`](./skills/governance-policy-gap-finder) | Vendor-neutral skill to find governance policy gaps against current system ownership and controls. |
+| [`growth-access-analyzer`](./skills/growth-access-analyzer) | Vendor-neutral skill to growth access analyzer and produce prioritized, actionable findings. |
 | [`growth-budget-analyzer`](./skills/growth-budget-analyzer) | Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
@@ -150,6 +152,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-usage-analyzer`](./skills/growth-usage-analyzer) | Vendor-neutral skill to growth usage analyzer and produce prioritized, actionable findings. |
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
+| [`identity-access-analyzer`](./skills/identity-access-analyzer) | Vendor-neutral skill to identity access analyzer and produce prioritized, actionable findings. |
 | [`identity-budget-analyzer`](./skills/identity-budget-analyzer) | Vendor-neutral skill to identity budget analyzer and produce prioritized, actionable findings. |
 | [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
 | [`identity-migration-analyzer`](./skills/identity-migration-analyzer) | Vendor-neutral skill to identity migration analyzer and produce prioritized, actionable findings. |
@@ -219,6 +222,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`partner-webhook-analyzer`](./skills/partner-webhook-analyzer) | Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
 | [`permission-creep-detector`](./skills/permission-creep-detector) | Vendor-neutral skill to detect permission creep from unused grants and role expansion patterns. |
+| [`pipeline-access-analyzer`](./skills/pipeline-access-analyzer) | Vendor-neutral skill to pipeline access analyzer and produce prioritized, actionable findings. |
 | [`pipeline-budget-analyzer`](./skills/pipeline-budget-analyzer) | Vendor-neutral skill to pipeline budget analyzer and produce prioritized, actionable findings. |
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
 | [`pipeline-forecast-analyzer`](./skills/pipeline-forecast-analyzer) | Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings. |
@@ -229,6 +233,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`policy-as-code-linter`](./skills/policy-as-code-linter) | Vendor-neutral skill for linting simple policy-as-code rules (YAML) for style, safety, and completeness. |
 | [`pr-review-summarizer`](./skills/pr-review-summarizer) | Use when reviewing a code pull request or merge request. |
 | [`pricing-experiment-readout-builder`](./skills/pricing-experiment-readout-builder) | Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations. |
+| [`privacy-access-analyzer`](./skills/privacy-access-analyzer) | Vendor-neutral skill to privacy access analyzer and produce prioritized, actionable findings. |
 | [`privacy-budget-analyzer`](./skills/privacy-budget-analyzer) | Vendor-neutral skill to privacy budget analyzer and produce prioritized, actionable findings. |
 | [`privacy-dsar-triage-assistant`](./skills/privacy-dsar-triage-assistant) | Vendor-neutral skill to triage data subject requests and map required systems and timelines. |
 | [`privacy-forecast-analyzer`](./skills/privacy-forecast-analyzer) | Vendor-neutral skill to privacy forecast analyzer and produce prioritized, actionable findings. |
