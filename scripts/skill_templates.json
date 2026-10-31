@@ -1213,5 +1213,105 @@
     "slug": "pipeline-access-analyzer",
     "title": "Pipeline Access Analyzer",
     "description": "Vendor-neutral skill to pipeline access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-access-analyzer",
+    "title": "Partner Access Analyzer",
+    "description": "Vendor-neutral skill to partner access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-access-analyzer",
+    "title": "Mobile Access Analyzer",
+    "description": "Vendor-neutral skill to mobile access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-access-analyzer",
+    "title": "Cloud Access Analyzer",
+    "description": "Vendor-neutral skill to cloud access analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-consent-analyzer",
+    "title": "Api Consent Analyzer",
+    "description": "Vendor-neutral skill to api consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-consent-analyzer",
+    "title": "Billing Consent Analyzer",
+    "description": "Vendor-neutral skill to billing consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-consent-analyzer",
+    "title": "Support Consent Analyzer",
+    "description": "Vendor-neutral skill to support consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-consent-analyzer",
+    "title": "Security Consent Analyzer",
+    "description": "Vendor-neutral skill to security consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-consent-analyzer",
+    "title": "Release Consent Analyzer",
+    "description": "Vendor-neutral skill to release consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-consent-analyzer",
+    "title": "Analytics Consent Analyzer",
+    "description": "Vendor-neutral skill to analytics consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-consent-analyzer",
+    "title": "Ops Consent Analyzer",
+    "description": "Vendor-neutral skill to ops consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-consent-analyzer",
+    "title": "Growth Consent Analyzer",
+    "description": "Vendor-neutral skill to growth consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-consent-analyzer",
+    "title": "Data Consent Analyzer",
+    "description": "Vendor-neutral skill to data consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-consent-analyzer",
+    "title": "Infra Consent Analyzer",
+    "description": "Vendor-neutral skill to infra consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-consent-analyzer",
+    "title": "Product Consent Analyzer",
+    "description": "Vendor-neutral skill to product consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-consent-analyzer",
+    "title": "Sales Consent Analyzer",
+    "description": "Vendor-neutral skill to sales consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-consent-analyzer",
+    "title": "Finance Consent Analyzer",
+    "description": "Vendor-neutral skill to finance consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-consent-analyzer",
+    "title": "Privacy Consent Analyzer",
+    "description": "Vendor-neutral skill to privacy consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-consent-analyzer",
+    "title": "Identity Consent Analyzer",
+    "description": "Vendor-neutral skill to identity consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-consent-analyzer",
+    "title": "Catalog Consent Analyzer",
+    "description": "Vendor-neutral skill to catalog consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-consent-analyzer",
+    "title": "Pipeline Consent Analyzer",
+    "description": "Vendor-neutral skill to pipeline consent analyzer and produce prioritized, actionable findings."
   }
 ]
