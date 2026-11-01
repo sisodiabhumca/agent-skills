@@ -105,6 +105,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-access-analyzer`](./skills/data-access-analyzer) | Vendor-neutral skill to data access analyzer and produce prioritized, actionable findings. |
 | [`data-budget-analyzer`](./skills/data-budget-analyzer) | Vendor-neutral skill to data budget analyzer and produce prioritized, actionable findings. |
 | [`data-catalog-coverage-auditor`](./skills/data-catalog-coverage-auditor) | Vendor-neutral skill to audit data catalog coverage for critical tables and ownership gaps. |
+| [`data-consent-analyzer`](./skills/data-consent-analyzer) | Vendor-neutral skill to data consent analyzer and produce prioritized, actionable findings. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
 | [`data-forecast-analyzer`](./skills/data-forecast-analyzer) | Vendor-neutral skill to data forecast analyzer and produce prioritized, actionable findings. |
@@ -140,6 +141,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`feature-usage-adoption-scorer`](./skills/feature-usage-adoption-scorer) | Vendor-neutral skill to score feature adoption depth across cohorts and recommend enablement actions. |
 | [`finance-access-analyzer`](./skills/finance-access-analyzer) | Vendor-neutral skill to finance access analyzer and produce prioritized, actionable findings. |
 | [`finance-budget-analyzer`](./skills/finance-budget-analyzer) | Vendor-neutral skill to finance budget analyzer and produce prioritized, actionable findings. |
+| [`finance-consent-analyzer`](./skills/finance-consent-analyzer) | Vendor-neutral skill to finance consent analyzer and produce prioritized, actionable findings. |
 | [`finance-forecast-analyzer`](./skills/finance-forecast-analyzer) | Vendor-neutral skill to finance forecast analyzer and produce prioritized, actionable findings. |
 | [`finance-migration-analyzer`](./skills/finance-migration-analyzer) | Vendor-neutral skill to finance migration analyzer and produce prioritized, actionable findings. |
 | [`finance-usage-analyzer`](./skills/finance-usage-analyzer) | Vendor-neutral skill to finance usage analyzer and produce prioritized, actionable findings. |
@@ -173,6 +175,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`incident-timeline-normalizer`](./skills/incident-timeline-normalizer) | Vendor-neutral skill to normalize incident event logs into an ordered timeline and compute phase durations. |
 | [`infra-access-analyzer`](./skills/infra-access-analyzer) | Vendor-neutral skill to infra access analyzer and produce prioritized, actionable findings. |
 | [`infra-budget-analyzer`](./skills/infra-budget-analyzer) | Vendor-neutral skill to infra budget analyzer and produce prioritized, actionable findings. |
+| [`infra-consent-analyzer`](./skills/infra-consent-analyzer) | Vendor-neutral skill to infra consent analyzer and produce prioritized, actionable findings. |
 | [`infra-cost-tag-policy-enforcer`](./skills/infra-cost-tag-policy-enforcer) | Vendor-neutral skill to enforce cost-tag policies and list noncompliant resources by owner. |
 | [`infra-forecast-analyzer`](./skills/infra-forecast-analyzer) | Vendor-neutral skill to infra forecast analyzer and produce prioritized, actionable findings. |
 | [`infra-migration-analyzer`](./skills/infra-migration-analyzer) | Vendor-neutral skill to infra migration analyzer and produce prioritized, actionable findings. |
@@ -253,6 +256,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`product-access-analyzer`](./skills/product-access-analyzer) | Vendor-neutral skill to product access analyzer and produce prioritized, actionable findings. |
 | [`product-analytics-investigator`](./skills/product-analytics-investigator) | Use when a PM, data PM, or analyst needs to investigate product metrics in Amplitude or Mixpanel — diagnosing drops in activation, retention, or funnel conversion, or attributing changes to releases, segments, or experiments. |
 | [`product-budget-analyzer`](./skills/product-budget-analyzer) | Vendor-neutral skill to product budget analyzer and produce prioritized, actionable findings. |
+| [`product-consent-analyzer`](./skills/product-consent-analyzer) | Vendor-neutral skill to product consent analyzer and produce prioritized, actionable findings. |
 | [`product-feedback-router`](./skills/product-feedback-router) | Vendor-neutral skill to route product feedback to owners with priority and duplicate detection. |
 | [`product-forecast-analyzer`](./skills/product-forecast-analyzer) | Vendor-neutral skill to product forecast analyzer and produce prioritized, actionable findings. |
 | [`product-migration-analyzer`](./skills/product-migration-analyzer) | Vendor-neutral skill to product migration analyzer and produce prioritized, actionable findings. |
@@ -285,6 +289,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sales-access-analyzer`](./skills/sales-access-analyzer) | Vendor-neutral skill to sales access analyzer and produce prioritized, actionable findings. |
 | [`sales-budget-analyzer`](./skills/sales-budget-analyzer) | Vendor-neutral skill to sales budget analyzer and produce prioritized, actionable findings. |
 | [`sales-call-objection-clusterer`](./skills/sales-call-objection-clusterer) | Vendor-neutral skill to cluster sales call objections and extract response patterns for enablement. |
+| [`sales-consent-analyzer`](./skills/sales-consent-analyzer) | Vendor-neutral skill to sales consent analyzer and produce prioritized, actionable findings. |
 | [`sales-forecast-analyzer`](./skills/sales-forecast-analyzer) | Vendor-neutral skill to sales forecast analyzer and produce prioritized, actionable findings. |
 | [`sales-forecast-bias-checker`](./skills/sales-forecast-bias-checker) | Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage. |
 | [`sales-migration-analyzer`](./skills/sales-migration-analyzer) | Vendor-neutral skill to sales migration analyzer and produce prioritized, actionable findings. |
