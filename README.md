@@ -33,6 +33,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
 | [`analytics-access-analyzer`](./skills/analytics-access-analyzer) | Vendor-neutral skill to analytics access analyzer and produce prioritized, actionable findings. |
 | [`analytics-budget-analyzer`](./skills/analytics-budget-analyzer) | Vendor-neutral skill to analytics budget analyzer and produce prioritized, actionable findings. |
+| [`analytics-consent-analyzer`](./skills/analytics-consent-analyzer) | Vendor-neutral skill to analytics consent analyzer and produce prioritized, actionable findings. |
 | [`analytics-forecast-analyzer`](./skills/analytics-forecast-analyzer) | Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings. |
 | [`analytics-migration-analyzer`](./skills/analytics-migration-analyzer) | Vendor-neutral skill to analytics migration analyzer and produce prioritized, actionable findings. |
 | [`analytics-usage-analyzer`](./skills/analytics-usage-analyzer) | Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings. |
@@ -154,6 +155,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`governance-policy-gap-finder`](./skills/governance-policy-gap-finder) | Vendor-neutral skill to find governance policy gaps against current system ownership and controls. |
 | [`growth-access-analyzer`](./skills/growth-access-analyzer) | Vendor-neutral skill to growth access analyzer and produce prioritized, actionable findings. |
 | [`growth-budget-analyzer`](./skills/growth-budget-analyzer) | Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings. |
+| [`growth-consent-analyzer`](./skills/growth-consent-analyzer) | Vendor-neutral skill to growth consent analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
 | [`growth-migration-analyzer`](./skills/growth-migration-analyzer) | Vendor-neutral skill to growth migration analyzer and produce prioritized, actionable findings. |
@@ -219,6 +221,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`oncall-runbook-executor`](./skills/oncall-runbook-executor) | Use during an incident or routine on-call task to execute a YAML-defined runbook step by step. |
 | [`ops-access-analyzer`](./skills/ops-access-analyzer) | Vendor-neutral skill to ops access analyzer and produce prioritized, actionable findings. |
 | [`ops-budget-analyzer`](./skills/ops-budget-analyzer) | Vendor-neutral skill to ops budget analyzer and produce prioritized, actionable findings. |
+| [`ops-consent-analyzer`](./skills/ops-consent-analyzer) | Vendor-neutral skill to ops consent analyzer and produce prioritized, actionable findings. |
 | [`ops-forecast-analyzer`](./skills/ops-forecast-analyzer) | Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings. |
 | [`ops-migration-analyzer`](./skills/ops-migration-analyzer) | Vendor-neutral skill to ops migration analyzer and produce prioritized, actionable findings. |
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |
@@ -249,6 +252,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pricing-experiment-readout-builder`](./skills/pricing-experiment-readout-builder) | Vendor-neutral skill to summarize pricing experiment outcomes with guardrails and rollout recommendations. |
 | [`privacy-access-analyzer`](./skills/privacy-access-analyzer) | Vendor-neutral skill to privacy access analyzer and produce prioritized, actionable findings. |
 | [`privacy-budget-analyzer`](./skills/privacy-budget-analyzer) | Vendor-neutral skill to privacy budget analyzer and produce prioritized, actionable findings. |
+| [`privacy-consent-analyzer`](./skills/privacy-consent-analyzer) | Vendor-neutral skill to privacy consent analyzer and produce prioritized, actionable findings. |
 | [`privacy-dsar-triage-assistant`](./skills/privacy-dsar-triage-assistant) | Vendor-neutral skill to triage data subject requests and map required systems and timelines. |
 | [`privacy-forecast-analyzer`](./skills/privacy-forecast-analyzer) | Vendor-neutral skill to privacy forecast analyzer and produce prioritized, actionable findings. |
 | [`privacy-migration-analyzer`](./skills/privacy-migration-analyzer) | Vendor-neutral skill to privacy migration analyzer and produce prioritized, actionable findings. |
@@ -274,6 +278,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`regulatory-guardrail-checker`](./skills/regulatory-guardrail-checker) | Use to screen a feature spec or product change for compliance risks across GDPR, CCPA, HIPAA, PCI-DSS, SOC2, and accessibility (WCAG 2.2). |
 | [`release-access-analyzer`](./skills/release-access-analyzer) | Vendor-neutral skill to release access analyzer and produce prioritized, actionable findings. |
 | [`release-budget-analyzer`](./skills/release-budget-analyzer) | Vendor-neutral skill to release budget analyzer and produce prioritized, actionable findings. |
+| [`release-consent-analyzer`](./skills/release-consent-analyzer) | Vendor-neutral skill to release consent analyzer and produce prioritized, actionable findings. |
 | [`release-forecast-analyzer`](./skills/release-forecast-analyzer) | Vendor-neutral skill to release forecast analyzer and produce prioritized, actionable findings. |
 | [`release-migration-analyzer`](./skills/release-migration-analyzer) | Vendor-neutral skill to release migration analyzer and produce prioritized, actionable findings. |
 | [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
