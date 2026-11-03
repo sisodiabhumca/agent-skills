@@ -4,6 +4,18 @@ A growing collection of production-ready, **vendor-neutral Agent Skills** — us
 
 Compatible with the [skills.sh](https://skills.sh) directory layout.
 
+## Browse the playground
+
+Live site: **[https://sisodiabhumca.github.io/agent-skills/](https://sisodiabhumca.github.io/agent-skills/)**
+
+Search skills, copy Claude/ChatGPT/Gemini prompts, and grab `npx skills add` install commands from the browser.
+
+Rebuild the static catalog after adding skills:
+
+```bash
+python scripts/build_docs_site.py
+```
+
 ## Install (whole collection)
 
 ```bash

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Skills — Production-ready skills for Claude, ChatGPT, Cursor &amp; Codex</title>
+  <meta name="description" content="Browse and install vendor-neutral Agent Skills for product, data, engineering, security, support, and operations. Copy prompts for Claude, ChatGPT, or Gemini — or install with npx skills add." />
+  <link rel="canonical" href="https://sisodiabhumca.github.io/agent-skills/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Agent Skills — production-ready skills for any AI agent" />
+  <meta property="og:description" content="Open-source SKILL.md library for product analytics, postmortems, data contracts, compliance, growth experiments, and more." />
+  <meta property="og:url" content="https://sisodiabhumca.github.io/agent-skills/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Agent Skills home">
+      <span class="brand-mark" aria-hidden="true">AS</span>
+      <span class="brand-text">
+        <strong>Agent Skills</strong>
+        <span class="tagline">Vendor-neutral skills for any AI agent</span>
+      </span>
+    </a>
+    <nav class="top-actions" aria-label="Primary">
+      <a class="ghost" href="https://github.com/sisodiabhumca/agent-skills" target="_blank" rel="noopener">GitHub</a>
+      <a class="ghost" href="https://www.skills.sh/sisodiabhumca/agent-skills" target="_blank" rel="noopener">skills.sh</a>
+      <button type="button" class="primary" id="copy-install-all">Copy install all</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Open source · MIT · Compatible with Claude, ChatGPT, Cursor, Codex</p>
+      <h1>Make agents ship real professional work.</h1>
+      <p class="lede">
+        <span id="hero-count">300+</span> production-ready skills for product, data, engineering,
+        security, support, and operations. Browse here, copy a prompt, or install with one command.
+      </p>
+      <div class="hero-ctas">
+        <a class="primary" href="#playground">Browse skills</a>
+        <button type="button" class="secondary" id="find-skill-btn">Find my skill</button>
+      </div>
+      <pre class="install-chip" tabindex="0"><code>npx skills add sisodiabhumca/agent-skills</code></pre>
+    </div>
+    <div class="hero-panel" aria-hidden="true">
+      <div class="stat"><span id="stat-count">—</span><label>skills</label></div>
+      <div class="stat"><span id="stat-cats">—</span><label>categories</label></div>
+      <div class="stat"><span>MIT</span><label>license</label></div>
+    </div>
+  </section>
+
+  <section class="finder" id="finder" hidden>
+    <div class="finder-inner">
+      <h2>Describe your task</h2>
+      <p>We’ll match the closest skills from the catalog.</p>
+      <div class="finder-row">
+        <input id="finder-input" type="search" placeholder="e.g. write a blameless postmortem after an API outage" />
+        <button type="button" class="primary" id="finder-run">Match skills</button>
+        <button type="button" class="ghost" id="finder-close">Close</button>
+      </div>
+      <div id="finder-results" class="finder-results"></div>
+    </div>
+  </section>
+
+  <main class="playground" id="playground">
+    <aside class="sidebar">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search skills…" autocomplete="off" />
+        <select id="category" aria-label="Filter by category">
+          <option value="">All categories</option>
+        </select>
+        <p class="count"><span id="visible-count">0</span> shown</p>
+      </div>
+      <div class="chip-row" id="quick-filters" aria-label="Quick filters"></div>
+      <div class="skill-list" id="skill-list" role="listbox" aria-label="Skills"></div>
+    </aside>
+
+    <section class="detail" id="detail" aria-live="polite">
+      <div class="empty-state" id="empty-state">
+        <h2>Pick a skill</h2>
+        <p>Search or browse the catalog. Copy ready-made instructions for Claude, ChatGPT, or Gemini — or install into Cursor/Codex with <code>npx skills</code>.</p>
+      </div>
+
+      <article class="skill-view" id="skill-view" hidden>
+        <header class="skill-header">
+          <div>
+            <p class="skill-cat" id="skill-cat"></p>
+            <h2 id="skill-title"></h2>
+            <p class="skill-desc" id="skill-desc"></p>
+          </div>
+          <div class="skill-actions">
+            <button type="button" class="secondary" id="fav-btn" aria-pressed="false">☆ Favorite</button>
+            <a class="ghost" id="github-link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </header>
+
+        <div class="copy-bar">
+          <span>Use this skill in another tool</span>
+          <div class="copy-btns">
+            <button type="button" class="secondary" data-copy="claude">Copy for Claude</button>
+            <button type="button" class="secondary" data-copy="chatgpt">Copy for ChatGPT</button>
+            <button type="button" class="secondary" data-copy="gemini">Copy for Gemini</button>
+            <button type="button" class="secondary" data-copy="raw">Copy raw instructions</button>
+            <button type="button" class="primary" data-copy="install">Copy install command</button>
+          </div>
+        </div>
+
+        <pre class="install-line"><code id="install-cmd"></code></pre>
+        <div class="skill-body" id="skill-body"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Built from <a href="https://github.com/sisodiabhumca/agent-skills">sisodiabhumca/agent-skills</a>.
+      Compatible with the <a href="https://skills.sh">skills.sh</a> layout.
+      Inspired by open skill playgrounds — free to browse, copy, and install.
+    </p>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
