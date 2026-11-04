@@ -58,6 +58,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`api-contract-diff`](./skills/api-contract-diff) | Vendor-neutral skill to compare two OpenAPI 3 specifications and produce a structured contract change report with breaking-change detection. |
 | [`api-deprecation-impact-analyzer`](./skills/api-deprecation-impact-analyzer) | Vendor-neutral skill to analyze API deprecation impact on consumers and migration urgency. |
 | [`api-error-budget-tracker`](./skills/api-error-budget-tracker) | Vendor-neutral skill to analyze API reliability metrics and summarize error budget burn with mitigation guidance. |
+| [`api-experiment-analyzer`](./skills/api-experiment-analyzer) | Vendor-neutral skill to api experiment analyzer and produce prioritized, actionable findings. |
 | [`api-forecast-analyzer`](./skills/api-forecast-analyzer) | Vendor-neutral skill to api forecast analyzer and produce prioritized, actionable findings. |
 | [`api-latency-budget-tracker`](./skills/api-latency-budget-tracker) | Vendor-neutral skill to track API latency budgets and surface endpoints burning remaining budget. |
 | [`api-migration-analyzer`](./skills/api-migration-analyzer) | Vendor-neutral skill to api migration analyzer and produce prioritized, actionable findings. |
@@ -72,6 +73,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`billing-budget-analyzer`](./skills/billing-budget-analyzer) | Vendor-neutral skill to billing budget analyzer and produce prioritized, actionable findings. |
 | [`billing-consent-analyzer`](./skills/billing-consent-analyzer) | Vendor-neutral skill to billing consent analyzer and produce prioritized, actionable findings. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
+| [`billing-experiment-analyzer`](./skills/billing-experiment-analyzer) | Vendor-neutral skill to billing experiment analyzer and produce prioritized, actionable findings. |
 | [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
 | [`billing-migration-analyzer`](./skills/billing-migration-analyzer) | Vendor-neutral skill to billing migration analyzer and produce prioritized, actionable findings. |
 | [`billing-usage-analyzer`](./skills/billing-usage-analyzer) | Vendor-neutral skill to billing usage analyzer and produce prioritized, actionable findings. |
@@ -94,6 +96,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`churn-winback-offer-ranker`](./skills/churn-winback-offer-ranker) | Vendor-neutral skill to rank winback offers by expected save rate and margin impact. |
 | [`cloud-access-analyzer`](./skills/cloud-access-analyzer) | Vendor-neutral skill to cloud access analyzer and produce prioritized, actionable findings. |
 | [`cloud-budget-analyzer`](./skills/cloud-budget-analyzer) | Vendor-neutral skill to cloud budget analyzer and produce prioritized, actionable findings. |
+| [`cloud-consent-analyzer`](./skills/cloud-consent-analyzer) | Vendor-neutral skill to cloud consent analyzer and produce prioritized, actionable findings. |
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
 | [`cloud-dependency-analyzer`](./skills/cloud-dependency-analyzer) | Vendor-neutral skill to cloud dependency analyzer and produce prioritized, actionable findings. |
 | [`cloud-forecast-analyzer`](./skills/cloud-forecast-analyzer) | Vendor-neutral skill to cloud forecast analyzer and produce prioritized, actionable findings. |
@@ -217,6 +220,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`meeting-notes-distiller`](./skills/meeting-notes-distiller) | Use when given a meeting transcript or raw notes to produce a structured summary — decisions made, action items (with owner + due date), risks/blockers, open questions, and a follow-up email draft. |
 | [`mobile-access-analyzer`](./skills/mobile-access-analyzer) | Vendor-neutral skill to mobile access analyzer and produce prioritized, actionable findings. |
 | [`mobile-budget-analyzer`](./skills/mobile-budget-analyzer) | Vendor-neutral skill to mobile budget analyzer and produce prioritized, actionable findings. |
+| [`mobile-consent-analyzer`](./skills/mobile-consent-analyzer) | Vendor-neutral skill to mobile consent analyzer and produce prioritized, actionable findings. |
 | [`mobile-crash-triage-assistant`](./skills/mobile-crash-triage-assistant) | Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact. |
 | [`mobile-dependency-analyzer`](./skills/mobile-dependency-analyzer) | Vendor-neutral skill to mobile dependency analyzer and produce prioritized, actionable findings. |
 | [`mobile-forecast-analyzer`](./skills/mobile-forecast-analyzer) | Vendor-neutral skill to mobile forecast analyzer and produce prioritized, actionable findings. |
@@ -243,6 +247,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`partner-access-analyzer`](./skills/partner-access-analyzer) | Vendor-neutral skill to partner access analyzer and produce prioritized, actionable findings. |
 | [`partner-api-health-monitor`](./skills/partner-api-health-monitor) | Vendor-neutral skill to monitor partner API health metrics and surface integration degradation risks. |
 | [`partner-budget-analyzer`](./skills/partner-budget-analyzer) | Vendor-neutral skill to partner budget analyzer and produce prioritized, actionable findings. |
+| [`partner-consent-analyzer`](./skills/partner-consent-analyzer) | Vendor-neutral skill to partner consent analyzer and produce prioritized, actionable findings. |
 | [`partner-dependency-analyzer`](./skills/partner-dependency-analyzer) | Vendor-neutral skill to partner dependency analyzer and produce prioritized, actionable findings. |
 | [`partner-forecast-analyzer`](./skills/partner-forecast-analyzer) | Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings. |
 | [`partner-migration-analyzer`](./skills/partner-migration-analyzer) | Vendor-neutral skill to partner migration analyzer and produce prioritized, actionable findings. |

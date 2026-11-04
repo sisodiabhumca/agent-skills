@@ -1313,5 +1313,105 @@
     "slug": "pipeline-consent-analyzer",
     "title": "Pipeline Consent Analyzer",
     "description": "Vendor-neutral skill to pipeline consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-consent-analyzer",
+    "title": "Partner Consent Analyzer",
+    "description": "Vendor-neutral skill to partner consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-consent-analyzer",
+    "title": "Mobile Consent Analyzer",
+    "description": "Vendor-neutral skill to mobile consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-consent-analyzer",
+    "title": "Cloud Consent Analyzer",
+    "description": "Vendor-neutral skill to cloud consent analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-experiment-analyzer",
+    "title": "Api Experiment Analyzer",
+    "description": "Vendor-neutral skill to api experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-experiment-analyzer",
+    "title": "Billing Experiment Analyzer",
+    "description": "Vendor-neutral skill to billing experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-experiment-analyzer",
+    "title": "Support Experiment Analyzer",
+    "description": "Vendor-neutral skill to support experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-experiment-analyzer",
+    "title": "Security Experiment Analyzer",
+    "description": "Vendor-neutral skill to security experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-experiment-analyzer",
+    "title": "Release Experiment Analyzer",
+    "description": "Vendor-neutral skill to release experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-experiment-analyzer",
+    "title": "Analytics Experiment Analyzer",
+    "description": "Vendor-neutral skill to analytics experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-experiment-analyzer",
+    "title": "Ops Experiment Analyzer",
+    "description": "Vendor-neutral skill to ops experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-experiment-analyzer",
+    "title": "Growth Experiment Analyzer",
+    "description": "Vendor-neutral skill to growth experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-experiment-analyzer",
+    "title": "Data Experiment Analyzer",
+    "description": "Vendor-neutral skill to data experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-experiment-analyzer",
+    "title": "Infra Experiment Analyzer",
+    "description": "Vendor-neutral skill to infra experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-experiment-analyzer",
+    "title": "Product Experiment Analyzer",
+    "description": "Vendor-neutral skill to product experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-experiment-analyzer",
+    "title": "Sales Experiment Analyzer",
+    "description": "Vendor-neutral skill to sales experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-experiment-analyzer",
+    "title": "Finance Experiment Analyzer",
+    "description": "Vendor-neutral skill to finance experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-experiment-analyzer",
+    "title": "Privacy Experiment Analyzer",
+    "description": "Vendor-neutral skill to privacy experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-experiment-analyzer",
+    "title": "Identity Experiment Analyzer",
+    "description": "Vendor-neutral skill to identity experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-experiment-analyzer",
+    "title": "Catalog Experiment Analyzer",
+    "description": "Vendor-neutral skill to catalog experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-experiment-analyzer",
+    "title": "Pipeline Experiment Analyzer",
+    "description": "Vendor-neutral skill to pipeline experiment analyzer and produce prioritized, actionable findings."
   }
 ]
