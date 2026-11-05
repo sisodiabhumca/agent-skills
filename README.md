@@ -88,6 +88,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`catalog-access-analyzer`](./skills/catalog-access-analyzer) | Vendor-neutral skill to catalog access analyzer and produce prioritized, actionable findings. |
 | [`catalog-budget-analyzer`](./skills/catalog-budget-analyzer) | Vendor-neutral skill to catalog budget analyzer and produce prioritized, actionable findings. |
 | [`catalog-consent-analyzer`](./skills/catalog-consent-analyzer) | Vendor-neutral skill to catalog consent analyzer and produce prioritized, actionable findings. |
+| [`catalog-experiment-analyzer`](./skills/catalog-experiment-analyzer) | Vendor-neutral skill to catalog experiment analyzer and produce prioritized, actionable findings. |
 | [`catalog-forecast-analyzer`](./skills/catalog-forecast-analyzer) | Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings. |
 | [`catalog-migration-analyzer`](./skills/catalog-migration-analyzer) | Vendor-neutral skill to catalog migration analyzer and produce prioritized, actionable findings. |
 | [`catalog-usage-analyzer`](./skills/catalog-usage-analyzer) | Vendor-neutral skill to catalog usage analyzer and produce prioritized, actionable findings. |
@@ -180,6 +181,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`identity-access-analyzer`](./skills/identity-access-analyzer) | Vendor-neutral skill to identity access analyzer and produce prioritized, actionable findings. |
 | [`identity-budget-analyzer`](./skills/identity-budget-analyzer) | Vendor-neutral skill to identity budget analyzer and produce prioritized, actionable findings. |
 | [`identity-consent-analyzer`](./skills/identity-consent-analyzer) | Vendor-neutral skill to identity consent analyzer and produce prioritized, actionable findings. |
+| [`identity-experiment-analyzer`](./skills/identity-experiment-analyzer) | Vendor-neutral skill to identity experiment analyzer and produce prioritized, actionable findings. |
 | [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
 | [`identity-migration-analyzer`](./skills/identity-migration-analyzer) | Vendor-neutral skill to identity migration analyzer and produce prioritized, actionable findings. |
 | [`identity-provisioning-auditor`](./skills/identity-provisioning-auditor) | Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations. |
@@ -258,6 +260,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pipeline-access-analyzer`](./skills/pipeline-access-analyzer) | Vendor-neutral skill to pipeline access analyzer and produce prioritized, actionable findings. |
 | [`pipeline-budget-analyzer`](./skills/pipeline-budget-analyzer) | Vendor-neutral skill to pipeline budget analyzer and produce prioritized, actionable findings. |
 | [`pipeline-consent-analyzer`](./skills/pipeline-consent-analyzer) | Vendor-neutral skill to pipeline consent analyzer and produce prioritized, actionable findings. |
+| [`pipeline-experiment-analyzer`](./skills/pipeline-experiment-analyzer) | Vendor-neutral skill to pipeline experiment analyzer and produce prioritized, actionable findings. |
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
 | [`pipeline-forecast-analyzer`](./skills/pipeline-forecast-analyzer) | Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings. |
 | [`pipeline-migration-analyzer`](./skills/pipeline-migration-analyzer) | Vendor-neutral skill to pipeline migration analyzer and produce prioritized, actionable findings. |
@@ -271,6 +274,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`privacy-budget-analyzer`](./skills/privacy-budget-analyzer) | Vendor-neutral skill to privacy budget analyzer and produce prioritized, actionable findings. |
 | [`privacy-consent-analyzer`](./skills/privacy-consent-analyzer) | Vendor-neutral skill to privacy consent analyzer and produce prioritized, actionable findings. |
 | [`privacy-dsar-triage-assistant`](./skills/privacy-dsar-triage-assistant) | Vendor-neutral skill to triage data subject requests and map required systems and timelines. |
+| [`privacy-experiment-analyzer`](./skills/privacy-experiment-analyzer) | Vendor-neutral skill to privacy experiment analyzer and produce prioritized, actionable findings. |
 | [`privacy-forecast-analyzer`](./skills/privacy-forecast-analyzer) | Vendor-neutral skill to privacy forecast analyzer and produce prioritized, actionable findings. |
 | [`privacy-migration-analyzer`](./skills/privacy-migration-analyzer) | Vendor-neutral skill to privacy migration analyzer and produce prioritized, actionable findings. |
 | [`privacy-policy-diff-summarizer`](./skills/privacy-policy-diff-summarizer) | Diff two privacy policy texts and produce a vendor-neutral summary of materially changed sections and risk flags. |
@@ -347,6 +351,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`support-consent-analyzer`](./skills/support-consent-analyzer) | Vendor-neutral skill to support consent analyzer and produce prioritized, actionable findings. |
 | [`support-deflection-opportunity-finder`](./skills/support-deflection-opportunity-finder) | Vendor-neutral skill to find support deflection opportunities from repetitive ticket patterns. |
 | [`support-escalation-router`](./skills/support-escalation-router) | Vendor-neutral skill to route support escalations based on severity, customer tier, and SLA exposure. |
+| [`support-experiment-analyzer`](./skills/support-experiment-analyzer) | Vendor-neutral skill to support experiment analyzer and produce prioritized, actionable findings. |
 | [`support-forecast-analyzer`](./skills/support-forecast-analyzer) | Vendor-neutral skill to support forecast analyzer and produce prioritized, actionable findings. |
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
