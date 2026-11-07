@@ -163,6 +163,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`finance-access-analyzer`](./skills/finance-access-analyzer) | Vendor-neutral skill to finance access analyzer and produce prioritized, actionable findings. |
 | [`finance-budget-analyzer`](./skills/finance-budget-analyzer) | Vendor-neutral skill to finance budget analyzer and produce prioritized, actionable findings. |
 | [`finance-consent-analyzer`](./skills/finance-consent-analyzer) | Vendor-neutral skill to finance consent analyzer and produce prioritized, actionable findings. |
+| [`finance-experiment-analyzer`](./skills/finance-experiment-analyzer) | Vendor-neutral skill to finance experiment analyzer and produce prioritized, actionable findings. |
 | [`finance-forecast-analyzer`](./skills/finance-forecast-analyzer) | Vendor-neutral skill to finance forecast analyzer and produce prioritized, actionable findings. |
 | [`finance-migration-analyzer`](./skills/finance-migration-analyzer) | Vendor-neutral skill to finance migration analyzer and produce prioritized, actionable findings. |
 | [`finance-usage-analyzer`](./skills/finance-usage-analyzer) | Vendor-neutral skill to finance usage analyzer and produce prioritized, actionable findings. |
@@ -290,6 +291,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`product-analytics-investigator`](./skills/product-analytics-investigator) | Use when a PM, data PM, or analyst needs to investigate product metrics in Amplitude or Mixpanel — diagnosing drops in activation, retention, or funnel conversion, or attributing changes to releases, segments, or experiments. |
 | [`product-budget-analyzer`](./skills/product-budget-analyzer) | Vendor-neutral skill to product budget analyzer and produce prioritized, actionable findings. |
 | [`product-consent-analyzer`](./skills/product-consent-analyzer) | Vendor-neutral skill to product consent analyzer and produce prioritized, actionable findings. |
+| [`product-experiment-analyzer`](./skills/product-experiment-analyzer) | Vendor-neutral skill to product experiment analyzer and produce prioritized, actionable findings. |
 | [`product-feedback-router`](./skills/product-feedback-router) | Vendor-neutral skill to route product feedback to owners with priority and duplicate detection. |
 | [`product-forecast-analyzer`](./skills/product-forecast-analyzer) | Vendor-neutral skill to product forecast analyzer and produce prioritized, actionable findings. |
 | [`product-migration-analyzer`](./skills/product-migration-analyzer) | Vendor-neutral skill to product migration analyzer and produce prioritized, actionable findings. |
@@ -305,6 +307,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-access-analyzer`](./skills/release-access-analyzer) | Vendor-neutral skill to release access analyzer and produce prioritized, actionable findings. |
 | [`release-budget-analyzer`](./skills/release-budget-analyzer) | Vendor-neutral skill to release budget analyzer and produce prioritized, actionable findings. |
 | [`release-consent-analyzer`](./skills/release-consent-analyzer) | Vendor-neutral skill to release consent analyzer and produce prioritized, actionable findings. |
+| [`release-experiment-analyzer`](./skills/release-experiment-analyzer) | Vendor-neutral skill to release experiment analyzer and produce prioritized, actionable findings. |
 | [`release-forecast-analyzer`](./skills/release-forecast-analyzer) | Vendor-neutral skill to release forecast analyzer and produce prioritized, actionable findings. |
 | [`release-migration-analyzer`](./skills/release-migration-analyzer) | Vendor-neutral skill to release migration analyzer and produce prioritized, actionable findings. |
 | [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
@@ -324,6 +327,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sales-budget-analyzer`](./skills/sales-budget-analyzer) | Vendor-neutral skill to sales budget analyzer and produce prioritized, actionable findings. |
 | [`sales-call-objection-clusterer`](./skills/sales-call-objection-clusterer) | Vendor-neutral skill to cluster sales call objections and extract response patterns for enablement. |
 | [`sales-consent-analyzer`](./skills/sales-consent-analyzer) | Vendor-neutral skill to sales consent analyzer and produce prioritized, actionable findings. |
+| [`sales-experiment-analyzer`](./skills/sales-experiment-analyzer) | Vendor-neutral skill to sales experiment analyzer and produce prioritized, actionable findings. |
 | [`sales-forecast-analyzer`](./skills/sales-forecast-analyzer) | Vendor-neutral skill to sales forecast analyzer and produce prioritized, actionable findings. |
 | [`sales-forecast-bias-checker`](./skills/sales-forecast-bias-checker) | Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage. |
 | [`sales-migration-analyzer`](./skills/sales-migration-analyzer) | Vendor-neutral skill to sales migration analyzer and produce prioritized, actionable findings. |
@@ -336,6 +340,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`security-budget-analyzer`](./skills/security-budget-analyzer) | Vendor-neutral skill to security budget analyzer and produce prioritized, actionable findings. |
 | [`security-consent-analyzer`](./skills/security-consent-analyzer) | Vendor-neutral skill to security consent analyzer and produce prioritized, actionable findings. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
+| [`security-experiment-analyzer`](./skills/security-experiment-analyzer) | Vendor-neutral skill to security experiment analyzer and produce prioritized, actionable findings. |
 | [`security-forecast-analyzer`](./skills/security-forecast-analyzer) | Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings. |
 | [`security-migration-analyzer`](./skills/security-migration-analyzer) | Vendor-neutral skill to security migration analyzer and produce prioritized, actionable findings. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
