@@ -44,6 +44,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ai-prompt-regression-tracker`](./skills/ai-prompt-regression-tracker) | Vendor-neutral skill to track prompt regressions across model versions with tagged eval outcomes. |
 | [`alert-fatigue-analyzer`](./skills/alert-fatigue-analyzer) | Vendor-neutral skill to analyze noisy alerts and recommend threshold and routing changes. |
 | [`analytics-access-analyzer`](./skills/analytics-access-analyzer) | Vendor-neutral skill to analytics access analyzer and produce prioritized, actionable findings. |
+| [`analytics-backlog-analyzer`](./skills/analytics-backlog-analyzer) | Vendor-neutral skill to analytics backlog analyzer and produce prioritized, actionable findings. |
 | [`analytics-budget-analyzer`](./skills/analytics-budget-analyzer) | Vendor-neutral skill to analytics budget analyzer and produce prioritized, actionable findings. |
 | [`analytics-consent-analyzer`](./skills/analytics-consent-analyzer) | Vendor-neutral skill to analytics consent analyzer and produce prioritized, actionable findings. |
 | [`analytics-experiment-analyzer`](./skills/analytics-experiment-analyzer) | Vendor-neutral skill to analytics experiment analyzer and produce prioritized, actionable findings. |
@@ -71,6 +72,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`backlog-prioritization-assistant`](./skills/backlog-prioritization-assistant) | Vendor-neutral skill to prioritize a backlog using configurable scoring (RICE/WSJF-style) and produce a ranked list with rationale. |
 | [`backup-restore-readiness-auditor`](./skills/backup-restore-readiness-auditor) | Vendor-neutral skill to audit backup coverage and restore-test freshness for critical systems. |
 | [`billing-access-analyzer`](./skills/billing-access-analyzer) | Vendor-neutral skill to billing access analyzer and produce prioritized, actionable findings. |
+| [`billing-backlog-analyzer`](./skills/billing-backlog-analyzer) | Vendor-neutral skill to billing backlog analyzer and produce prioritized, actionable findings. |
 | [`billing-budget-analyzer`](./skills/billing-budget-analyzer) | Vendor-neutral skill to billing budget analyzer and produce prioritized, actionable findings. |
 | [`billing-consent-analyzer`](./skills/billing-consent-analyzer) | Vendor-neutral skill to billing consent analyzer and produce prioritized, actionable findings. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
@@ -305,6 +307,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`quota-forecast-builder`](./skills/quota-forecast-builder) | Vendor-neutral skill to forecast sales quota attainment from pipeline stage and historical conversion. |
 | [`regulatory-guardrail-checker`](./skills/regulatory-guardrail-checker) | Use to screen a feature spec or product change for compliance risks across GDPR, CCPA, HIPAA, PCI-DSS, SOC2, and accessibility (WCAG 2.2). |
 | [`release-access-analyzer`](./skills/release-access-analyzer) | Vendor-neutral skill to release access analyzer and produce prioritized, actionable findings. |
+| [`release-backlog-analyzer`](./skills/release-backlog-analyzer) | Vendor-neutral skill to release backlog analyzer and produce prioritized, actionable findings. |
 | [`release-budget-analyzer`](./skills/release-budget-analyzer) | Vendor-neutral skill to release budget analyzer and produce prioritized, actionable findings. |
 | [`release-consent-analyzer`](./skills/release-consent-analyzer) | Vendor-neutral skill to release consent analyzer and produce prioritized, actionable findings. |
 | [`release-experiment-analyzer`](./skills/release-experiment-analyzer) | Vendor-neutral skill to release experiment analyzer and produce prioritized, actionable findings. |
@@ -337,6 +340,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`schema-migration-risk-checker`](./skills/schema-migration-risk-checker) | Vendor-neutral skill to assess database schema migration risk from lock time, size, and dependency usage. |
 | [`secrets-rotation-planner`](./skills/secrets-rotation-planner) | Vendor-neutral skill to plan credential rotations based on age, exposure, and dependency blast radius. |
 | [`security-access-analyzer`](./skills/security-access-analyzer) | Vendor-neutral skill to security access analyzer and produce prioritized, actionable findings. |
+| [`security-backlog-analyzer`](./skills/security-backlog-analyzer) | Vendor-neutral skill to security backlog analyzer and produce prioritized, actionable findings. |
 | [`security-budget-analyzer`](./skills/security-budget-analyzer) | Vendor-neutral skill to security budget analyzer and produce prioritized, actionable findings. |
 | [`security-consent-analyzer`](./skills/security-consent-analyzer) | Vendor-neutral skill to security consent analyzer and produce prioritized, actionable findings. |
 | [`security-exception-expiry-tracker`](./skills/security-exception-expiry-tracker) | Vendor-neutral skill to track security exception expirations and generate remediation reminders. |
@@ -357,6 +361,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`status-page-comms-drafter`](./skills/status-page-comms-drafter) | Vendor-neutral skill to draft status page updates from incident timelines and customer impact data. |
 | [`subscription-downgrade-risk-scorer`](./skills/subscription-downgrade-risk-scorer) | Vendor-neutral skill to score downgrade risk from product usage and support interaction signals. |
 | [`support-access-analyzer`](./skills/support-access-analyzer) | Vendor-neutral skill to support access analyzer and produce prioritized, actionable findings. |
+| [`support-backlog-analyzer`](./skills/support-backlog-analyzer) | Vendor-neutral skill to support backlog analyzer and produce prioritized, actionable findings. |
 | [`support-budget-analyzer`](./skills/support-budget-analyzer) | Vendor-neutral skill to support budget analyzer and produce prioritized, actionable findings. |
 | [`support-consent-analyzer`](./skills/support-consent-analyzer) | Vendor-neutral skill to support consent analyzer and produce prioritized, actionable findings. |
 | [`support-deflection-opportunity-finder`](./skills/support-deflection-opportunity-finder) | Vendor-neutral skill to find support deflection opportunities from repetitive ticket patterns. |

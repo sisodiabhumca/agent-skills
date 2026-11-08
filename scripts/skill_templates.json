@@ -1413,5 +1413,105 @@
     "slug": "pipeline-experiment-analyzer",
     "title": "Pipeline Experiment Analyzer",
     "description": "Vendor-neutral skill to pipeline experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-experiment-analyzer",
+    "title": "Partner Experiment Analyzer",
+    "description": "Vendor-neutral skill to partner experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-experiment-analyzer",
+    "title": "Mobile Experiment Analyzer",
+    "description": "Vendor-neutral skill to mobile experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-experiment-analyzer",
+    "title": "Cloud Experiment Analyzer",
+    "description": "Vendor-neutral skill to cloud experiment analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-backlog-analyzer",
+    "title": "Api Backlog Analyzer",
+    "description": "Vendor-neutral skill to api backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-backlog-analyzer",
+    "title": "Billing Backlog Analyzer",
+    "description": "Vendor-neutral skill to billing backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-backlog-analyzer",
+    "title": "Support Backlog Analyzer",
+    "description": "Vendor-neutral skill to support backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-backlog-analyzer",
+    "title": "Security Backlog Analyzer",
+    "description": "Vendor-neutral skill to security backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-backlog-analyzer",
+    "title": "Release Backlog Analyzer",
+    "description": "Vendor-neutral skill to release backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-backlog-analyzer",
+    "title": "Analytics Backlog Analyzer",
+    "description": "Vendor-neutral skill to analytics backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-backlog-analyzer",
+    "title": "Ops Backlog Analyzer",
+    "description": "Vendor-neutral skill to ops backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-backlog-analyzer",
+    "title": "Growth Backlog Analyzer",
+    "description": "Vendor-neutral skill to growth backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-backlog-analyzer",
+    "title": "Data Backlog Analyzer",
+    "description": "Vendor-neutral skill to data backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-backlog-analyzer",
+    "title": "Infra Backlog Analyzer",
+    "description": "Vendor-neutral skill to infra backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-backlog-analyzer",
+    "title": "Product Backlog Analyzer",
+    "description": "Vendor-neutral skill to product backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-backlog-analyzer",
+    "title": "Sales Backlog Analyzer",
+    "description": "Vendor-neutral skill to sales backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-backlog-analyzer",
+    "title": "Finance Backlog Analyzer",
+    "description": "Vendor-neutral skill to finance backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-backlog-analyzer",
+    "title": "Privacy Backlog Analyzer",
+    "description": "Vendor-neutral skill to privacy backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-backlog-analyzer",
+    "title": "Identity Backlog Analyzer",
+    "description": "Vendor-neutral skill to identity backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-backlog-analyzer",
+    "title": "Catalog Backlog Analyzer",
+    "description": "Vendor-neutral skill to catalog backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-backlog-analyzer",
+    "title": "Pipeline Backlog Analyzer",
+    "description": "Vendor-neutral skill to pipeline backlog analyzer and produce prioritized, actionable findings."
   }
 ]
