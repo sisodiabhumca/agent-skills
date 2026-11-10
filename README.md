@@ -90,6 +90,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`capacity-planning-signal-analyzer`](./skills/capacity-planning-signal-analyzer) | Vendor-neutral skill to synthesize utilization trends and forecast capacity risks for platform teams. |
 | [`capacity-reservation-optimizer`](./skills/capacity-reservation-optimizer) | Vendor-neutral skill to optimize capacity reservations from forecast demand and utilization history. |
 | [`catalog-access-analyzer`](./skills/catalog-access-analyzer) | Vendor-neutral skill to catalog access analyzer and produce prioritized, actionable findings. |
+| [`catalog-backlog-analyzer`](./skills/catalog-backlog-analyzer) | Vendor-neutral skill to catalog backlog analyzer and produce prioritized, actionable findings. |
 | [`catalog-budget-analyzer`](./skills/catalog-budget-analyzer) | Vendor-neutral skill to catalog budget analyzer and produce prioritized, actionable findings. |
 | [`catalog-consent-analyzer`](./skills/catalog-consent-analyzer) | Vendor-neutral skill to catalog consent analyzer and produce prioritized, actionable findings. |
 | [`catalog-experiment-analyzer`](./skills/catalog-experiment-analyzer) | Vendor-neutral skill to catalog experiment analyzer and produce prioritized, actionable findings. |
@@ -127,6 +128,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`customer-reference-request-triager`](./skills/customer-reference-request-triager) | Vendor-neutral skill to triage reference requests by account fit, risk, and sales urgency. |
 | [`customer-success-playbook-matcher`](./skills/customer-success-playbook-matcher) | Vendor-neutral skill to match accounts to success playbooks using health and lifecycle signals. |
 | [`data-access-analyzer`](./skills/data-access-analyzer) | Vendor-neutral skill to data access analyzer and produce prioritized, actionable findings. |
+| [`data-backlog-analyzer`](./skills/data-backlog-analyzer) | Vendor-neutral skill to data backlog analyzer and produce prioritized, actionable findings. |
 | [`data-budget-analyzer`](./skills/data-budget-analyzer) | Vendor-neutral skill to data budget analyzer and produce prioritized, actionable findings. |
 | [`data-catalog-coverage-auditor`](./skills/data-catalog-coverage-auditor) | Vendor-neutral skill to audit data catalog coverage for critical tables and ownership gaps. |
 | [`data-consent-analyzer`](./skills/data-consent-analyzer) | Vendor-neutral skill to data consent analyzer and produce prioritized, actionable findings. |
@@ -177,6 +179,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`fraud-signal-prioritizer`](./skills/fraud-signal-prioritizer) | Vendor-neutral skill to prioritize fraud signals by confidence, exposure, and investigation cost. |
 | [`governance-policy-gap-finder`](./skills/governance-policy-gap-finder) | Vendor-neutral skill to find governance policy gaps against current system ownership and controls. |
 | [`growth-access-analyzer`](./skills/growth-access-analyzer) | Vendor-neutral skill to growth access analyzer and produce prioritized, actionable findings. |
+| [`growth-backlog-analyzer`](./skills/growth-backlog-analyzer) | Vendor-neutral skill to growth backlog analyzer and produce prioritized, actionable findings. |
 | [`growth-budget-analyzer`](./skills/growth-budget-analyzer) | Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings. |
 | [`growth-consent-analyzer`](./skills/growth-consent-analyzer) | Vendor-neutral skill to growth consent analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-analyzer`](./skills/growth-experiment-analyzer) | Vendor-neutral skill to growth experiment analyzer and produce prioritized, actionable findings. |
@@ -187,6 +190,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-webhook-analyzer`](./skills/growth-webhook-analyzer) | Vendor-neutral skill to growth webhook analyzer and produce prioritized, actionable findings. |
 | [`http-api-smoke-tester`](./skills/http-api-smoke-tester) | Run a vendor-neutral HTTP API smoke test plan (requests + assertions) and emit a compact pass/fail report. |
 | [`identity-access-analyzer`](./skills/identity-access-analyzer) | Vendor-neutral skill to identity access analyzer and produce prioritized, actionable findings. |
+| [`identity-backlog-analyzer`](./skills/identity-backlog-analyzer) | Vendor-neutral skill to identity backlog analyzer and produce prioritized, actionable findings. |
 | [`identity-budget-analyzer`](./skills/identity-budget-analyzer) | Vendor-neutral skill to identity budget analyzer and produce prioritized, actionable findings. |
 | [`identity-consent-analyzer`](./skills/identity-consent-analyzer) | Vendor-neutral skill to identity consent analyzer and produce prioritized, actionable findings. |
 | [`identity-experiment-analyzer`](./skills/identity-experiment-analyzer) | Vendor-neutral skill to identity experiment analyzer and produce prioritized, actionable findings. |
@@ -271,6 +275,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
 | [`permission-creep-detector`](./skills/permission-creep-detector) | Vendor-neutral skill to detect permission creep from unused grants and role expansion patterns. |
 | [`pipeline-access-analyzer`](./skills/pipeline-access-analyzer) | Vendor-neutral skill to pipeline access analyzer and produce prioritized, actionable findings. |
+| [`pipeline-backlog-analyzer`](./skills/pipeline-backlog-analyzer) | Vendor-neutral skill to pipeline backlog analyzer and produce prioritized, actionable findings. |
 | [`pipeline-budget-analyzer`](./skills/pipeline-budget-analyzer) | Vendor-neutral skill to pipeline budget analyzer and produce prioritized, actionable findings. |
 | [`pipeline-consent-analyzer`](./skills/pipeline-consent-analyzer) | Vendor-neutral skill to pipeline consent analyzer and produce prioritized, actionable findings. |
 | [`pipeline-experiment-analyzer`](./skills/pipeline-experiment-analyzer) | Vendor-neutral skill to pipeline experiment analyzer and produce prioritized, actionable findings. |
