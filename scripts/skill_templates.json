@@ -1513,5 +1513,105 @@
     "slug": "pipeline-backlog-analyzer",
     "title": "Pipeline Backlog Analyzer",
     "description": "Vendor-neutral skill to pipeline backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-backlog-analyzer",
+    "title": "Partner Backlog Analyzer",
+    "description": "Vendor-neutral skill to partner backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-backlog-analyzer",
+    "title": "Mobile Backlog Analyzer",
+    "description": "Vendor-neutral skill to mobile backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-backlog-analyzer",
+    "title": "Cloud Backlog Analyzer",
+    "description": "Vendor-neutral skill to cloud backlog analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-dashboard-analyzer",
+    "title": "Api Dashboard Analyzer",
+    "description": "Vendor-neutral skill to api dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-dashboard-analyzer",
+    "title": "Billing Dashboard Analyzer",
+    "description": "Vendor-neutral skill to billing dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-dashboard-analyzer",
+    "title": "Support Dashboard Analyzer",
+    "description": "Vendor-neutral skill to support dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-dashboard-analyzer",
+    "title": "Security Dashboard Analyzer",
+    "description": "Vendor-neutral skill to security dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-dashboard-analyzer",
+    "title": "Release Dashboard Analyzer",
+    "description": "Vendor-neutral skill to release dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-dashboard-analyzer",
+    "title": "Analytics Dashboard Analyzer",
+    "description": "Vendor-neutral skill to analytics dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-dashboard-analyzer",
+    "title": "Ops Dashboard Analyzer",
+    "description": "Vendor-neutral skill to ops dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-dashboard-analyzer",
+    "title": "Growth Dashboard Analyzer",
+    "description": "Vendor-neutral skill to growth dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-dashboard-analyzer",
+    "title": "Data Dashboard Analyzer",
+    "description": "Vendor-neutral skill to data dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-dashboard-analyzer",
+    "title": "Infra Dashboard Analyzer",
+    "description": "Vendor-neutral skill to infra dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-dashboard-analyzer",
+    "title": "Product Dashboard Analyzer",
+    "description": "Vendor-neutral skill to product dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-dashboard-analyzer",
+    "title": "Sales Dashboard Analyzer",
+    "description": "Vendor-neutral skill to sales dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-dashboard-analyzer",
+    "title": "Finance Dashboard Analyzer",
+    "description": "Vendor-neutral skill to finance dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-dashboard-analyzer",
+    "title": "Privacy Dashboard Analyzer",
+    "description": "Vendor-neutral skill to privacy dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-dashboard-analyzer",
+    "title": "Identity Dashboard Analyzer",
+    "description": "Vendor-neutral skill to identity dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-dashboard-analyzer",
+    "title": "Catalog Dashboard Analyzer",
+    "description": "Vendor-neutral skill to catalog dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-dashboard-analyzer",
+    "title": "Pipeline Dashboard Analyzer",
+    "description": "Vendor-neutral skill to pipeline dashboard analyzer and produce prioritized, actionable findings."
   }
 ]
