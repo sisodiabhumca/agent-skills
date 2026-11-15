@@ -78,6 +78,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`billing-backlog-analyzer`](./skills/billing-backlog-analyzer) | Vendor-neutral skill to billing backlog analyzer and produce prioritized, actionable findings. |
 | [`billing-budget-analyzer`](./skills/billing-budget-analyzer) | Vendor-neutral skill to billing budget analyzer and produce prioritized, actionable findings. |
 | [`billing-consent-analyzer`](./skills/billing-consent-analyzer) | Vendor-neutral skill to billing consent analyzer and produce prioritized, actionable findings. |
+| [`billing-dashboard-analyzer`](./skills/billing-dashboard-analyzer) | Vendor-neutral skill to billing dashboard analyzer and produce prioritized, actionable findings. |
 | [`billing-dispute-triage-assistant`](./skills/billing-dispute-triage-assistant) | Vendor-neutral skill to triage billing disputes and recommend resolution paths with evidence checks. |
 | [`billing-experiment-analyzer`](./skills/billing-experiment-analyzer) | Vendor-neutral skill to billing experiment analyzer and produce prioritized, actionable findings. |
 | [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
@@ -138,6 +139,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-consent-analyzer`](./skills/data-consent-analyzer) | Vendor-neutral skill to data consent analyzer and produce prioritized, actionable findings. |
 | [`data-contract-enforcer`](./skills/data-contract-enforcer) | Use to validate dbt models or warehouse tables against a data contract YAML. |
 | [`data-contract-validator`](./skills/data-contract-validator) | Vendor-neutral skill to validate JSON records against a lightweight data contract (schema + rules) and produce a validation report. |
+| [`data-dashboard-analyzer`](./skills/data-dashboard-analyzer) | Vendor-neutral skill to data dashboard analyzer and produce prioritized, actionable findings. |
 | [`data-experiment-analyzer`](./skills/data-experiment-analyzer) | Vendor-neutral skill to data experiment analyzer and produce prioritized, actionable findings. |
 | [`data-forecast-analyzer`](./skills/data-forecast-analyzer) | Vendor-neutral skill to data forecast analyzer and produce prioritized, actionable findings. |
 | [`data-lineage-breakage-detector`](./skills/data-lineage-breakage-detector) | Vendor-neutral skill to detect lineage breakages after schema or pipeline changes. |
@@ -188,6 +190,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-backlog-analyzer`](./skills/growth-backlog-analyzer) | Vendor-neutral skill to growth backlog analyzer and produce prioritized, actionable findings. |
 | [`growth-budget-analyzer`](./skills/growth-budget-analyzer) | Vendor-neutral skill to growth budget analyzer and produce prioritized, actionable findings. |
 | [`growth-consent-analyzer`](./skills/growth-consent-analyzer) | Vendor-neutral skill to growth consent analyzer and produce prioritized, actionable findings. |
+| [`growth-dashboard-analyzer`](./skills/growth-dashboard-analyzer) | Vendor-neutral skill to growth dashboard analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-analyzer`](./skills/growth-experiment-analyzer) | Vendor-neutral skill to growth experiment analyzer and produce prioritized, actionable findings. |
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
@@ -219,6 +222,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`infra-budget-analyzer`](./skills/infra-budget-analyzer) | Vendor-neutral skill to infra budget analyzer and produce prioritized, actionable findings. |
 | [`infra-consent-analyzer`](./skills/infra-consent-analyzer) | Vendor-neutral skill to infra consent analyzer and produce prioritized, actionable findings. |
 | [`infra-cost-tag-policy-enforcer`](./skills/infra-cost-tag-policy-enforcer) | Vendor-neutral skill to enforce cost-tag policies and list noncompliant resources by owner. |
+| [`infra-dashboard-analyzer`](./skills/infra-dashboard-analyzer) | Vendor-neutral skill to infra dashboard analyzer and produce prioritized, actionable findings. |
 | [`infra-experiment-analyzer`](./skills/infra-experiment-analyzer) | Vendor-neutral skill to infra experiment analyzer and produce prioritized, actionable findings. |
 | [`infra-forecast-analyzer`](./skills/infra-forecast-analyzer) | Vendor-neutral skill to infra forecast analyzer and produce prioritized, actionable findings. |
 | [`infra-migration-analyzer`](./skills/infra-migration-analyzer) | Vendor-neutral skill to infra migration analyzer and produce prioritized, actionable findings. |
@@ -318,6 +322,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`product-backlog-analyzer`](./skills/product-backlog-analyzer) | Vendor-neutral skill to product backlog analyzer and produce prioritized, actionable findings. |
 | [`product-budget-analyzer`](./skills/product-budget-analyzer) | Vendor-neutral skill to product budget analyzer and produce prioritized, actionable findings. |
 | [`product-consent-analyzer`](./skills/product-consent-analyzer) | Vendor-neutral skill to product consent analyzer and produce prioritized, actionable findings. |
+| [`product-dashboard-analyzer`](./skills/product-dashboard-analyzer) | Vendor-neutral skill to product dashboard analyzer and produce prioritized, actionable findings. |
 | [`product-experiment-analyzer`](./skills/product-experiment-analyzer) | Vendor-neutral skill to product experiment analyzer and produce prioritized, actionable findings. |
 | [`product-feedback-router`](./skills/product-feedback-router) | Vendor-neutral skill to route product feedback to owners with priority and duplicate detection. |
 | [`product-forecast-analyzer`](./skills/product-forecast-analyzer) | Vendor-neutral skill to product forecast analyzer and produce prioritized, actionable findings. |
