@@ -67,6 +67,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`api-forecast-analyzer`](./skills/api-forecast-analyzer) | Vendor-neutral skill to api forecast analyzer and produce prioritized, actionable findings. |
 | [`api-latency-budget-tracker`](./skills/api-latency-budget-tracker) | Vendor-neutral skill to track API latency budgets and surface endpoints burning remaining budget. |
 | [`api-migration-analyzer`](./skills/api-migration-analyzer) | Vendor-neutral skill to api migration analyzer and produce prioritized, actionable findings. |
+| [`api-quota-auditor`](./skills/api-quota-auditor) | Vendor-neutral skill to api quota auditor and produce prioritized, actionable findings. |
 | [`api-rate-limit-impact-analyzer`](./skills/api-rate-limit-impact-analyzer) | Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact. |
 | [`api-usage-analyzer`](./skills/api-usage-analyzer) | Vendor-neutral skill to api usage analyzer and produce prioritized, actionable findings. |
 | [`api-webhook-analyzer`](./skills/api-webhook-analyzer) | Vendor-neutral skill to api webhook analyzer and produce prioritized, actionable findings. |
@@ -83,6 +84,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`billing-experiment-analyzer`](./skills/billing-experiment-analyzer) | Vendor-neutral skill to billing experiment analyzer and produce prioritized, actionable findings. |
 | [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
 | [`billing-migration-analyzer`](./skills/billing-migration-analyzer) | Vendor-neutral skill to billing migration analyzer and produce prioritized, actionable findings. |
+| [`billing-quota-auditor`](./skills/billing-quota-auditor) | Vendor-neutral skill to billing quota auditor and produce prioritized, actionable findings. |
 | [`billing-usage-analyzer`](./skills/billing-usage-analyzer) | Vendor-neutral skill to billing usage analyzer and produce prioritized, actionable findings. |
 | [`billing-webhook-analyzer`](./skills/billing-webhook-analyzer) | Vendor-neutral skill to billing webhook analyzer and produce prioritized, actionable findings. |
 | [`board-metric-narrative-builder`](./skills/board-metric-narrative-builder) | Vendor-neutral skill to build concise board narratives from KPI deltas and risk callouts. |
@@ -347,6 +349,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
 | [`release-notes-changelog-normalizer`](./skills/release-notes-changelog-normalizer) | Vendor-neutral skill to normalize raw release notes into Keep a Changelog-style entries with consistent headings. |
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
+| [`release-quota-auditor`](./skills/release-quota-auditor) | Vendor-neutral skill to release quota auditor and produce prioritized, actionable findings. |
 | [`release-risk-checklist-builder`](./skills/release-risk-checklist-builder) | Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints. |
 | [`release-train-risk-ranker`](./skills/release-train-risk-ranker) | Vendor-neutral skill to rank release train candidates by dependency risk and rollback complexity. |
 | [`release-usage-analyzer`](./skills/release-usage-analyzer) | Vendor-neutral skill to release usage analyzer and produce prioritized, actionable findings. |
@@ -382,6 +385,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`security-forecast-analyzer`](./skills/security-forecast-analyzer) | Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings. |
 | [`security-migration-analyzer`](./skills/security-migration-analyzer) | Vendor-neutral skill to security migration analyzer and produce prioritized, actionable findings. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
+| [`security-quota-auditor`](./skills/security-quota-auditor) | Vendor-neutral skill to security quota auditor and produce prioritized, actionable findings. |
 | [`security-usage-analyzer`](./skills/security-usage-analyzer) | Vendor-neutral skill to security usage analyzer and produce prioritized, actionable findings. |
 | [`security-webhook-analyzer`](./skills/security-webhook-analyzer) | Vendor-neutral skill to security webhook analyzer and produce prioritized, actionable findings. |
 | [`service-ownership-mapper`](./skills/service-ownership-mapper) | Vendor-neutral skill to map services to owners and flag orphaned or dual-owned components. |
@@ -406,6 +410,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-migration-analyzer`](./skills/support-migration-analyzer) | Vendor-neutral skill to support migration analyzer and produce prioritized, actionable findings. |
+| [`support-quota-auditor`](./skills/support-quota-auditor) | Vendor-neutral skill to support quota auditor and produce prioritized, actionable findings. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
 | [`support-usage-analyzer`](./skills/support-usage-analyzer) | Vendor-neutral skill to support usage analyzer and produce prioritized, actionable findings. |
 | [`support-webhook-analyzer`](./skills/support-webhook-analyzer) | Vendor-neutral skill to support webhook analyzer and produce prioritized, actionable findings. |

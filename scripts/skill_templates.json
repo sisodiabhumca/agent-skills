@@ -1613,5 +1613,105 @@
     "slug": "pipeline-dashboard-analyzer",
     "title": "Pipeline Dashboard Analyzer",
     "description": "Vendor-neutral skill to pipeline dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-dashboard-analyzer",
+    "title": "Partner Dashboard Analyzer",
+    "description": "Vendor-neutral skill to partner dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-dashboard-analyzer",
+    "title": "Mobile Dashboard Analyzer",
+    "description": "Vendor-neutral skill to mobile dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-dashboard-analyzer",
+    "title": "Cloud Dashboard Analyzer",
+    "description": "Vendor-neutral skill to cloud dashboard analyzer and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-quota-auditor",
+    "title": "Api Quota Auditor",
+    "description": "Vendor-neutral skill to api quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-quota-auditor",
+    "title": "Billing Quota Auditor",
+    "description": "Vendor-neutral skill to billing quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-quota-auditor",
+    "title": "Support Quota Auditor",
+    "description": "Vendor-neutral skill to support quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-quota-auditor",
+    "title": "Security Quota Auditor",
+    "description": "Vendor-neutral skill to security quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-quota-auditor",
+    "title": "Release Quota Auditor",
+    "description": "Vendor-neutral skill to release quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-quota-auditor",
+    "title": "Analytics Quota Auditor",
+    "description": "Vendor-neutral skill to analytics quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-quota-auditor",
+    "title": "Ops Quota Auditor",
+    "description": "Vendor-neutral skill to ops quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-quota-auditor",
+    "title": "Growth Quota Auditor",
+    "description": "Vendor-neutral skill to growth quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-quota-auditor",
+    "title": "Data Quota Auditor",
+    "description": "Vendor-neutral skill to data quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-quota-auditor",
+    "title": "Infra Quota Auditor",
+    "description": "Vendor-neutral skill to infra quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-quota-auditor",
+    "title": "Product Quota Auditor",
+    "description": "Vendor-neutral skill to product quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-quota-auditor",
+    "title": "Sales Quota Auditor",
+    "description": "Vendor-neutral skill to sales quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-quota-auditor",
+    "title": "Finance Quota Auditor",
+    "description": "Vendor-neutral skill to finance quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-quota-auditor",
+    "title": "Privacy Quota Auditor",
+    "description": "Vendor-neutral skill to privacy quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-quota-auditor",
+    "title": "Identity Quota Auditor",
+    "description": "Vendor-neutral skill to identity quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-quota-auditor",
+    "title": "Catalog Quota Auditor",
+    "description": "Vendor-neutral skill to catalog quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-quota-auditor",
+    "title": "Pipeline Quota Auditor",
+    "description": "Vendor-neutral skill to pipeline quota auditor and produce prioritized, actionable findings."
   }
 ]
