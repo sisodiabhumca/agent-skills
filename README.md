@@ -51,6 +51,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`analytics-experiment-analyzer`](./skills/analytics-experiment-analyzer) | Vendor-neutral skill to analytics experiment analyzer and produce prioritized, actionable findings. |
 | [`analytics-forecast-analyzer`](./skills/analytics-forecast-analyzer) | Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings. |
 | [`analytics-migration-analyzer`](./skills/analytics-migration-analyzer) | Vendor-neutral skill to analytics migration analyzer and produce prioritized, actionable findings. |
+| [`analytics-quota-auditor`](./skills/analytics-quota-auditor) | Vendor-neutral skill to analytics quota auditor and produce prioritized, actionable findings. |
 | [`analytics-usage-analyzer`](./skills/analytics-usage-analyzer) | Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings. |
 | [`analytics-webhook-analyzer`](./skills/analytics-webhook-analyzer) | Vendor-neutral skill to analytics webhook analyzer and produce prioritized, actionable findings. |
 | [`api-access-analyzer`](./skills/api-access-analyzer) | Vendor-neutral skill to api access analyzer and produce prioritized, actionable findings. |
@@ -111,6 +112,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`cloud-budget-analyzer`](./skills/cloud-budget-analyzer) | Vendor-neutral skill to cloud budget analyzer and produce prioritized, actionable findings. |
 | [`cloud-consent-analyzer`](./skills/cloud-consent-analyzer) | Vendor-neutral skill to cloud consent analyzer and produce prioritized, actionable findings. |
 | [`cloud-cost-tag-coverage-auditor`](./skills/cloud-cost-tag-coverage-auditor) | Audit cloud resource export data for missing or invalid cost allocation tags and output a vendor-neutral remediation plan. |
+| [`cloud-dashboard-analyzer`](./skills/cloud-dashboard-analyzer) | Vendor-neutral skill to cloud dashboard analyzer and produce prioritized, actionable findings. |
 | [`cloud-dependency-analyzer`](./skills/cloud-dependency-analyzer) | Vendor-neutral skill to cloud dependency analyzer and produce prioritized, actionable findings. |
 | [`cloud-experiment-analyzer`](./skills/cloud-experiment-analyzer) | Vendor-neutral skill to cloud experiment analyzer and produce prioritized, actionable findings. |
 | [`cloud-forecast-analyzer`](./skills/cloud-forecast-analyzer) | Vendor-neutral skill to cloud forecast analyzer and produce prioritized, actionable findings. |
@@ -252,6 +254,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`mobile-budget-analyzer`](./skills/mobile-budget-analyzer) | Vendor-neutral skill to mobile budget analyzer and produce prioritized, actionable findings. |
 | [`mobile-consent-analyzer`](./skills/mobile-consent-analyzer) | Vendor-neutral skill to mobile consent analyzer and produce prioritized, actionable findings. |
 | [`mobile-crash-triage-assistant`](./skills/mobile-crash-triage-assistant) | Vendor-neutral skill to triage mobile crash clusters by release, device, and customer impact. |
+| [`mobile-dashboard-analyzer`](./skills/mobile-dashboard-analyzer) | Vendor-neutral skill to mobile dashboard analyzer and produce prioritized, actionable findings. |
 | [`mobile-dependency-analyzer`](./skills/mobile-dependency-analyzer) | Vendor-neutral skill to mobile dependency analyzer and produce prioritized, actionable findings. |
 | [`mobile-experiment-analyzer`](./skills/mobile-experiment-analyzer) | Vendor-neutral skill to mobile experiment analyzer and produce prioritized, actionable findings. |
 | [`mobile-forecast-analyzer`](./skills/mobile-forecast-analyzer) | Vendor-neutral skill to mobile forecast analyzer and produce prioritized, actionable findings. |
@@ -283,6 +286,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`partner-backlog-analyzer`](./skills/partner-backlog-analyzer) | Vendor-neutral skill to partner backlog analyzer and produce prioritized, actionable findings. |
 | [`partner-budget-analyzer`](./skills/partner-budget-analyzer) | Vendor-neutral skill to partner budget analyzer and produce prioritized, actionable findings. |
 | [`partner-consent-analyzer`](./skills/partner-consent-analyzer) | Vendor-neutral skill to partner consent analyzer and produce prioritized, actionable findings. |
+| [`partner-dashboard-analyzer`](./skills/partner-dashboard-analyzer) | Vendor-neutral skill to partner dashboard analyzer and produce prioritized, actionable findings. |
 | [`partner-dependency-analyzer`](./skills/partner-dependency-analyzer) | Vendor-neutral skill to partner dependency analyzer and produce prioritized, actionable findings. |
 | [`partner-experiment-analyzer`](./skills/partner-experiment-analyzer) | Vendor-neutral skill to partner experiment analyzer and produce prioritized, actionable findings. |
 | [`partner-forecast-analyzer`](./skills/partner-forecast-analyzer) | Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings. |
@@ -300,6 +304,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
 | [`pipeline-forecast-analyzer`](./skills/pipeline-forecast-analyzer) | Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings. |
 | [`pipeline-migration-analyzer`](./skills/pipeline-migration-analyzer) | Vendor-neutral skill to pipeline migration analyzer and produce prioritized, actionable findings. |
+| [`pipeline-quota-auditor`](./skills/pipeline-quota-auditor) | Vendor-neutral skill to pipeline quota auditor and produce prioritized, actionable findings. |
 | [`pipeline-stage-velocity-analyzer`](./skills/pipeline-stage-velocity-analyzer) | Vendor-neutral skill to analyze sales pipeline stage velocity and identify bottleneck stages. |
 | [`pipeline-usage-analyzer`](./skills/pipeline-usage-analyzer) | Vendor-neutral skill to pipeline usage analyzer and produce prioritized, actionable findings. |
 | [`pipeline-webhook-analyzer`](./skills/pipeline-webhook-analyzer) | Vendor-neutral skill to pipeline webhook analyzer and produce prioritized, actionable findings. |
