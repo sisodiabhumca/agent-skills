@@ -1713,5 +1713,105 @@
     "slug": "pipeline-quota-auditor",
     "title": "Pipeline Quota Auditor",
     "description": "Vendor-neutral skill to pipeline quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-quota-auditor",
+    "title": "Partner Quota Auditor",
+    "description": "Vendor-neutral skill to partner quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-quota-auditor",
+    "title": "Mobile Quota Auditor",
+    "description": "Vendor-neutral skill to mobile quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-quota-auditor",
+    "title": "Cloud Quota Auditor",
+    "description": "Vendor-neutral skill to cloud quota auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-ticket-auditor",
+    "title": "Api Ticket Auditor",
+    "description": "Vendor-neutral skill to api ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-ticket-auditor",
+    "title": "Billing Ticket Auditor",
+    "description": "Vendor-neutral skill to billing ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-ticket-auditor",
+    "title": "Support Ticket Auditor",
+    "description": "Vendor-neutral skill to support ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-ticket-auditor",
+    "title": "Security Ticket Auditor",
+    "description": "Vendor-neutral skill to security ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-ticket-auditor",
+    "title": "Release Ticket Auditor",
+    "description": "Vendor-neutral skill to release ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-ticket-auditor",
+    "title": "Analytics Ticket Auditor",
+    "description": "Vendor-neutral skill to analytics ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-ticket-auditor",
+    "title": "Ops Ticket Auditor",
+    "description": "Vendor-neutral skill to ops ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-ticket-auditor",
+    "title": "Growth Ticket Auditor",
+    "description": "Vendor-neutral skill to growth ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-ticket-auditor",
+    "title": "Data Ticket Auditor",
+    "description": "Vendor-neutral skill to data ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-ticket-auditor",
+    "title": "Infra Ticket Auditor",
+    "description": "Vendor-neutral skill to infra ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-ticket-auditor",
+    "title": "Product Ticket Auditor",
+    "description": "Vendor-neutral skill to product ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-ticket-auditor",
+    "title": "Sales Ticket Auditor",
+    "description": "Vendor-neutral skill to sales ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-ticket-auditor",
+    "title": "Finance Ticket Auditor",
+    "description": "Vendor-neutral skill to finance ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-ticket-auditor",
+    "title": "Privacy Ticket Auditor",
+    "description": "Vendor-neutral skill to privacy ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-ticket-auditor",
+    "title": "Identity Ticket Auditor",
+    "description": "Vendor-neutral skill to identity ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-ticket-auditor",
+    "title": "Catalog Ticket Auditor",
+    "description": "Vendor-neutral skill to catalog ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-ticket-auditor",
+    "title": "Pipeline Ticket Auditor",
+    "description": "Vendor-neutral skill to pipeline ticket auditor and produce prioritized, actionable findings."
   }
 ]

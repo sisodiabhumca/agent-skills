@@ -104,6 +104,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`catalog-forecast-analyzer`](./skills/catalog-forecast-analyzer) | Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings. |
 | [`catalog-migration-analyzer`](./skills/catalog-migration-analyzer) | Vendor-neutral skill to catalog migration analyzer and produce prioritized, actionable findings. |
 | [`catalog-quota-auditor`](./skills/catalog-quota-auditor) | Vendor-neutral skill to catalog quota auditor and produce prioritized, actionable findings. |
+| [`catalog-ticket-auditor`](./skills/catalog-ticket-auditor) | Vendor-neutral skill to catalog ticket auditor and produce prioritized, actionable findings. |
 | [`catalog-usage-analyzer`](./skills/catalog-usage-analyzer) | Vendor-neutral skill to catalog usage analyzer and produce prioritized, actionable findings. |
 | [`catalog-webhook-analyzer`](./skills/catalog-webhook-analyzer) | Vendor-neutral skill to catalog webhook analyzer and produce prioritized, actionable findings. |
 | [`change-request-risk-scorer`](./skills/change-request-risk-scorer) | Vendor-neutral skill to score change requests using blast radius, rollback readiness, and dependency impact. |
@@ -118,6 +119,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`cloud-experiment-analyzer`](./skills/cloud-experiment-analyzer) | Vendor-neutral skill to cloud experiment analyzer and produce prioritized, actionable findings. |
 | [`cloud-forecast-analyzer`](./skills/cloud-forecast-analyzer) | Vendor-neutral skill to cloud forecast analyzer and produce prioritized, actionable findings. |
 | [`cloud-migration-analyzer`](./skills/cloud-migration-analyzer) | Vendor-neutral skill to cloud migration analyzer and produce prioritized, actionable findings. |
+| [`cloud-quota-auditor`](./skills/cloud-quota-auditor) | Vendor-neutral skill to cloud quota auditor and produce prioritized, actionable findings. |
 | [`cloud-usage-analyzer`](./skills/cloud-usage-analyzer) | Vendor-neutral skill to cloud usage analyzer and produce prioritized, actionable findings. |
 | [`cloud-webhook-analyzer`](./skills/cloud-webhook-analyzer) | Vendor-neutral skill to cloud webhook analyzer and produce prioritized, actionable findings. |
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
@@ -265,6 +267,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`mobile-experiment-analyzer`](./skills/mobile-experiment-analyzer) | Vendor-neutral skill to mobile experiment analyzer and produce prioritized, actionable findings. |
 | [`mobile-forecast-analyzer`](./skills/mobile-forecast-analyzer) | Vendor-neutral skill to mobile forecast analyzer and produce prioritized, actionable findings. |
 | [`mobile-migration-analyzer`](./skills/mobile-migration-analyzer) | Vendor-neutral skill to mobile migration analyzer and produce prioritized, actionable findings. |
+| [`mobile-quota-auditor`](./skills/mobile-quota-auditor) | Vendor-neutral skill to mobile quota auditor and produce prioritized, actionable findings. |
 | [`mobile-usage-analyzer`](./skills/mobile-usage-analyzer) | Vendor-neutral skill to mobile usage analyzer and produce prioritized, actionable findings. |
 | [`mobile-webhook-analyzer`](./skills/mobile-webhook-analyzer) | Vendor-neutral skill to mobile webhook analyzer and produce prioritized, actionable findings. |
 | [`model-eval-suite-coverage-checker`](./skills/model-eval-suite-coverage-checker) | Vendor-neutral skill to check LLM eval suite coverage for critical prompts and failure modes. |
@@ -298,6 +301,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`partner-experiment-analyzer`](./skills/partner-experiment-analyzer) | Vendor-neutral skill to partner experiment analyzer and produce prioritized, actionable findings. |
 | [`partner-forecast-analyzer`](./skills/partner-forecast-analyzer) | Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings. |
 | [`partner-migration-analyzer`](./skills/partner-migration-analyzer) | Vendor-neutral skill to partner migration analyzer and produce prioritized, actionable findings. |
+| [`partner-quota-auditor`](./skills/partner-quota-auditor) | Vendor-neutral skill to partner quota auditor and produce prioritized, actionable findings. |
 | [`partner-usage-analyzer`](./skills/partner-usage-analyzer) | Vendor-neutral skill to partner usage analyzer and produce prioritized, actionable findings. |
 | [`partner-webhook-analyzer`](./skills/partner-webhook-analyzer) | Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
@@ -313,6 +317,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pipeline-migration-analyzer`](./skills/pipeline-migration-analyzer) | Vendor-neutral skill to pipeline migration analyzer and produce prioritized, actionable findings. |
 | [`pipeline-quota-auditor`](./skills/pipeline-quota-auditor) | Vendor-neutral skill to pipeline quota auditor and produce prioritized, actionable findings. |
 | [`pipeline-stage-velocity-analyzer`](./skills/pipeline-stage-velocity-analyzer) | Vendor-neutral skill to analyze sales pipeline stage velocity and identify bottleneck stages. |
+| [`pipeline-ticket-auditor`](./skills/pipeline-ticket-auditor) | Vendor-neutral skill to pipeline ticket auditor and produce prioritized, actionable findings. |
 | [`pipeline-usage-analyzer`](./skills/pipeline-usage-analyzer) | Vendor-neutral skill to pipeline usage analyzer and produce prioritized, actionable findings. |
 | [`pipeline-webhook-analyzer`](./skills/pipeline-webhook-analyzer) | Vendor-neutral skill to pipeline webhook analyzer and produce prioritized, actionable findings. |
 | [`policy-as-code-linter`](./skills/policy-as-code-linter) | Vendor-neutral skill for linting simple policy-as-code rules (YAML) for style, safety, and completeness. |
