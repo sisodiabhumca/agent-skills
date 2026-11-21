@@ -189,6 +189,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`finance-forecast-analyzer`](./skills/finance-forecast-analyzer) | Vendor-neutral skill to finance forecast analyzer and produce prioritized, actionable findings. |
 | [`finance-migration-analyzer`](./skills/finance-migration-analyzer) | Vendor-neutral skill to finance migration analyzer and produce prioritized, actionable findings. |
 | [`finance-quota-auditor`](./skills/finance-quota-auditor) | Vendor-neutral skill to finance quota auditor and produce prioritized, actionable findings. |
+| [`finance-ticket-auditor`](./skills/finance-ticket-auditor) | Vendor-neutral skill to finance ticket auditor and produce prioritized, actionable findings. |
 | [`finance-usage-analyzer`](./skills/finance-usage-analyzer) | Vendor-neutral skill to finance usage analyzer and produce prioritized, actionable findings. |
 | [`finance-webhook-analyzer`](./skills/finance-webhook-analyzer) | Vendor-neutral skill to finance webhook analyzer and produce prioritized, actionable findings. |
 | [`finops-chargeback-reporter`](./skills/finops-chargeback-reporter) | Vendor-neutral skill to produce chargeback reports with tag coverage and allocation confidence notes. |
@@ -238,6 +239,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`infra-forecast-analyzer`](./skills/infra-forecast-analyzer) | Vendor-neutral skill to infra forecast analyzer and produce prioritized, actionable findings. |
 | [`infra-migration-analyzer`](./skills/infra-migration-analyzer) | Vendor-neutral skill to infra migration analyzer and produce prioritized, actionable findings. |
 | [`infra-quota-auditor`](./skills/infra-quota-auditor) | Vendor-neutral skill to infra quota auditor and produce prioritized, actionable findings. |
+| [`infra-ticket-auditor`](./skills/infra-ticket-auditor) | Vendor-neutral skill to infra ticket auditor and produce prioritized, actionable findings. |
 | [`infra-usage-analyzer`](./skills/infra-usage-analyzer) | Vendor-neutral skill to infra usage analyzer and produce prioritized, actionable findings. |
 | [`infra-webhook-analyzer`](./skills/infra-webhook-analyzer) | Vendor-neutral skill to infra webhook analyzer and produce prioritized, actionable findings. |
 | [`integration-test-gap-analyzer`](./skills/integration-test-gap-analyzer) | Vendor-neutral skill to find integration paths lacking automated tests after recent service changes. |
@@ -334,6 +336,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`privacy-migration-analyzer`](./skills/privacy-migration-analyzer) | Vendor-neutral skill to privacy migration analyzer and produce prioritized, actionable findings. |
 | [`privacy-policy-diff-summarizer`](./skills/privacy-policy-diff-summarizer) | Diff two privacy policy texts and produce a vendor-neutral summary of materially changed sections and risk flags. |
 | [`privacy-quota-auditor`](./skills/privacy-quota-auditor) | Vendor-neutral skill to privacy quota auditor and produce prioritized, actionable findings. |
+| [`privacy-ticket-auditor`](./skills/privacy-ticket-auditor) | Vendor-neutral skill to privacy ticket auditor and produce prioritized, actionable findings. |
 | [`privacy-usage-analyzer`](./skills/privacy-usage-analyzer) | Vendor-neutral skill to privacy usage analyzer and produce prioritized, actionable findings. |
 | [`privacy-webhook-analyzer`](./skills/privacy-webhook-analyzer) | Vendor-neutral skill to privacy webhook analyzer and produce prioritized, actionable findings. |
 | [`procurement-rfp-comparator`](./skills/procurement-rfp-comparator) | Vendor-neutral skill to compare vendor RFP responses against weighted evaluation criteria. |
@@ -349,6 +352,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`product-migration-analyzer`](./skills/product-migration-analyzer) | Vendor-neutral skill to product migration analyzer and produce prioritized, actionable findings. |
 | [`product-ops-ticket-clusterer`](./skills/product-ops-ticket-clusterer) | Vendor-neutral skill to cluster product ops tickets into themes with owner recommendations. |
 | [`product-quota-auditor`](./skills/product-quota-auditor) | Vendor-neutral skill to product quota auditor and produce prioritized, actionable findings. |
+| [`product-ticket-auditor`](./skills/product-ticket-auditor) | Vendor-neutral skill to product ticket auditor and produce prioritized, actionable findings. |
 | [`product-trial-conversion-explainer`](./skills/product-trial-conversion-explainer) | Vendor-neutral skill to explain trial conversion changes across cohorts, channels, and onboarding paths. |
 | [`product-usage-analyzer`](./skills/product-usage-analyzer) | Vendor-neutral skill to product usage analyzer and produce prioritized, actionable findings. |
 | [`product-webhook-analyzer`](./skills/product-webhook-analyzer) | Vendor-neutral skill to product webhook analyzer and produce prioritized, actionable findings. |
@@ -390,6 +394,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`sales-forecast-bias-checker`](./skills/sales-forecast-bias-checker) | Vendor-neutral skill to detect systematic forecast bias by rep, segment, and stage. |
 | [`sales-migration-analyzer`](./skills/sales-migration-analyzer) | Vendor-neutral skill to sales migration analyzer and produce prioritized, actionable findings. |
 | [`sales-quota-auditor`](./skills/sales-quota-auditor) | Vendor-neutral skill to sales quota auditor and produce prioritized, actionable findings. |
+| [`sales-ticket-auditor`](./skills/sales-ticket-auditor) | Vendor-neutral skill to sales ticket auditor and produce prioritized, actionable findings. |
 | [`sales-usage-analyzer`](./skills/sales-usage-analyzer) | Vendor-neutral skill to sales usage analyzer and produce prioritized, actionable findings. |
 | [`sales-webhook-analyzer`](./skills/sales-webhook-analyzer) | Vendor-neutral skill to sales webhook analyzer and produce prioritized, actionable findings. |
 | [`sbom-license-risk-checker`](./skills/sbom-license-risk-checker) | Vendor-neutral skill to check a CycloneDX SBOM for license policy compliance and emit a risk report. |
