@@ -69,6 +69,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`api-forecast-analyzer`](./skills/api-forecast-analyzer) | Vendor-neutral skill to api forecast analyzer and produce prioritized, actionable findings. |
 | [`api-latency-budget-tracker`](./skills/api-latency-budget-tracker) | Vendor-neutral skill to track API latency budgets and surface endpoints burning remaining budget. |
 | [`api-migration-analyzer`](./skills/api-migration-analyzer) | Vendor-neutral skill to api migration analyzer and produce prioritized, actionable findings. |
+| [`api-policy-auditor`](./skills/api-policy-auditor) | Vendor-neutral skill to api policy auditor and produce prioritized, actionable findings. |
 | [`api-quota-auditor`](./skills/api-quota-auditor) | Vendor-neutral skill to api quota auditor and produce prioritized, actionable findings. |
 | [`api-rate-limit-impact-analyzer`](./skills/api-rate-limit-impact-analyzer) | Vendor-neutral skill to analyze rate-limit events and estimate customer-facing impact. |
 | [`api-ticket-auditor`](./skills/api-ticket-auditor) | Vendor-neutral skill to api ticket auditor and produce prioritized, actionable findings. |
@@ -87,6 +88,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`billing-experiment-analyzer`](./skills/billing-experiment-analyzer) | Vendor-neutral skill to billing experiment analyzer and produce prioritized, actionable findings. |
 | [`billing-forecast-analyzer`](./skills/billing-forecast-analyzer) | Vendor-neutral skill to billing forecast analyzer and produce prioritized, actionable findings. |
 | [`billing-migration-analyzer`](./skills/billing-migration-analyzer) | Vendor-neutral skill to billing migration analyzer and produce prioritized, actionable findings. |
+| [`billing-policy-auditor`](./skills/billing-policy-auditor) | Vendor-neutral skill to billing policy auditor and produce prioritized, actionable findings. |
 | [`billing-quota-auditor`](./skills/billing-quota-auditor) | Vendor-neutral skill to billing quota auditor and produce prioritized, actionable findings. |
 | [`billing-ticket-auditor`](./skills/billing-ticket-auditor) | Vendor-neutral skill to billing ticket auditor and produce prioritized, actionable findings. |
 | [`billing-usage-analyzer`](./skills/billing-usage-analyzer) | Vendor-neutral skill to billing usage analyzer and produce prioritized, actionable findings. |
@@ -123,6 +125,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`cloud-forecast-analyzer`](./skills/cloud-forecast-analyzer) | Vendor-neutral skill to cloud forecast analyzer and produce prioritized, actionable findings. |
 | [`cloud-migration-analyzer`](./skills/cloud-migration-analyzer) | Vendor-neutral skill to cloud migration analyzer and produce prioritized, actionable findings. |
 | [`cloud-quota-auditor`](./skills/cloud-quota-auditor) | Vendor-neutral skill to cloud quota auditor and produce prioritized, actionable findings. |
+| [`cloud-ticket-auditor`](./skills/cloud-ticket-auditor) | Vendor-neutral skill to cloud ticket auditor and produce prioritized, actionable findings. |
 | [`cloud-usage-analyzer`](./skills/cloud-usage-analyzer) | Vendor-neutral skill to cloud usage analyzer and produce prioritized, actionable findings. |
 | [`cloud-webhook-analyzer`](./skills/cloud-webhook-analyzer) | Vendor-neutral skill to cloud webhook analyzer and produce prioritized, actionable findings. |
 | [`competitive-win-loss-analyzer`](./skills/competitive-win-loss-analyzer) | Vendor-neutral skill to analyze win-loss notes and extract recurring competitive themes. |
@@ -418,6 +421,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`security-forecast-analyzer`](./skills/security-forecast-analyzer) | Vendor-neutral skill to security forecast analyzer and produce prioritized, actionable findings. |
 | [`security-migration-analyzer`](./skills/security-migration-analyzer) | Vendor-neutral skill to security migration analyzer and produce prioritized, actionable findings. |
 | [`security-patch-sla-tracker`](./skills/security-patch-sla-tracker) | Vendor-neutral skill to track security patch SLAs and escalate overdue critical vulnerabilities. |
+| [`security-policy-auditor`](./skills/security-policy-auditor) | Vendor-neutral skill to security policy auditor and produce prioritized, actionable findings. |
 | [`security-quota-auditor`](./skills/security-quota-auditor) | Vendor-neutral skill to security quota auditor and produce prioritized, actionable findings. |
 | [`security-ticket-auditor`](./skills/security-ticket-auditor) | Vendor-neutral skill to security ticket auditor and produce prioritized, actionable findings. |
 | [`security-usage-analyzer`](./skills/security-usage-analyzer) | Vendor-neutral skill to security usage analyzer and produce prioritized, actionable findings. |
@@ -444,6 +448,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`support-macro-gap-analyzer`](./skills/support-macro-gap-analyzer) | Vendor-neutral skill to find support ticket themes lacking macro coverage and draft macro candidates. |
 | [`support-macro-personalizer`](./skills/support-macro-personalizer) | Vendor-neutral skill to render customer support macros with variables, validate placeholders, and output ready-to-send drafts. |
 | [`support-migration-analyzer`](./skills/support-migration-analyzer) | Vendor-neutral skill to support migration analyzer and produce prioritized, actionable findings. |
+| [`support-policy-auditor`](./skills/support-policy-auditor) | Vendor-neutral skill to support policy auditor and produce prioritized, actionable findings. |
 | [`support-quota-auditor`](./skills/support-quota-auditor) | Vendor-neutral skill to support quota auditor and produce prioritized, actionable findings. |
 | [`support-sla-breach-detector`](./skills/support-sla-breach-detector) | Vendor-neutral skill for detecting support-ticket SLA breaches from exported ticket timelines. |
 | [`support-ticket-auditor`](./skills/support-ticket-auditor) | Vendor-neutral skill to support ticket auditor and produce prioritized, actionable findings. |

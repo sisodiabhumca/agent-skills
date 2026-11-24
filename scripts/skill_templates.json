@@ -1813,5 +1813,105 @@
     "slug": "pipeline-ticket-auditor",
     "title": "Pipeline Ticket Auditor",
     "description": "Vendor-neutral skill to pipeline ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-ticket-auditor",
+    "title": "Partner Ticket Auditor",
+    "description": "Vendor-neutral skill to partner ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-ticket-auditor",
+    "title": "Mobile Ticket Auditor",
+    "description": "Vendor-neutral skill to mobile ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-ticket-auditor",
+    "title": "Cloud Ticket Auditor",
+    "description": "Vendor-neutral skill to cloud ticket auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-policy-auditor",
+    "title": "Api Policy Auditor",
+    "description": "Vendor-neutral skill to api policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-policy-auditor",
+    "title": "Billing Policy Auditor",
+    "description": "Vendor-neutral skill to billing policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-policy-auditor",
+    "title": "Support Policy Auditor",
+    "description": "Vendor-neutral skill to support policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-policy-auditor",
+    "title": "Security Policy Auditor",
+    "description": "Vendor-neutral skill to security policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-policy-auditor",
+    "title": "Release Policy Auditor",
+    "description": "Vendor-neutral skill to release policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-policy-auditor",
+    "title": "Analytics Policy Auditor",
+    "description": "Vendor-neutral skill to analytics policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-policy-auditor",
+    "title": "Ops Policy Auditor",
+    "description": "Vendor-neutral skill to ops policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-policy-auditor",
+    "title": "Growth Policy Auditor",
+    "description": "Vendor-neutral skill to growth policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-policy-auditor",
+    "title": "Data Policy Auditor",
+    "description": "Vendor-neutral skill to data policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-policy-auditor",
+    "title": "Infra Policy Auditor",
+    "description": "Vendor-neutral skill to infra policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-policy-auditor",
+    "title": "Product Policy Auditor",
+    "description": "Vendor-neutral skill to product policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-policy-auditor",
+    "title": "Sales Policy Auditor",
+    "description": "Vendor-neutral skill to sales policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-policy-auditor",
+    "title": "Finance Policy Auditor",
+    "description": "Vendor-neutral skill to finance policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-policy-auditor",
+    "title": "Privacy Policy Auditor",
+    "description": "Vendor-neutral skill to privacy policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-policy-auditor",
+    "title": "Identity Policy Auditor",
+    "description": "Vendor-neutral skill to identity policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-policy-auditor",
+    "title": "Catalog Policy Auditor",
+    "description": "Vendor-neutral skill to catalog policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-policy-auditor",
+    "title": "Pipeline Policy Auditor",
+    "description": "Vendor-neutral skill to pipeline policy auditor and produce prioritized, actionable findings."
   }
 ]
