@@ -108,6 +108,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`catalog-experiment-analyzer`](./skills/catalog-experiment-analyzer) | Vendor-neutral skill to catalog experiment analyzer and produce prioritized, actionable findings. |
 | [`catalog-forecast-analyzer`](./skills/catalog-forecast-analyzer) | Vendor-neutral skill to catalog forecast analyzer and produce prioritized, actionable findings. |
 | [`catalog-migration-analyzer`](./skills/catalog-migration-analyzer) | Vendor-neutral skill to catalog migration analyzer and produce prioritized, actionable findings. |
+| [`catalog-policy-auditor`](./skills/catalog-policy-auditor) | Vendor-neutral skill to catalog policy auditor and produce prioritized, actionable findings. |
 | [`catalog-quota-auditor`](./skills/catalog-quota-auditor) | Vendor-neutral skill to catalog quota auditor and produce prioritized, actionable findings. |
 | [`catalog-ticket-auditor`](./skills/catalog-ticket-auditor) | Vendor-neutral skill to catalog ticket auditor and produce prioritized, actionable findings. |
 | [`catalog-usage-analyzer`](./skills/catalog-usage-analyzer) | Vendor-neutral skill to catalog usage analyzer and produce prioritized, actionable findings. |
@@ -279,6 +280,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`mobile-forecast-analyzer`](./skills/mobile-forecast-analyzer) | Vendor-neutral skill to mobile forecast analyzer and produce prioritized, actionable findings. |
 | [`mobile-migration-analyzer`](./skills/mobile-migration-analyzer) | Vendor-neutral skill to mobile migration analyzer and produce prioritized, actionable findings. |
 | [`mobile-quota-auditor`](./skills/mobile-quota-auditor) | Vendor-neutral skill to mobile quota auditor and produce prioritized, actionable findings. |
+| [`mobile-ticket-auditor`](./skills/mobile-ticket-auditor) | Vendor-neutral skill to mobile ticket auditor and produce prioritized, actionable findings. |
 | [`mobile-usage-analyzer`](./skills/mobile-usage-analyzer) | Vendor-neutral skill to mobile usage analyzer and produce prioritized, actionable findings. |
 | [`mobile-webhook-analyzer`](./skills/mobile-webhook-analyzer) | Vendor-neutral skill to mobile webhook analyzer and produce prioritized, actionable findings. |
 | [`model-eval-suite-coverage-checker`](./skills/model-eval-suite-coverage-checker) | Vendor-neutral skill to check LLM eval suite coverage for critical prompts and failure modes. |
@@ -314,6 +316,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`partner-forecast-analyzer`](./skills/partner-forecast-analyzer) | Vendor-neutral skill to partner forecast analyzer and produce prioritized, actionable findings. |
 | [`partner-migration-analyzer`](./skills/partner-migration-analyzer) | Vendor-neutral skill to partner migration analyzer and produce prioritized, actionable findings. |
 | [`partner-quota-auditor`](./skills/partner-quota-auditor) | Vendor-neutral skill to partner quota auditor and produce prioritized, actionable findings. |
+| [`partner-ticket-auditor`](./skills/partner-ticket-auditor) | Vendor-neutral skill to partner ticket auditor and produce prioritized, actionable findings. |
 | [`partner-usage-analyzer`](./skills/partner-usage-analyzer) | Vendor-neutral skill to partner usage analyzer and produce prioritized, actionable findings. |
 | [`partner-webhook-analyzer`](./skills/partner-webhook-analyzer) | Vendor-neutral skill to partner webhook analyzer and produce prioritized, actionable findings. |
 | [`payment-failure-recovery-advisor`](./skills/payment-failure-recovery-advisor) | Vendor-neutral skill to recommend payment failure recovery actions by decline code and customer tier. |
@@ -327,6 +330,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`pipeline-flake-detector`](./skills/pipeline-flake-detector) | Vendor-neutral skill to detect flaky CI jobs from historical run data and suggest stabilization actions. |
 | [`pipeline-forecast-analyzer`](./skills/pipeline-forecast-analyzer) | Vendor-neutral skill to pipeline forecast analyzer and produce prioritized, actionable findings. |
 | [`pipeline-migration-analyzer`](./skills/pipeline-migration-analyzer) | Vendor-neutral skill to pipeline migration analyzer and produce prioritized, actionable findings. |
+| [`pipeline-policy-auditor`](./skills/pipeline-policy-auditor) | Vendor-neutral skill to pipeline policy auditor and produce prioritized, actionable findings. |
 | [`pipeline-quota-auditor`](./skills/pipeline-quota-auditor) | Vendor-neutral skill to pipeline quota auditor and produce prioritized, actionable findings. |
 | [`pipeline-stage-velocity-analyzer`](./skills/pipeline-stage-velocity-analyzer) | Vendor-neutral skill to analyze sales pipeline stage velocity and identify bottleneck stages. |
 | [`pipeline-ticket-auditor`](./skills/pipeline-ticket-auditor) | Vendor-neutral skill to pipeline ticket auditor and produce prioritized, actionable findings. |
@@ -382,6 +386,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`release-notes-audience-adapter`](./skills/release-notes-audience-adapter) | Vendor-neutral skill to adapt release notes for customer, support, and sales audiences. |
 | [`release-notes-changelog-normalizer`](./skills/release-notes-changelog-normalizer) | Vendor-neutral skill to normalize raw release notes into Keep a Changelog-style entries with consistent headings. |
 | [`release-notes-writer`](./skills/release-notes-writer) | Use to assemble user-facing release notes from a list of merged PRs (CSV/JSON) or by reading `git log` between two refs. |
+| [`release-policy-auditor`](./skills/release-policy-auditor) | Vendor-neutral skill to release policy auditor and produce prioritized, actionable findings. |
 | [`release-quota-auditor`](./skills/release-quota-auditor) | Vendor-neutral skill to release quota auditor and produce prioritized, actionable findings. |
 | [`release-risk-checklist-builder`](./skills/release-risk-checklist-builder) | Vendor-neutral skill to generate a release risk checklist from scope, dependencies, and rollout constraints. |
 | [`release-ticket-auditor`](./skills/release-ticket-auditor) | Vendor-neutral skill to release ticket auditor and produce prioritized, actionable findings. |
