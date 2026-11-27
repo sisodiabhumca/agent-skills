@@ -51,6 +51,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`analytics-experiment-analyzer`](./skills/analytics-experiment-analyzer) | Vendor-neutral skill to analytics experiment analyzer and produce prioritized, actionable findings. |
 | [`analytics-forecast-analyzer`](./skills/analytics-forecast-analyzer) | Vendor-neutral skill to analytics forecast analyzer and produce prioritized, actionable findings. |
 | [`analytics-migration-analyzer`](./skills/analytics-migration-analyzer) | Vendor-neutral skill to analytics migration analyzer and produce prioritized, actionable findings. |
+| [`analytics-policy-auditor`](./skills/analytics-policy-auditor) | Vendor-neutral skill to analytics policy auditor and produce prioritized, actionable findings. |
 | [`analytics-quota-auditor`](./skills/analytics-quota-auditor) | Vendor-neutral skill to analytics quota auditor and produce prioritized, actionable findings. |
 | [`analytics-ticket-auditor`](./skills/analytics-ticket-auditor) | Vendor-neutral skill to analytics ticket auditor and produce prioritized, actionable findings. |
 | [`analytics-usage-analyzer`](./skills/analytics-usage-analyzer) | Vendor-neutral skill to analytics usage analyzer and produce prioritized, actionable findings. |
@@ -159,6 +160,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`data-lineage-breakage-detector`](./skills/data-lineage-breakage-detector) | Vendor-neutral skill to detect lineage breakages after schema or pipeline changes. |
 | [`data-migration-analyzer`](./skills/data-migration-analyzer) | Vendor-neutral skill to data migration analyzer and produce prioritized, actionable findings. |
 | [`data-pipeline-freshness-auditor`](./skills/data-pipeline-freshness-auditor) | Vendor-neutral skill to audit warehouse table freshness and rank downstream impact of delays. |
+| [`data-policy-auditor`](./skills/data-policy-auditor) | Vendor-neutral skill to data policy auditor and produce prioritized, actionable findings. |
 | [`data-quality-sla-monitor`](./skills/data-quality-sla-monitor) | Vendor-neutral skill to monitor data quality SLAs and produce remediation priorities for analytics teams. |
 | [`data-quota-auditor`](./skills/data-quota-auditor) | Vendor-neutral skill to data quota auditor and produce prioritized, actionable findings. |
 | [`data-retention-enforcement-planner`](./skills/data-retention-enforcement-planner) | Vendor-neutral skill to plan retention enforcement jobs with legal hold and deletion safeguards. |
@@ -214,6 +216,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`growth-experiment-planner`](./skills/growth-experiment-planner) | Use when planning A/B tests in LaunchDarkly, Optimizely, or similar platforms. |
 | [`growth-forecast-analyzer`](./skills/growth-forecast-analyzer) | Vendor-neutral skill to growth forecast analyzer and produce prioritized, actionable findings. |
 | [`growth-migration-analyzer`](./skills/growth-migration-analyzer) | Vendor-neutral skill to growth migration analyzer and produce prioritized, actionable findings. |
+| [`growth-policy-auditor`](./skills/growth-policy-auditor) | Vendor-neutral skill to growth policy auditor and produce prioritized, actionable findings. |
 | [`growth-quota-auditor`](./skills/growth-quota-auditor) | Vendor-neutral skill to growth quota auditor and produce prioritized, actionable findings. |
 | [`growth-ticket-auditor`](./skills/growth-ticket-auditor) | Vendor-neutral skill to growth ticket auditor and produce prioritized, actionable findings. |
 | [`growth-usage-analyzer`](./skills/growth-usage-analyzer) | Vendor-neutral skill to growth usage analyzer and produce prioritized, actionable findings. |
@@ -227,6 +230,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`identity-experiment-analyzer`](./skills/identity-experiment-analyzer) | Vendor-neutral skill to identity experiment analyzer and produce prioritized, actionable findings. |
 | [`identity-forecast-analyzer`](./skills/identity-forecast-analyzer) | Vendor-neutral skill to identity forecast analyzer and produce prioritized, actionable findings. |
 | [`identity-migration-analyzer`](./skills/identity-migration-analyzer) | Vendor-neutral skill to identity migration analyzer and produce prioritized, actionable findings. |
+| [`identity-policy-auditor`](./skills/identity-policy-auditor) | Vendor-neutral skill to identity policy auditor and produce prioritized, actionable findings. |
 | [`identity-provisioning-auditor`](./skills/identity-provisioning-auditor) | Vendor-neutral skill to audit identity provisioning workflows for timing, scope, and policy violations. |
 | [`identity-quota-auditor`](./skills/identity-quota-auditor) | Vendor-neutral skill to identity quota auditor and produce prioritized, actionable findings. |
 | [`identity-ticket-auditor`](./skills/identity-ticket-auditor) | Vendor-neutral skill to identity ticket auditor and produce prioritized, actionable findings. |
@@ -301,6 +305,7 @@ The table below is auto-generated from each skill's `SKILL.md` frontmatter. Run 
 | [`ops-experiment-analyzer`](./skills/ops-experiment-analyzer) | Vendor-neutral skill to ops experiment analyzer and produce prioritized, actionable findings. |
 | [`ops-forecast-analyzer`](./skills/ops-forecast-analyzer) | Vendor-neutral skill to ops forecast analyzer and produce prioritized, actionable findings. |
 | [`ops-migration-analyzer`](./skills/ops-migration-analyzer) | Vendor-neutral skill to ops migration analyzer and produce prioritized, actionable findings. |
+| [`ops-policy-auditor`](./skills/ops-policy-auditor) | Vendor-neutral skill to ops policy auditor and produce prioritized, actionable findings. |
 | [`ops-quota-auditor`](./skills/ops-quota-auditor) | Vendor-neutral skill to ops quota auditor and produce prioritized, actionable findings. |
 | [`ops-rca-hypothesis-generator`](./skills/ops-rca-hypothesis-generator) | Generates vendor-neutral root-cause-analysis (RCA) hypotheses from incident symptoms and recent changes, producing a prioritized investigation plan. |
 | [`ops-ticket-auditor`](./skills/ops-ticket-auditor) | Vendor-neutral skill to ops ticket auditor and produce prioritized, actionable findings. |
