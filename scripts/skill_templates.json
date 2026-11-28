@@ -1913,5 +1913,105 @@
     "slug": "pipeline-policy-auditor",
     "title": "Pipeline Policy Auditor",
     "description": "Vendor-neutral skill to pipeline policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "partner-policy-auditor",
+    "title": "Partner Policy Auditor",
+    "description": "Vendor-neutral skill to partner policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "mobile-policy-auditor",
+    "title": "Mobile Policy Auditor",
+    "description": "Vendor-neutral skill to mobile policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "cloud-policy-auditor",
+    "title": "Cloud Policy Auditor",
+    "description": "Vendor-neutral skill to cloud policy auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "api-incident-auditor",
+    "title": "Api Incident Auditor",
+    "description": "Vendor-neutral skill to api incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "billing-incident-auditor",
+    "title": "Billing Incident Auditor",
+    "description": "Vendor-neutral skill to billing incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "support-incident-auditor",
+    "title": "Support Incident Auditor",
+    "description": "Vendor-neutral skill to support incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "security-incident-auditor",
+    "title": "Security Incident Auditor",
+    "description": "Vendor-neutral skill to security incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "release-incident-auditor",
+    "title": "Release Incident Auditor",
+    "description": "Vendor-neutral skill to release incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "analytics-incident-auditor",
+    "title": "Analytics Incident Auditor",
+    "description": "Vendor-neutral skill to analytics incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "ops-incident-auditor",
+    "title": "Ops Incident Auditor",
+    "description": "Vendor-neutral skill to ops incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "growth-incident-auditor",
+    "title": "Growth Incident Auditor",
+    "description": "Vendor-neutral skill to growth incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "data-incident-auditor",
+    "title": "Data Incident Auditor",
+    "description": "Vendor-neutral skill to data incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "infra-incident-auditor",
+    "title": "Infra Incident Auditor",
+    "description": "Vendor-neutral skill to infra incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "product-incident-auditor",
+    "title": "Product Incident Auditor",
+    "description": "Vendor-neutral skill to product incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "sales-incident-auditor",
+    "title": "Sales Incident Auditor",
+    "description": "Vendor-neutral skill to sales incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "finance-incident-auditor",
+    "title": "Finance Incident Auditor",
+    "description": "Vendor-neutral skill to finance incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "privacy-incident-auditor",
+    "title": "Privacy Incident Auditor",
+    "description": "Vendor-neutral skill to privacy incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "identity-incident-auditor",
+    "title": "Identity Incident Auditor",
+    "description": "Vendor-neutral skill to identity incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "catalog-incident-auditor",
+    "title": "Catalog Incident Auditor",
+    "description": "Vendor-neutral skill to catalog incident auditor and produce prioritized, actionable findings."
+  },
+  {
+    "slug": "pipeline-incident-auditor",
+    "title": "Pipeline Incident Auditor",
+    "description": "Vendor-neutral skill to pipeline incident auditor and produce prioritized, actionable findings."
   }
 ]
